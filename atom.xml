@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.91change.club/"/>
-  <updated>2019-08-20T12:02:29.157Z</updated>
+  <updated>2019-08-20T12:04:17.392Z</updated>
   <id>http://www.91change.club/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.91change.club/2019/08/19/5/"/>
     <id>http://www.91change.club/2019/08/19/5/</id>
     <published>2019-08-19T11:47:56.000Z</published>
-    <updated>2019-08-20T12:02:29.157Z</updated>
+    <updated>2019-08-20T12:04:17.392Z</updated>
     
     <content type="html"><![CDATA[<h2 id="关于七牛云的使用"><a href="#关于七牛云的使用" class="headerlink" title="关于七牛云的使用"></a>关于七牛云的使用</h2><p>在网站的访问过程中，由于要使用图片才能显现美观，但图片过多时就会降低网站的访问进程，增加访问的时间，所以我们就要把图片同一处理，放在一个图床里单独访问，但是自己配一个服务器又要钱，买一个云储存对象很贵，这里介绍了七牛云，每个月免费10G的存储空间，非常适合小型博客网站，相册的使用。</p><a id="more"></a><h4 id="1、注册七牛云"><a href="#1、注册七牛云" class="headerlink" title="1、注册七牛云"></a>1、注册<a href="https://portal.qiniu.com/signup" target="_blank" rel="noopener">七牛云</a></h4><p>进入主页点击：<br>为了更直观 我截图来说明</p><p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190820192645.png" alt></p><p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190820192652.png" alt></p><h4 id="2、创建好后我们可以看到"><a href="#2、创建好后我们可以看到" class="headerlink" title="2、创建好后我们可以看到"></a>2、创建好后我们可以看到</h4><p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190820192658.png" alt></p><p> <strong>记住这个域名</strong><br>虽然这旁边有上传文件，把图片上床后就会形成一个URL地址<br>然后你的代码里添加这个URL就可以加载图片了，但是非常麻烦每次都要打开这个网站传，所以这里介绍一个插件PicGo，大家可以到我<a href="https://github.com/jirouping/PicGo" target="_blank" rel="noopener">github</a>上下载。特别感谢PicGo大佬的插件。</p><p>然后配置PicGo插件：</p><p>1、网址为上图里的默认域名 </p><p>2、AK和SK进密钥管理看</p><p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190820192701.png" alt></p><h4 id="Next"><a href="#Next" class="headerlink" title="Next:"></a>Next:</h4><p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190820194407.png" alt></p><h4 id="配置七牛图床"><a href="#配置七牛图床" class="headerlink" title="配置七牛图床:"></a>配置七牛图床:</h4><p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190820194747.png" alt></p><p>配置好后进去上传区，上传图片。然后在相册区复制不同类型的URL</p><p>这就是一些七牛云的操作。</p><hr>]]></content>
     
@@ -32,7 +32,7 @@
     </summary>
     
     
-      <category term="七牛云 插件 PicGo" scheme="http://www.91change.club/tags/%E4%B8%83%E7%89%9B%E4%BA%91-%E6%8F%92%E4%BB%B6-PicGo/"/>
+      <category term="-七牛云 -插件 -PicGo" scheme="http://www.91change.club/tags/%E4%B8%83%E7%89%9B%E4%BA%91-%E6%8F%92%E4%BB%B6-PicGo/"/>
     
   </entry>
   
