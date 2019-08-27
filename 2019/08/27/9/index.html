@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="长歌|91Change">
 <meta property="og:description" content="浅谈c语言灵魂——指针由于最近开学了，又要实习，还要准备考研，好几天没写了。">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-08-27T15:58:01.450Z">
+<meta property="og:updated_time" content="2019-08-27T15:59:42.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈c指针(二)">
 <meta name="twitter:description" content="浅谈c语言灵魂——指针由于最近开学了，又要实习，还要准备考研，好几天没写了。">
@@ -226,15 +226,15 @@
 <pre><code>1：int  *pi 指针指向 const  int  i 常量的情况
 const  int  i1 = 40; 
 int  *pi; 
-pi  =  &amp;i1;           // 这样可以吗？不行，VC 下是编译错。 
-                      // const  int 类型的 i1 的地址是不能赋值给指向 int 类型地址的指针 pi 的。否则 pi 岂不是能修改 i1 的值了吗！
+pi  =  &amp;i1;     // 这样可以吗？不行，VC 下是编译错。 
+                // const  int 类型的 i1 的地址是不能赋值给指向 int 类型地址的指针 pi 的。否则 pi 岂不是能修改 i1 的值了吗！
 pi = (int *) &amp;i1;     //这样可以吗？强制类型转换可是 C 所支持的。
 //VC 下编译通过，但是仍不能通过 *pi = 80 来修改 i1 的值。去试试吧！看看具体的怎样。
 
 2：const  int  *pi 指针指向 const  int  i1 的情况
 const  int  i1=40; 
 const  int  *pi; 
-pi = &amp;i1;            // 两个类型相同，可以这样赋值。很显然，i1 的值无论是通过pi 还是 i1 都不能修改的。 </code></pre><p>什么还要如此看重关键字 const 呢？<br>1). 关键字 const 的作用是为给读你代码的人传达非常有用的信息，实际上，声明一个参数 为常量是为了告诉了用户这个参数的应用目的。如果你曾花很多时间清理其它人留下的垃 圾，你就会很快学会感谢这点多余的信息。（当然，懂得用 const 的程序员很少会留下的垃圾 让别人来清理的。）<br>2). 通过给优化器一些附加的信息，使用关键字 const 也许能产生更紧凑的代码。<br>3). 合理地使用关键字 const 可以使编译器很自然地保护那些不希望被改变的参数，防止其 被无意的代码修改。简而言之，这样可以减少 bug 的出现。</p>
+pi = &amp;i1;      // 两个类型相同，可以这样赋值。很显然，i1 的值无论是通过pi 还是 i1 都不能修改的。 </code></pre><p>什么还要如此看重关键字 const 呢？<br>1). 关键字 const 的作用是为给读你代码的人传达非常有用的信息，实际上，声明一个参数 为常量是为了告诉了用户这个参数的应用目的。如果你曾花很多时间清理其它人留下的垃 圾，你就会很快学会感谢这点多余的信息。（当然，懂得用 const 的程序员很少会留下的垃圾 让别人来清理的。）<br>2). 通过给优化器一些附加的信息，使用关键字 const 也许能产生更紧凑的代码。<br>3). 合理地使用关键字 const 可以使编译器很自然地保护那些不希望被改变的参数，防止其 被无意的代码修改。简而言之，这样可以减少 bug 的出现。</p>
 <hr>
 
       
