@@ -6,23 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://www.91change.club">
-  <title>yilia主题的一些配置问题 | 长歌|91Change</title>
+  <title>浅谈c指针(二) | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="页面点击爱心和网站访问数量的实现为了完善自己更好看的博客，对原始主题进行了一些小的修改">
-<meta name="keywords" content="yilia,hexo">
+  <meta name="description" content="浅谈c语言灵魂——指针由于最近开学了，又要实习，还要准备考研，好几天没写了。 上次写到指针和数组，今天在看一些c的面试题发现一个很重要的东西就是const了，相信学过c的人一定会说：“const就意味着是常数了”，那只能说明你只懂皮毛了，这里推荐一篇外国大佬 Dan Saks的文章《const T vs T const》，在他的文章里完全概括了所有的用法。 下面的代码什么意思： 123456con">
+<meta name="keywords" content="c语言,指针,const用法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="yilia主题的一些配置问题">
-<meta property="og:url" content="http://www.91change.club/2019/08/17/4/index.html">
+<meta property="og:title" content="浅谈c指针(二)">
+<meta property="og:url" content="http://www.91change.club/2019/08/27/9/index.html">
 <meta property="og:site_name" content="长歌|91Change">
-<meta property="og:description" content="页面点击爱心和网站访问数量的实现为了完善自己更好看的博客，对原始主题进行了一些小的修改">
+<meta property="og:description" content="浅谈c语言灵魂——指针由于最近开学了，又要实习，还要准备考研，好几天没写了。 上次写到指针和数组，今天在看一些c的面试题发现一个很重要的东西就是const了，相信学过c的人一定会说：“const就意味着是常数了”，那只能说明你只懂皮毛了，这里推荐一篇外国大佬 Dan Saks的文章《const T vs T const》，在他的文章里完全概括了所有的用法。 下面的代码什么意思： 123456con">
 <meta property="og:locale" content="cn">
-<meta property="og:image" content="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190817202816.png">
-<meta property="og:image" content="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190817202810.png">
-<meta property="og:updated_time" content="2019-08-17T15:38:02.422Z">
+<meta property="og:updated_time" content="2019-08-27T15:49:24.502Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yilia主题的一些配置问题">
-<meta name="twitter:description" content="页面点击爱心和网站访问数量的实现为了完善自己更好看的博客，对原始主题进行了一些小的修改">
-<meta name="twitter:image" content="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190817202816.png">
+<meta name="twitter:title" content="浅谈c指针(二)">
+<meta name="twitter:description" content="浅谈c语言灵魂——指针由于最近开学了，又要实习，还要准备考研，好几天没写了。 上次写到指针和数组，今天在看一些c的面试题发现一个很重要的东西就是const了，相信学过c的人一定会说：“const就意味着是常数了”，那只能说明你只懂皮毛了，这里推荐一篇外国大佬 Dan Saks的文章《const T vs T const》，在他的文章里完全概括了所有的用法。 下面的代码什么意思： 123456con">
   
     <link rel="alternative" href="/atom.xml" title="长歌|91Change" type="application/atom+xml">
   
@@ -186,39 +183,57 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-4" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-9" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      yilia主题的一些配置问题
+      浅谈c指针(二)
     </h1>
   
 
         
-        <a href="/2019/08/17/4/" class="archive-article-date">
-  	<time datetime="2019-08-17T04:02:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-17</time>
+        <a href="/2019/08/27/9/" class="archive-article-date">
+  	<time datetime="2019-08-27T08:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="页面点击爱心和网站访问数量的实现"><a href="#页面点击爱心和网站访问数量的实现" class="headerlink" title="页面点击爱心和网站访问数量的实现"></a>页面点击爱心和网站访问数量的实现</h2><p>为了完善自己更好看的博客，对原始主题进行了一些小的修改</p>
-<a id="more"></a>
-<h5 id="页面点击出现爱心的实现"><a href="#页面点击出现爱心的实现" class="headerlink" title="页面点击出现爱心的实现"></a>页面点击出现爱心的实现</h5><p>在这里我加了一些js代码让页面显示更炫酷，文件我上传到了<u><a href="https://github.com/jirouping/yilia-love/blob/master/love.js" target="_blank" rel="noopener"><strong>我的github</strong></a></u>里大家可以复制下来，然后新建一个<u><strong><em>love.js</em></strong></u>文件加在<font color="orange" size="4">\blog\themes\yilia\source</font>里，接着在你的<font color="orange" size="4">\blog\themes\yilia\layout\_partial\footer.ejs</font>的最后面加入以下代码：<br></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/love.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+        <h2 id="浅谈c语言灵魂——指针"><a href="#浅谈c语言灵魂——指针" class="headerlink" title="浅谈c语言灵魂——指针"></a>浅谈c语言灵魂——指针</h2><p>由于最近开学了，又要实习，还要准备考研，好几天没写了。</p>
+<p>上次写到指针和数组，今天在看一些c的面试题发现一个很重要的东西就是<font size="5" color="red">const</font>了，相信学过c的人一定会说：“const就意味着是常数了”，那只能说明你只懂皮毛了，这里推荐一篇外国大佬 Dan Saks的文章《const T vs T const》，在他的文章里完全概括了所有的用法。</p>
+<p>下面的代码什么意思：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const  int  a;</span><br><span class="line">int  const  a;</span><br><span class="line">const  int  *a;</span><br><span class="line">int  const  *a;</span><br><span class="line">int*  const  a;</span><br><span class="line">int  const*  const a ;</span><br></pre></td></tr></table></figure>
 
-<h4 id="页面访问次数的实现"><a href="#页面访问次数的实现" class="headerlink" title="页面访问次数的实现"></a>页面访问次数的实现</h4><p>这里我是使用<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子</a>来实现的，首先同在你的<font color="orange" size="4">\blog\themes\yilia\layout_partial\footer.ejs</font>加入如下代码：</p>
-<p><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190817202816.png" alt></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 自己加一个div</span><br><span class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</span><br><span class="line"> 	本站访客数：&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人 |</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">&lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;</span><br><span class="line">	本文总阅读量：&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p>一般的int const和const int效果是一样的，a都是一个常数整数型的数，在这里我们只要记住<strong>int 与const 哪个放前哪个放后都是一样的</strong>，第三个a首先是一个指针其次它是一个指向常整数型的，也就是说*a是常量了，是不能被赋值的，但是a的值是可以改变的，也就是说它可以重新指向另一个地址。看下面的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int  i1 = 30; </span><br><span class="line">int  i2 = 40; </span><br><span class="line">const int *a = &amp;i1; </span><br><span class="line">a  =  &amp;i2;         /* 注意这里，a可以在任意时候重新赋值一个新内存地址 */ </span><br><span class="line">i2 = 80;            /* 注意看：这里不能能用*a = 80 来代替 */ </span><br><span class="line">printf(&quot;%d\n&quot;, *a); /* 输出是 80 */</span><br></pre></td></tr></table></figure>
 
-<p>再在最后加入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>首先const修饰的是整个<em>a(注意不是a)。所以</em>a是常量，不能被赋值的，即使a所指的i2是变量。</p>
+<p>由于前面第一个和第二已经说明const和int谁在前都是一样的，所以第二个和第三个效果也是一样的，这里可能就会问了那怎么用const来修饰a呢？，注意第四个的const的位置，那你就应该明白了。</p>
+<p><strong>int  *const  a</strong> (int*  const和int  *const是一样的，只是风格不同)<br><br>先看下面的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int i1 = 30; </span><br><span class="line">int i2 = 40; </span><br><span class="line">int *const a = &amp;i1; </span><br><span class="line">/* a = &amp;i2; 注意这里，a 不能再这样重新赋值了，即不能再指向另一个新地址第4 行的注释）*/ </span><br><span class="line">i1 = 80;           /* 想想看：这里能用 *a = 80; 来代替吗？可以，这里可以通过*a 修改 i1 的值。（第 5 行的注释）*/ </span><br><span class="line">/* 请自行与前面一个例子比较。 */ </span><br><span class="line">printf(&quot;%d&quot;, *a);     /* 输出是 80 */</span><br></pre></td></tr></table></figure>
 
-<p>最后面实现：<br><img src="http://pwbwgsn9c.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190817202810.png" alt></p>
+<p>写到这里相信你们都懂了，a的值是不能重新被赋值的。<strong>它只能永远指向初始化时的内存地址了</strong>但是你可以通过改变*a来修改i1的值了。</p>
+<p>所以说第四个意思 a 是一个指向整型数的常指针（也就 是说，指针指向的整型数是可以修改的，但指针是不可修改的）</p>
+<p>与前一个例子对照一下吧！看以下的两点分析：<br>1）a 因为有了 const 的修饰，所以只是一个指针常量：也就是说 a 值是不可修改的（即 a 不可以重新指向 i2 这个变量了）（请看第 4 行的注释）。<br>2）整个*a的前面没有 const 的修饰。也就是说，*a 是变量而不是常量，所以我们可以通过*a来修改它所指内存 i1 的值（请看第 5 行的注释）。<br><br><strong>总之一句话，这次的 a 是一个指向 int 变量类型数据的指针常量。</strong></p>
+<p>也就是说如果 const 修饰在*a 前，则不能改的是*a(即不能类似这样：*a=50;赋值)而不是指 a。  如果 const 是直接写在 a前，则 a不能改(即不能类似这样：a=&i;赋值)。</p>
+<p>说完第四个了，接着第五个int  const*  const  a; 最后一个意味着 a 是一个 指向常整型数的常指针（也就是说，指针指向的整型数是不可修改的，同时指针也是不可 修改的）</p>
+<p>const的一些基本用法就这些了，最后补充一下：</p>
+<pre><code>1：int  *pi 指针指向 const  int  i 常量的情况
+const  int  i1 = 40; 
+int  *pi; 
+pi  =  &amp;i1;             // 这样可以吗？不行，VC 下是编译错。 
+                        // const  int 类型的 i1 的地址是不能赋值给指向 int 类型地址的指针 pi 的。否则 pi 岂不是能修改 i1 的值了吗！
+pi = (int *) &amp;i1;       //这样可以吗？强制类型转换可是 C 所支持的。
+                        //VC 下编译通过，但是仍不能通过 *pi = 80 来修改 i1 的值。去试试吧！看看具体的怎样。
+
+2：const  int  *pi 指针指向 const  int  i1 的情况
+const  int  i1=40; 
+const  int  *pi; 
+pi = &amp;i1;               // 两个类型相同，可以这样赋值。很显然，i1 的值无论是通过pi 还是 i1 都不能修改的。 </code></pre><p>什么还要如此看重关键字 const 呢？<br><br>1). 关键字 const 的作用是为给读你代码的人传达非常有用的信息，实际上，声明一个参数 为常量是为了告诉了用户这个参数的应用目的。如果你曾花很多时间清理其它人留下的垃 圾，你就会很快学会感谢这点多余的信息。（当然，懂得用 const 的程序员很少会留下的垃圾 让别人来清理的。）<br>2). 通过给优化器一些附加的信息，使用关键字 const 也许能产生更紧凑的代码。 <br><br>3). 合理地使用关键字 const 可以使编译器很自然地保护那些不希望被改变的参数，防止其 被无意的代码修改。简而言之，这样可以减少 bug 的出现。</p>
 <hr>
 
       
@@ -235,7 +250,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://www.91change.club/2019/08/17/4/
+				http://www.91change.club/2019/08/27/9/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -293,11 +308,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">const用法</a>
         		</li>
       		
 		</ul>
@@ -353,7 +372,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-	  <img src="http://s.jiathis.com/qrcode.php?url=http://www.91change.club/2019/08/17/4/" alt="微信分享二维码">
+	  <img src="http://s.jiathis.com/qrcode.php?url=http://www.91change.club/2019/08/27/9/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -367,18 +386,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/19/5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          关于七牛云图床的使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/16/3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">考研日常记</div>
+    <a href="/2019/08/24/8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2019年计划</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -408,7 +418,7 @@
   
 
   
-  <div id="SOHUCS" sid="4" ></div> 
+  <div id="SOHUCS" sid="9" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
