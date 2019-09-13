@@ -9,22 +9,22 @@
   <title>浅谈c指针(一) | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="浅谈c语言灵魂——指针c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
-<meta name="keywords" content="指针,C语言">
+<meta name="keywords" content="C语言,指针">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈c指针(一)">
 <meta property="og:url" content="http://www.91change.club/2019/08/21/6/index.html">
 <meta property="og:site_name" content="长歌|91Change">
 <meta property="og:description" content="浅谈c语言灵魂——指针c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
 <meta property="og:locale" content="cn">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxa9yvqj307p060745.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6xnfa1hw6j307p060745.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxl3fw9j303o00j0nz.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxsigm9j307105y3yd.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxyh2kej304h00j0m4.jpg">
-<meta property="og:updated_time" content="2019-09-12T11:41:46.423Z">
+<meta property="og:updated_time" content="2019-09-13T01:50:39.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈c指针(一)">
 <meta name="twitter:description" content="浅谈c语言灵魂——指针c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxa9yvqj307p060745.jpg">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6xnfa1hw6j307p060745.jpg">
   
     <link rel="alternative" href="/atom.xml" title="长歌|91Change" type="application/atom+xml">
   
@@ -258,13 +258,13 @@
 </ul>
 <p>但二者并不相同：</p>
 <p>如：把两个字符串相加</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxa9yvqj307p060745.jpg" alt="图片1.png"></p>
+<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6xnfa1hw6j307p060745.jpg" alt></p>
 <p>结果：</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxl3fw9j303o00j0nz.jpg" alt="图片4.png"></p>
+<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxl3fw9j303o00j0nz.jpg" alt></p>
 <p>对比：</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxsigm9j307105y3yd.jpg" alt="图片3.png"></p>
+<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxsigm9j307105y3yd.jpg" alt></p>
 <p>结果：</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxyh2kej304h00j0m4.jpg" alt="图片5.png"></p>
+<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxyh2kej304h00j0m4.jpg" alt></p>
 <p>把字符串加到指针所指的字串上去，出现段错误，<font color="red">本质原因</font>：*d=”0123456789”存放在常量区，是无法修的。而数组是存放在<font color="red">栈</font>中，是可以修改的。两者区别如下：<br><br>一. ”读“ ”写“ 能力</p>
 <ul>
 <li>char *a = “abcd”;  此时”abcd”存放在常量区。通过指针只可以访问字符串常量，而不可以改变它。<br></li>
@@ -359,11 +359,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
         		</li>
       		
 		</ul>
@@ -596,18 +596,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">指针</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">const用法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
               </li>
              
@@ -624,6 +612,30 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">计划</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">const用法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">考研</a>
               </li>
              
@@ -636,19 +648,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">计划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
             
             <div class="clearfix"></div>
