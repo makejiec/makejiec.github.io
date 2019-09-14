@@ -41,6 +41,26 @@
   </entry>
   
   <entry>
+    <title>2019年计划</title>
+    <link href="http://www.91change.club/2019/08/24/8/"/>
+    <id>http://www.91change.club/2019/08/24/8/</id>
+    <published>2019-08-24T11:49:53.000Z</published>
+    <updated>2019-09-14T11:16:31.200Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX182g3BSTtEiNYD/ziz3eNue4NOwPXgOT6gCvVfnkmThyZ7anXgp+dbPK9IbCwP/lfxwA5FzrgpX8cakD1dwHIl0i0rlttSIjqAe/tgzyJ5QhUpY9+UchGmkrTZVT7d6tOzjQsJ0PBXLpfrQoRE7GNKODIaI37J7Yvg//6ZnAjU3Vdvgf5zDtj77wNmGsBo654lrmSOQP8d1NQXvnx7GH0cPCHcDwrS2/cZArPWd60s9jw4FXvodxD8TpM+Jib3Lg0smyQKn0SaoYVfoUbYx9pRm/UCfOC5j/HKjyJ75EtAoOaLeFvdwXJtWtwVZGSY8VnaZlkI2Oq9hbwckBKxix9GSCNmtutScH4K/QAXPRFI8g92mg+Je9wi6yeHLF2YmZKA40HiRFFNkF9Lr04y+NlrGZn/KxGoRprw0pgzEp6kWMvL6bsINUZrNo/jwJExYZrQknoH1ywtYfFE6LDmJ/aV8OL5eWVP5+BHYw1e+lAkBy82OAjL9SRbLeVECUI0bPuPEoBcQ7Zm+XAFPV9a5pkTWnyfZg3GLEQ96KjDkzASqVz+LN0X6jdhBqE7cKvu0S8cSDJK93f+hiLaedE3JIRrlZ7ui7u3vidM6WKwS9Tj+r3SBb7wQwRDeeU0tS/OqRzp3SjKcjRhc1BRCTLTyUNfTxXhn3eWTZSMm5o1bwFaL3rnt90W4VPvY9xWXwcjYYFOJJj9Z+Thk3NTFg9c9AZ1sqZdC53QWjXWU1Mz+zHltitfzqHXdQM4ai+lKypdAucXVTrOfqGaIilgvJwvrVCcXHTL2czdidaBgHEiSQJhhhShP/pDkH5XKFVtrSSHOmah+JaI0FlK2T8fjHDb4dhuB4v4h0m2HOZLAOYmWwJGkipJlEaajllMUWDz8tDn7DyFm+/QTDl7gYELIGIEHJz8gLr4xZBO2WRgUUvx7/YibocxayYILmfMRqw2eiyk0PjgZ6i4MLbuShfffs1i9rJesGt/KPrmMKyEOkIXY2RD0QIB31Ew1mTIflzLSLKs4lQcWs0sIQyx6s0k8NcWF8seLjfDKeCgGnMjJ6i+A6GmIAI72bYBeF0o4qM4C7/55492rAI6posiS5uql1ezvoKVPAGlspbBRwOdAt5PJg3q0v23DF/ticVixi0gIoODs6kmVWOGI8E+4Pg8BDm4lLFEvFyAcV7mrl2cSxf42c9aE9UGsobOOisRvgHUc7W8/GmUo1/zfU+unFzaPgNZzNaSWPh3N3Hw74CEYhvOz+T05pjMdsbZCWcoS</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      这是2019年对自己的一些要求，可能会实现其中一个，但是写出来才有动力，祝大家今天的计划都能实现，梦还是要有的，万一实现了呢，大家一起努力。
+    
+    </summary>
+    
+    
+      <category term="计划" scheme="http://www.91change.club/tags/%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>浅谈c指针(一)</title>
     <link href="http://www.91change.club/2019/08/21/6/"/>
     <id>http://www.91change.club/2019/08/21/6/</id>
