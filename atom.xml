@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.91change.club/"/>
-  <updated>2019-11-20T06:50:06.784Z</updated>
+  <updated>2019-11-20T14:26:22.705Z</updated>
   <id>http://www.91change.club/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>经典排序算法</title>
+    <link href="http://www.91change.club/2019/11/20/11/"/>
+    <id>http://www.91change.club/2019/11/20/11/</id>
+    <published>2019-11-20T13:11:03.000Z</published>
+    <updated>2019-11-20T14:26:22.705Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer">通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。<a id="more"></a><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>废话不多说上代码：<br></p><pre><code>/*选择排序*/#include&lt;stdio.h&gt;#define NUM 20int main(void){    int a[NUM], i, j, n;    int min;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)       {        scanf(&quot;%d&quot;, &amp;a[i]);    }    for(i = 0; i &lt; n-1; i++)   {        min = i;        for(j = i + 1; j &lt; n; j++)            min = a[j] &lt; a[min] ? j : min;        if(min != i)        {            a[i] ^= a[min];            a[min] ^= a[i];            a[i] ^= a[min];        }    }    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vejx8mij30fr03jdg3.jpg" alt="图片2.png"></p><h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><pre><code>/*快速排序*/#include&lt;stdio.h&gt;#define NUM 20typedef int ElemType;void QuickSort(ElemType s[], int low, int hight);int Partition(ElemType s[], int low, int hight);int main(void)`{    int a[NUM], low, hight, i, n;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    low = 0;    hight = n-1;    QuickSort(a, low, hight);    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}void QuickSort(ElemType s[], int low, int hight){    if(low &lt; hight)    {        int piv = Partition(s, low, hight);        QuickSort(s, low, piv - 1);        QuickSort(s, piv+1, hight);    }}int Partition(ElemType s[], int low, int hight){    int pi = s[low];    while(low &lt; hight)    {        while(low &lt; hight &amp;&amp; s[hight] &gt;= pi)            --hight;        s[low] = s[hight];        while(low &lt; hight &amp;&amp; s[low] &lt;= pi)            ++low;        s[hight] = s[low];    }    s[low] = pi;    return low;}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vb4xjz4j30fj04gq37.jpg" alt="图片1.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;经典排序算法&quot;&gt;&lt;a href=&quot;#经典排序算法&quot; class=&quot;headerlink&quot; title=&quot;经典排序算法&quot;&gt;&lt;/a&gt;经典排序算法&lt;/h2&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://www.91change.club/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序" scheme="http://www.91change.club/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>华师18年真题</title>
@@ -60,11 +83,11 @@
     </summary>
     
     
-      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
     
       <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
   </entry>
   
@@ -84,9 +107,9 @@
     </summary>
     
     
-      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
+    
+      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
     
       <category term="const用法" scheme="http://www.91change.club/tags/const%E7%94%A8%E6%B3%95/"/>
     
@@ -99,7 +122,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2019-09-14T11:16:31.200Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19swfd2kVdcm5h74cyZqKLzl3bkdQNwaX2m+8VolWBU3N7dn4FyJm8DUPDzytyxTOSJyDRqyyXZ0NA8nzsQuJFWpawZKaAps0fvXs3GyRIVG0cA6q8pHQD39sbBVVus6ctJKGe690tuwDDKZ4WcYtoHr4jyoSsfq3kpOsAn/ObRFQg3Z02Xngp0KqpCqa17jY6KFWlcjLnXtghCYH7OyAYZe+X1asFdsK9vq0K+Q9qnOna4QGJUeMKllHVae7pvzVu4znE8G5VsKwFTrNWyd1DT6gkPeL4IUMqJVDo2+miIBe5UQMmXF3JRfzQ7N0WjnWMcll0lup2Hx2hywy9Wfitny/w94yoQFKz0vlhsMRblGh1ZOY4oHi7Op/vv/12otKLuRTxWYwFc8u+WjzZBhY2VuNTJsgEip9wnDRWzggnRgnEKEgIvCwbwCPMWaDN4WvLMlnegl9I8Wdu2JBPFBl4JOCdYi2vWUuuEuJmW7I/YzMAYi9cvzzVqA3L2bnoKdLhMlJJT8+Z1DP97/vgXl7HXvGZtpWlwIITCHmcVJgwBi6QB+SJFfh7iulinF/v8/vJWTyFdtlnYo9hcLBCKRr4P0Z6eMdhTjfnZH06v+ceq1zCxKVnL96IR4nUqXlPdo/gsZd7d0QGnd8Z4FQDzdDhces6LBi5h/WrEkZ1uzIspRc5dV4BwowyIC3xLpKHFgXO18sZhrS0u3dI1d1DErWc4RqzK5C4FMniXXkj9Sd0wNYLWBxYdTyiro6QeSoqxVwRIr2KAl4TpjPmknFWEJkyS0neOA7vkx8jiRzzQyzg5iDxSlGZvu8GGgfq1aes3KBAo8oEH5yAqCgsA89sD+P1jNfomaDGACF3sd4WVCxB32VfOlwNWeE189nZGLE6VvwNR/1eqddIbUcz7pNky0QNDnulg5t/ZFocjymnmBuXAiVWbpnFkqa+rLSB6OMF+x7LSwyEKiwuRl1u6rhPWTPtj1nXyYTlB+dfpWQKPL8S7kICsBQkZ7ZEgiz0zNmCHCPiJj90/ZB6FGsToZPIFgu9yiDr5RGTIbQLYVzTweThMsq34P8hmapKVkLtevl2bCY4sjoPafQMXIz6StCzD8/H+vb/KvkTRxOkU6oiFiFvIJsEou525xRN/lAD3rMPHL7nP8JEw4V5Ou9WZZoDXf1Hh+qX2MNXhJgxHdj3v8x+qX0Lnr7sU71W/kAv8b+AVEY2AKIqgrxnH42LpMfqKO2RrUB/rQ8FaigxbTcNwNOsxqefbpVzZtOt0</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+bZtsvmDSblpfLxnkFhlXOgaq1U4YCS/aAjMg7Lq+u/xkXMp2ol1t3L5nNP62Sr8VmU5UVjVIkAk4+To3J9kb6zI6ZCYL8IeYdA44mydlXKloQ379R2LP0+IOhvQr1ctEYIMsFQkwCE6bgZxkh/jxXmnQzSLFor6yWRNDWR0fTTUsqgu+0KYirx8oz9syJE0oRbarjHRsI1GJ6oKf8EuYvd8sBHkbFpORk2FdCoMeTG6Rm638GabjsyrqE/V0FnXrzZ97N5+8HvyBMcqNvU22CoLvtDzQGdfUzJABirQAt3ImWrD3C49i/TxAXPHUHvRer4SToO/6evyMHNGfX3lrkR3r6abFbOZVv1mf6TpZDs9/jvdTeXNltW+IHFY6NjLdAzfhMmLHV5okMHjfN7fWfKenvIVahKiGN5LIi2BI9fN6gQt/3fxI4hrd8xhB0isx9Ec1UtpIuELvzBXzvRB6v4cvZ12ExKU756yUinTjjsXXpG2cIIut5eFuwUwXJ4wuqz1JwN8A5+7dsCeUz/cwZkrfDNXrQicpA4fwfB1WS3fjrmL9doK//gpLNFFM9pnengVGVUHkX+jtgtSvhDSt/Tp7hLO+cmz5cRAKD8FCtRhy7Devc0EpBAR4UqxZgVJbdzPdM1uddPvUJSLE5jfkVwVd1zxSbK7GSzAGKN/R2nl2Ei06Kh9bBfftqDNN4rY13E/NoLU+ItT+ABbjBTGWTtnjjIZX8XeQJdJNLzJkEVORO54lv3csed96Wadzk+EH/gk9Db4q74wklxsGHXbCQDiLsiPPipkUp+I7zM7OqepOwYAMoiJmldxu6YdeVSpmwL7PsUkEEGUs1jo/ILMu+6Sjsn9YDhv5whTzKu0g0l3NPXNN9vwB50Za0TNJrc9n2vBawbvzD7qzW0sqcfvKjx1N0QZ0s8mSlOhRaRw92WsQiaAO6sBqh2iySb+t64e8iJKNVWWiMkcRQj6zR/yXZoTacfMpT9na5kMEi6q5b746r0oA+abKGFpvHFnTyHLVrJqURyd1U3wBpvfi/JkegDHgNb4ISppOiSyYWLpaLUFb83TlQ2SXJIiwdNDaeXs1BVJRaeF4EXNPGnvM1qLETjpvJQFBymDnD9RVn+dCAGHj2ar1aoup2FPYRE1OQ2iP3wB/tlCsh3pjxXVyho5GsT6Go8SVGxOvqs3tSFmLtGI/qXUwz0w5BDCzkLvF/jXw03xIbbYsuq5gGreNM3zkBUWWXKZh8+nWJlaTl9ff6QjL5YJwCbqNr</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -130,9 +153,9 @@
     </summary>
     
     
-      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
-    
       <category term="C语言" scheme="http://www.91change.club/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
     
   </entry>
   
@@ -204,9 +227,9 @@
     </summary>
     
     
-      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
-    
       <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
     
       <category term="Independent" scheme="http://www.91change.club/tags/Independent/"/>
     
