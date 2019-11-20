@@ -72,7 +72,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数： 10
+			总文章数： 11
             <br/>
             <br/>			
 		</nav>
@@ -244,6 +244,205 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">计划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-12" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/20/12/">经典排序算法</a>
+    </h1>
+  
+
+		
+        
+        <a href="/2019/11/20/12/" class="archive-article-date">
+  	<time datetime="2019-11-20T14:33:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer">
+
+<!-- moer -->
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><pre><code>/*
+冒泡排序
+*/
+
+#include&lt;stdio.h&gt;
+
+#define num 6
+
+int main(void)
+{
+    int i,j,n;
+    int flag;
+    int a[num];
+    for(i = 0; i &lt; num; i++)
+    {
+        scanf(&quot;%d&quot;, &amp;a[i]);
+    }
+
+    for(i = 1; i &lt; num; i++)
+    {
+        flag = 0;
+        for(j = 0; j &lt; num - i; j++)
+        {
+            if(a[j] &gt; a[j+1])
+            {
+                a[j] = a[j] + a[j+1];
+                a[j+1] = a[j] - a[j+1];
+                a[j] = a[j] - a[j+1];
+                flag = 1;
+            }
+        }
+
+         if(!flag) break;
+    }
+
+    for(i = 0; i &lt; num; i++)
+        printf(&quot;%d &quot;,a[i]);
+    printf(&quot;\n&quot;);
+}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p>
+<h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><pre><code>/*
+归并排序
+*/
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+
+#define NUM 20
+
+typedef int ElemType;
+
+void MergeSort(ElemType s[], int low, int hight);
+void Merge(ElemType s[], int low, int mid, int hight);
+
+int Buff[20] = {0};
+
+int n;
+
+int main(void)
+{
+    int a[NUM], low, hight, i, n;
+
+    printf(&quot;请输入要排序的个数（小于20）：&quot;);
+    scanf(&quot;%d&quot;, &amp;n);
+
+    for(i = 0; i &lt; n; i++)
+    {
+        scanf(&quot;%d&quot;, &amp;a[i]);
+    }
+
+    low = 0;
+    hight = n-1;
+
+    MergeSort(a, low, hight);
+
+    for(i = 0; i &lt; n; i++)
+    {
+        printf(&quot;%d &quot;, a[i]);
+    }
+
+    printf(&quot;\n&quot;);
+}
+
+void MergeSort(ElemType s[], int low, int hight)
+{
+    if(low &lt; hight)
+{
+        int mid = (low + hight) / 2;
+        MergeSort(s, low, mid);
+        MergeSort(s, mid+1, hight);
+        Merge(s, low, mid, hight);
+    }
+}
+
+void Merge(ElemType s[], int low, int mid, int hight)
+{
+    int flag, i ,j;
+
+    for(flag = low; flag &lt;= hight; flag++)
+        Buff[flag] = s[flag];
+    for(i = low, j = mid + 1, flag = i; i &lt;= mid &amp;&amp; j &lt;= hight; flag++)
+    {
+
+        if(Buff[i] &lt;= Buff[j])
+            s[flag] = Buff[i++];
+        else
+            s[flag] = Buff[j++];
+
+        //s[flag] = Buff[i] &lt;= Buff[j] ? Buff[i++] : Buff[j++];
+    }
+
+    if(i &lt;= mid) 
+        s[flag++] = Buff[i++];
+    if(j &lt;= hight)
+        s[flag++] = Buff[j++];
+}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p>
+
+      
+	  
+	  
+	    
+		
+		
+		  <div hidden="hidden"></div>
+		
+
+		
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
         		</li>
       		
 		</ul>
@@ -501,7 +700,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">中秋节</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -509,7 +708,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">中秋节</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
         		</li>
       		
 		</ul>
@@ -590,11 +789,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -681,11 +880,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
         		</li>
       		
 		</ul>
@@ -946,11 +1145,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -990,93 +1189,10 @@
 
 
   
-    <article id="post-first" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/12/first/">Hexo博客的搭建之旅</a>
-    </h1>
-  
-
-		
-        
-        <a href="/2019/08/12/first/" class="archive-article-date">
-  	<time datetime="2019-08-12T13:01:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="hexo-阿里云（centos7-x）-git"><a href="#hexo-阿里云（centos7-x）-git" class="headerlink" title="hexo+阿里云（centos7.x）+git"></a>hexo+阿里云（centos7.x）+git</h2><meta name="referrer" content="no-referrer">
-
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>拥有个人的博客是每个程序员的想法，我也一样所以看到最近看到hexo的博客，心血来潮，查一下，hexo是一个轻量的博客框架，</p>
-        
-          <a class="article-more-a" href="/2019/08/12/first/#more">展开全文 >></a>
-        
-      
-	  
-	  
-	    
-		
-		
-		  <div hidden="hidden"></div>
-		
-
-		
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">阿里云</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -1189,6 +1305,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">const用法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">考研</a>
               </li>
              
@@ -1197,11 +1333,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
+                <a href="javascript:void(0)" class="js-tag color2">Independent</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Independent</a>
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1217,35 +1357,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">C语言</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">指针</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">const用法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
               </li>
              
               <li class="article-tag-list-item">
