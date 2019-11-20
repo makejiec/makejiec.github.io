@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.91change.club/"/>
-  <updated>2019-11-20T14:48:14.941Z</updated>
+  <updated>2019-11-20T14:56:34.685Z</updated>
   <id>http://www.91change.club/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="http://www.91change.club/2019/11/20/12/"/>
     <id>http://www.91change.club/2019/11/20/12/</id>
     <published>2019-11-20T14:33:55.000Z</published>
-    <updated>2019-11-20T14:48:14.941Z</updated>
+    <updated>2019-11-20T14:56:34.685Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer"><!-- moer --><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><pre><code>/*冒泡排序*/#include&lt;stdio.h&gt;#define num 6int main(void){    int i,j,n;    int flag;    int a[num];    for(i = 0; i &lt; num; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    for(i = 1; i &lt; num; i++)    {        flag = 0;        for(j = 0; j &lt; num - i; j++)        {            if(a[j] &gt; a[j+1])            {                a[j] = a[j] + a[j+1];                a[j+1] = a[j] - a[j+1];                a[j] = a[j] - a[j+1];                flag = 1;            }        }         if(!flag) break;    }    for(i = 0; i &lt; num; i++)        printf(&quot;%d &quot;,a[i]);    printf(&quot;\n&quot;);}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><pre><code>/*归并排序*/#include&lt;stdio.h&gt;#include&lt;stdlib.h&gt;#define NUM 20typedef int ElemType;void MergeSort(ElemType s[], int low, int hight);void Merge(ElemType s[], int low, int mid, int hight);int Buff[20] = {0};int n;int main(void){    int a[NUM], low, hight, i, n;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    low = 0;    hight = n-1;    MergeSort(a, low, hight);    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}void MergeSort(ElemType s[], int low, int hight){    if(low &lt; hight){        int mid = (low + hight) / 2;        MergeSort(s, low, mid);        MergeSort(s, mid+1, hight);        Merge(s, low, mid, hight);    }}void Merge(ElemType s[], int low, int mid, int hight){    int flag, i ,j;    for(flag = low; flag &lt;= hight; flag++)        Buff[flag] = s[flag];    for(i = low, j = mid + 1, flag = i; i &lt;= mid &amp;&amp; j &lt;= hight; flag++)    {        if(Buff[i] &lt;= Buff[j])            s[flag] = Buff[i++];        else            s[flag] = Buff[j++];        //s[flag] = Buff[i] &lt;= Buff[j] ? Buff[i++] : Buff[j++];    }    if(i &lt;= mid)         s[flag++] = Buff[i++];    if(j &lt;= hight)        s[flag++] = Buff[j++];}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer"><a id="more"></a><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><pre><code>/*冒泡排序*/#include&lt;stdio.h&gt;#define num 6int main(void){    int i,j,n;    int flag;    int a[num];    for(i = 0; i &lt; num; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    for(i = 1; i &lt; num; i++)    {        flag = 0;        for(j = 0; j &lt; num - i; j++)        {            if(a[j] &gt; a[j+1])            {                a[j] = a[j] + a[j+1];                a[j+1] = a[j] - a[j+1];                a[j] = a[j] - a[j+1];                flag = 1;            }        }         if(!flag) break;    }    for(i = 0; i &lt; num; i++)        printf(&quot;%d &quot;,a[i]);    printf(&quot;\n&quot;);}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><pre><code>/*归并排序*/#include&lt;stdio.h&gt;#include&lt;stdlib.h&gt;#define NUM 20typedef int ElemType;void MergeSort(ElemType s[], int low, int hight);void Merge(ElemType s[], int low, int mid, int hight);int Buff[20] = {0};int n;int main(void){    int a[NUM], low, hight, i, n;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    low = 0;    hight = n-1;    MergeSort(a, low, hight);    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}void MergeSort(ElemType s[], int low, int hight){    if(low &lt; hight){        int mid = (low + hight) / 2;        MergeSort(s, low, mid);        MergeSort(s, mid+1, hight);        Merge(s, low, mid, hight);    }}void Merge(ElemType s[], int low, int mid, int hight){    int flag, i ,j;    for(flag = low; flag &lt;= hight; flag++)        Buff[flag] = s[flag];    for(i = low, j = mid + 1, flag = i; i &lt;= mid &amp;&amp; j &lt;= hight; flag++)    {        if(Buff[i] &lt;= Buff[j])            s[flag] = Buff[i++];        else            s[flag] = Buff[j++];        //s[flag] = Buff[i] &lt;= Buff[j] ? Buff[i++] : Buff[j++];    }    if(i &lt;= mid)         s[flag++] = Buff[i++];    if(j &lt;= hight)        s[flag++] = Buff[j++];}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;经典排序算法&quot;&gt;&lt;a href=&quot;#经典排序算法&quot; class=&quot;headerlink&quot; title=&quot;经典排序算法&quot;&gt;&lt;/a&gt;经典排序算法&lt;/h2&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;!-- moer -
-      
+      &lt;h2 id=&quot;经典排序算法&quot;&gt;&lt;a href=&quot;#经典排序算法&quot; class=&quot;headerlink&quot; title=&quot;经典排序算法&quot;&gt;&lt;/a&gt;经典排序算法&lt;/h2&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
     
     </summary>
     
@@ -110,11 +105,11 @@
     </summary>
     
     
+      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+    
       <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
       <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
-    
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
@@ -149,7 +144,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2019-09-14T11:16:31.200Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19HhJ6EMACs5lqWyXEhbc4EA8vRDo3z2fi4pUK2jq5VgFQX/EwRsoNm0wxgj96CWHC/ykNu5YLTJUavVAVAMRhJXmk1YiR/5BWLAenXHWSvQIrb0n1R9pqKOmQc3KrNiyneqDrVkNM1kO8j/2gnrZ+3Tlj7GmA4gwAlynh+ETR0cqY75+mrJoLWj7UrtqNYwOapC8iVsaZWSSCnkDs6OE43ol3rt+d0YXhyxQS6aEZ63+m2xgY/g61jcrRetkyL0m95G16zhlh97aALjum8RxH88aO6ZjPutlJ8xsLKGv1Shoo8B+J78F+w7LeqfsjdTlpUDbJE0rdGT0gI8ptNILhaEbFsCvj+WFMhXaiVU236ZVHH9AEyj4jBJZR7BytXj06pyPjVNGQxZIdSVPY2QJLIIEnIZ1C3YNeiKsAdM6/3tsMTZxVVbFU9sdvVIuoX1pBpK4FjjVquxMc1EEIGPWQjl2zf2Qf4BA1fQ855Cy6BI4hXdbAe3/chFP/7c8CQLKOfLtzfmwz5HioEocc/ooRxpZZL7hXETUsGz430GgbqBiQsDxKrugFYX8Z0SWjxIiAzZ3PI24IQX5f0ndSpDrKhn0Lt3+zpv/xlwu7I3JNWnSQuMDkndAMdVSK0gy9wMtzIxx4wgVftcNtXPZfQQjXQdeTfP/mCYYX7JAld/CFgJLFo/1fadXV2e3iK6vgMc5ioL7rKs7vSZOmi0CUquN5KKPPVr7VF4afi2YvPpueZ8rBsIGroox9RG9FuCELT3mvidD6wTWUCi2CpTIstrBuBcUnJTNytDelXb8r5rhJP1TZTHYqc++pBTSNM4iBIed2J2XrFjL+O5VufSCjYV3I7OwVpHushWd9R5yQqfVRTdTt+0lN0WN5ZVG2nIdlIM4soH7E2OYp7GHSq4lFOMuCRCMesqBM4/xNZofdoo9I5x4KogmSqs9fTeDYzg8CQjcIcGcAsBHi3WMziSToQsI2ivNtX6gLCU027zKzOYiccQkvoA+HdDfvAAEmw2fEeqsCfaZDC91Xr+ORlkqnP1FPQhqZXLKtcBLTAZZYBUZp24OExa2DhgKImQa9HMGH4b/z/cle6TKKmp9xR06H03bC1bpQeu6tC1/if4CFbpCWXNwfdIG4St3XHTSQpDIwGzUxfeMzk5fSeZf/UEUyL6ly+1dmKe3dYjDMUc5VK2Mk4pwxq+x3ZCC4luFZPwDKPJP8oQA6ButY8ydIQaQ9fwfupVpJRW2tQIHEOwQNEPHPkSJ0El8/UGnIX</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/PKrS7LEo6sMC737NU2qLiZYGQIwDYZMXnGyEKtRS5ixpQiqOswQ2Q9Jn72uQxlN9D7XEWcJevySSiQOqhnaIbrm3Wn/8s93xBU0b84TYQvCkB5GklCSnRX6fKL04+uLt9Miybz6yEP0SXr0xkXRjd2cQc2XB6Mg/tqpV36RnbGlLidbuposz4GbLy8jHUn3fni3J4+gx5+FpTqiXuxQkoyMbgak8ePeX6svJscvlKJIjxxsyL2t+PRcVozkWyrXM6//0mOedsOhrQ4QL0nzgwuPKSZcahxbONS4IsmGNDdEwqVAb+eeNWhCWv1stTGXYf0Qpi6yM2ZZDimpJj264Sd+2iYjSUx9HH+t/pfGU86pFN7CEtK5fYg/6+dpObzx+zZeTl3H1lgPH4/2L++TeMfGRrdhgN6wqRKrmJ766ARtiGmmnaO7nAMDkDYvZwzNhj7V30oRssD7vwsWjHetcJczXLi8LQj4igMwdb2442xS1jHjtvI83j/z28jO25Nh8TJL9lU+ODfXKhya5Hks5LOXXEsJLZL6Lh5zutzk1aGwCVNxU1i5oZfPrTTAC65P5ZuQfkRqCw6HDphGjW8L+iiT5Um561bFTGQoQVTPzXvMg7xHkOf49uX7QMOwLbi/TLe/S+bANG6C8N8/qnKniGMrgvo3q42R6p0Vv/88xe7ao8NW+x4EhR1Ek6jmUGDfgu0FQ4PKZGd2/vq14skgTI51yN4/jlagpF7kAVZFCJj4rCvNt5dWUQHr5frKOAEXnmHcN4Lqok0OdSVyYD2020OOxaWynspq7iRy8za5+yDfKbfM+n1POz3DmrTpzuoJ4ebhOZwzATabjV2+0mDju8mN2beCbbZDFW/zDc6a6HNfJaiQ9hY5kp8ftMnz3N8W0fV83q2WbkvO7atsej1lNRxLW35fsYI8aC+RmC1qRLooWT6GYFfY9unJyqs4bjSWGaf+T0d0gvqYTgB8mJ1crjkGOhoxlL5vdvyodPKgWIy9ffBIQnEex7HN00gSCXlXbyjXgoc0yoOX0bDCJfu8SuDUHiKf3rrc9DT7gYD8xqZuHibhBSjAqFSkd1f7OBvMN7yPmnNAX6QHm7AMil3ism1AqFYXf16N4OzDNYYczfOsMnzmsKBEv6mnoPmjJLs/VK4IIu6sLIgbSUOxMTO0riXTdyGpWcxZvH1rXzUVo7XD5tQklWH2ybVfWazR7CT+ZULLaORPfYHBwC988WIAViYL2/FtxowOHZM3/joHGXG8Em4wyac90g</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -254,9 +249,9 @@
     </summary>
     
     
-      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
-    
       <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
     
       <category term="Independent" scheme="http://www.91change.club/tags/Independent/"/>
     

@@ -301,123 +301,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer">
-
-<!-- moer -->
-<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><pre><code>/*
-冒泡排序
-*/
-
-#include&lt;stdio.h&gt;
-
-#define num 6
-
-int main(void)
-{
-    int i,j,n;
-    int flag;
-    int a[num];
-    for(i = 0; i &lt; num; i++)
-    {
-        scanf(&quot;%d&quot;, &amp;a[i]);
-    }
-
-    for(i = 1; i &lt; num; i++)
-    {
-        flag = 0;
-        for(j = 0; j &lt; num - i; j++)
-        {
-            if(a[j] &gt; a[j+1])
-            {
-                a[j] = a[j] + a[j+1];
-                a[j+1] = a[j] - a[j+1];
-                a[j] = a[j] - a[j+1];
-                flag = 1;
-            }
-        }
-
-         if(!flag) break;
-    }
-
-    for(i = 0; i &lt; num; i++)
-        printf(&quot;%d &quot;,a[i]);
-    printf(&quot;\n&quot;);
-}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p>
-<h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><pre><code>/*
-归并排序
-*/
-#include&lt;stdio.h&gt;
-#include&lt;stdlib.h&gt;
-
-#define NUM 20
-
-typedef int ElemType;
-
-void MergeSort(ElemType s[], int low, int hight);
-void Merge(ElemType s[], int low, int mid, int hight);
-
-int Buff[20] = {0};
-
-int n;
-
-int main(void)
-{
-    int a[NUM], low, hight, i, n;
-
-    printf(&quot;请输入要排序的个数（小于20）：&quot;);
-    scanf(&quot;%d&quot;, &amp;n);
-
-    for(i = 0; i &lt; n; i++)
-    {
-        scanf(&quot;%d&quot;, &amp;a[i]);
-    }
-
-    low = 0;
-    hight = n-1;
-
-    MergeSort(a, low, hight);
-
-    for(i = 0; i &lt; n; i++)
-    {
-        printf(&quot;%d &quot;, a[i]);
-    }
-
-    printf(&quot;\n&quot;);
-}
-
-void MergeSort(ElemType s[], int low, int hight)
-{
-    if(low &lt; hight)
-{
-        int mid = (low + hight) / 2;
-        MergeSort(s, low, mid);
-        MergeSort(s, mid+1, hight);
-        Merge(s, low, mid, hight);
-    }
-}
-
-void Merge(ElemType s[], int low, int mid, int hight)
-{
-    int flag, i ,j;
-
-    for(flag = low; flag &lt;= hight; flag++)
-        Buff[flag] = s[flag];
-    for(i = low, j = mid + 1, flag = i; i &lt;= mid &amp;&amp; j &lt;= hight; flag++)
-    {
-
-        if(Buff[i] &lt;= Buff[j])
-            s[flag] = Buff[i++];
-        else
-            s[flag] = Buff[j++];
-
-        //s[flag] = Buff[i] &lt;= Buff[j] ? Buff[i++] : Buff[j++];
-    }
-
-    if(i &lt;= mid) 
-        s[flag++] = Buff[i++];
-    if(j &lt;= hight)
-        s[flag++] = Buff[j++];
-}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94vv3dzmqj30e303674c.jpg" alt="图片3.png"></p>
-
+        
+          <a class="article-more-a" href="/2019/11/20/12/#more">展开全文 >></a>
+        
       
 	  
 	  
@@ -700,15 +586,15 @@ void Merge(ElemType s[], int low, int mid, int hight)
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">中秋节</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
         		</li>
       		
 		</ul>
@@ -1145,11 +1031,11 @@ void Merge(ElemType s[], int low, int mid, int hight)
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -1317,19 +1203,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">考研</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">2018upup</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
               </li>
              
               <li class="article-tag-list-item">
