@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.91change.club/"/>
-  <updated>2019-11-20T14:56:34.685Z</updated>
+  <updated>2019-11-21T15:38:03.662Z</updated>
   <id>http://www.91change.club/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KMP算法</title>
+    <link href="http://www.91change.club/2019/11/21/13/"/>
+    <id>http://www.91change.club/2019/11/21/13/</id>
+    <published>2019-11-21T15:22:16.000Z</published>
+    <updated>2019-11-21T15:38:03.662Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="模式匹配算法——KMP"><a href="#模式匹配算法——KMP" class="headerlink" title="模式匹配算法——KMP"></a>模式匹配算法——KMP</h2><meta name="referrer" content="no-referrer"><p>今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番</p><a id="more"></a><p>不解释直接上代码：<br></p><pre><code>/*KMP算法*/#include&lt;stdio.h&gt;#include&lt;string.h&gt;void get_next(char *T,int *next);int Index_KMP(char *S, char *T, int pos);int pos = 0;int next[10];      //next数组char T[10] = &quot;abc&quot;;char S[20] = &quot;ccccccdabcefg&quot;;int main(void){    //char S[LEN_1_SIZE];   // T[LEN_2_SIZE];    int x;    /*printf(&quot;输入主串长度：&quot;);        scanf(&quot;%d&quot;,&amp;n);    printf(&quot;输入主串：&quot;);    fgets(S, n, stdin);        printf(&quot;输入模式串长度：&quot;);    scanf(&quot;%d&quot;,&amp;m);    printf(&quot;输入模式串：&quot;);    fgets(T, m, stdin);*/    get_next(T, next);    x = Index_KMP(S, T, pos);    if(x != 0)    {        printf(&quot;在主串第%d处\n&quot;, x);    }    else    {        printf(&quot;failed\n&quot;);    }}/*获取next数组*/void get_next(char *T,int *next){    int i = 1, j = 0;    next[0]=next[1] = 0;    while(i &lt; (int)strlen(T))    {        if(j == 0|| T[i] == T[j])            {            next[++i] = ++j;        }        else            j = next[j];    }}int Index_KMP(char *S, char *T, int pos){    int j = 1, i = pos;    while(i &lt;= (int)strlen(S) &amp;&amp; j &lt;= (int)strlen(T))    {        if(j == 0 || S[i] == T[j - 1])        {            ++i;            ++j;            }        else            j = next[j];    }    if(j &gt; (int)strlen(T))         return i - strlen(T) + 1;    else        return 0;}</code></pre><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g9634mxm5uj30cz035mx7.jpg" alt="1.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;模式匹配算法——KMP&quot;&gt;&lt;a href=&quot;#模式匹配算法——KMP&quot; class=&quot;headerlink&quot; title=&quot;模式匹配算法——KMP&quot;&gt;&lt;/a&gt;模式匹配算法——KMP&lt;/h2&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://www.91change.club/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数据结构" scheme="http://www.91change.club/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="模式匹配" scheme="http://www.91change.club/tags/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>经典排序算法</title>
@@ -107,9 +133,9 @@
     
       <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
-    
       <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
   </entry>
   
@@ -129,9 +155,9 @@
     </summary>
     
     
-      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
+    
+      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
     
       <category term="const用法" scheme="http://www.91change.club/tags/const%E7%94%A8%E6%B3%95/"/>
     
@@ -144,7 +170,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2019-09-14T11:16:31.200Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19gnD4epf79yfEM5vgvjK8qoRIvtdMa7UUysWInCd5aGhTc6zBbNngO8M9jXCPA+sbKdUISLIaRUfMBAa5T4KFDtNS6bnhQL4hvSF62PN7d1QBJos/NjDEnn/IM88SCgmPXi0BGfRN5WNpNvCRNBGvOZBUVe76ildKseRizp0FELdGm3B+LeDuyvHI7SoMGQE0RaKlrJUamj33IZQfJpQ23CpMaLeBOI9C34Htk7t2UliJIT/Nb/fQjH8TKKKU1zmpxOWGGtOUTmeP+fs/PTdcOqrM1bx3vxJ3m9xX6nySfMBud3J7ATqxZf/FGIihAtzYF3xC0hZg2upIOrXVAjzKrzcAHTZMBKSmF808V9N1P7xwQCFqGzODfoAMdV0nLpMHxwf2Gk66craNs07sMETZfX8POx21nh7m1KOUpqqHjzH4giPW4zhDzMGa+r4Kiqh0IZmf6gTC1LEOMH5S1EpZnc+2LyqwEFwpRgtDEh19mM12tcxVHKMndSp675Yk5opZYW0cpbBPtiW+cS/zU13W8IzS+arRvQ66Ddyi3QF39AfeNjJTWyvErr2kA97tipl3WDcPFizC/bFFALRvJPHyTRrmeXmgy1zFxa7a1c9/Igt0z3+/kqpGHR0qzCq6X2o3a6g6LLmskUUu9qb4jpcH0Pd40+v9unVRdOHzXm84rkW1jyns90DMgo3fKqTLZ0kMo5hSH2A3BgRPcn0+Tx8Dz9J7vIzoy0m+tKU042D7Swb8OOmTHdVl+ZAIpl4u4h7U6/vYnPPaBKL96wzo72mF72vk9Z1RxasRIg+MchrcEqbmRIbZBMyEA3bNXI/qGHVu0Usc6JPx7UACsmR63ay5R3Ixct/2qVHr6ozTrLRQz1cZWideDKyz9Q95UMrJzQfvCi4O3sSVrYwcssCk0er5wFEKikEcui+wksnoxc9ImfOnxFSrahEjVEfz+7CgDqCvgR7G29PGSqffhlR6pyME07K5i+ogkPqndme8D5Ys7bUZEBUM374chO0f8YjLz6Aucg6nZ1/3uPBIWxtQ7QU2xql3rAru+YpBfWAQme+NS+/1YKgblbKQVGA8g/eAtGm6aDExQVWOltWJNBFiXrx3BR4OJna0UwpU9gBzMw6KGQuUA/kXnVRPFlbTd/RkSgau+PD5Ut++VP8+ftrnzc0cY8nvFmxkz+4sQ1s9zVtMNJURMT87irvy3zMPwnOyigCqisswfI1pkOV9CVKqaCrGVShgTk7Cn3AerIxZyc1TelD3XrOi7E5zh</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+nmd+qbR4RuHJ9RXVakCFrO7/bM+L6M2pTsBBpwFLmXmr5aMKyRKZ1JdC/aUvxeUVFCmdUWOIkrE3MfriRS1N/JJEaC3oD5+H54KkEtc1KzQUQ4Ea5TZRUEUXRBYO4o5XIu5RJZfCVhuK9SOFgCjRxQCdJFbihCLEmyNqoptxbvSzbo9JYHhUGJeE9CPXKGkuZiWWC/BCAbhszpWfJIPtIJe0+YuH/xt/+SP3gArivP92jM4DWWKZyhFIpepLS1JuXrHPESJow11Ux+Oqm8r+0JJAYP45wVcQk3EFsvKWDnG4wf2NrdCziHMDi9Eg22kqyzCCmfoRUjM9BOXua8GPcl+lYDrXR1qLe+92ca3LWp7/H+Bv5b8Eb+HpJv29YC1wiFKAjwRLkpeTgmGceFrUfLvGVSrs1BqZo5bmSXAgvBZlzY7w711xXNufscHC9mHBLpPH/DTHaRE/hUpGtT5eAXfFp9Up3Nn9wXGC3+cAPej5YaLuSLYgNAuUeLXGfs76TyaCel3XVIGfNhHk2XGHcve7XTED1ha4VSs64UrVtSjOBOKIeHLREFW/LXk8uFC/MJARcCWga/OtcFVrtjZV6oHhdViajfHzwtCHU7nwjEaiiR1F9g/Co9hXRbpZjbM0L4YeqLo6Mneb5T6fwMSi9XIxCT36bXE6z/+nzXZoQNyDzivh5P1CvQsmtOPdr402KaY7eALDVhfZCCjcp4CJUUeJSbcXYoxlGIsHw3mLQRsl64845ePy8+uT5vj05BGM86Rfa/Pw2OjsMuYym+hFzbmibYTtIPjUsiAjdp/hx6E6D4tuA4ahXUiKOH8L6cSFCSFNOjltEIaLHMj1/CqQnrgxRy+FmY5FvwzZTiH5Oc0krLATvNPm5VJnCJTyEAcbJaAJCxP3I/jSd5eIAiKBZwqB0XULDe+egr15PcIP+0Uz/7SzlB/db1G/ryfyTEkbcH/ala0gp3xwWe8MD8qei/tI0LQC36artw2BL1mlEdeM7rRnQkeivlaZksfdPU5Nyz95ONrNQ6OfG3BdIwTR0ElS0jiyqV61RzdCJCSJyu0kDME8PnABGedOksK1t8PmsEUR2/zqrxmSfMHWNJk3tjVoHYp693/40gG8vMC4qe5J5z7daC1vwcc7Tl0NT49/WmrcmHkLBZe1SNJQ1KdWweJuQz1/glEyTQXkEmbhMEZQ6NWYRk9V3K5lR/dkde+BrEeUL/6fOZrDu4qLzZzL+8kJPapfXoS4IZp49IyBqckSc9AbAPt1m</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -175,9 +201,9 @@
     </summary>
     
     
-      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
-    
       <category term="C语言" scheme="http://www.91change.club/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
     
   </entry>
   
