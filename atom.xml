@@ -88,30 +88,6 @@
   </entry>
   
   <entry>
-    <title>华师18年真题</title>
-    <link href="http://www.91change.club/2019/11/20/10/"/>
-    <id>http://www.91change.club/2019/11/20/10/</id>
-    <published>2019-11-20T04:49:59.000Z</published>
-    <updated>2019-11-21T15:08:41.240Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="华师18年真题答案"><a href="#华师18年真题答案" class="headerlink" title="华师18年真题答案"></a>华师18年真题答案</h2><meta name="referrer" content="no-referrer"><p>看到群里很多同学问答案，由于18年的真题难度变大了。个人认为华师的13-17年的真题不值得看，所以做了一下18年的真题。答案如下：</p><a id="more"></a><h3 id="C语言部分"><a href="#C语言部分" class="headerlink" title="C语言部分"></a>C语言部分</h3><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题<br></h3><ol><li>1</li><li>48</li><li>0</li><li>7</li><li>(x&lt;0 &amp;&amp; y&lt;0 &amp;&amp; z&gt;=0) || (x&lt;0 &amp;&amp; z&lt;0 &amp;&amp; y&gt;=0) || (y&lt;0 &amp;&amp; z&lt;0 &amp;&amp; x&gt;=0)</li><li>6</li><li>((a%5 == 0)&amp;&amp;(a%100 != 0))</li><li>6</li><li>表示p中的10个单元是char型指针</li><li>-14</li></ol><h3 id="程序填空题"><a href="#程序填空题" class="headerlink" title="程序填空题"></a>程序填空题</h3><ol start="11"><li>‘\0‘<br>sptr</li><li>*(pa+i)<br>avg/5.0</li><li>struct  student<br>stu == stu[i]<br><br>break</li><li>a[m][n] = a[i][j]<br>m = i<br>min = a[m][0]<br>数组太多自己写<br>18  </li><li>8  </li><li>11101</li><li>220440</li><li>（2）2 6 6<br>（1）1 6 6  <h3 id="第二个编程题"><a href="#第二个编程题" class="headerlink" title="第二个编程题"></a>第二个编程题</h3>第一题课后习题自己看</li></ol><p>第二题代码：<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"> #include&lt;stdio.h&gt;</span><br><span class="line"> #define N 100</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int a[N],i,j,b[N] = &#123;0&#125;;</span><br><span class="line">    int n;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    for(i = 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(&quot;%d&quot;, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    for(i = 0; i &lt; n-1; i++)</span><br><span class="line">        for(j = i+1; j &lt; n; j++)</span><br><span class="line">            if(a[i] == a[j])</span><br><span class="line">                b[i]++;</span><br><span class="line">    for(i = 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int sum = 1;</span><br><span class="line">        for(j = 0; j &lt; n; j++)</span><br><span class="line">            if((b[j] == 0) &amp;&amp; (a[i] &gt; a[j]))</span><br><span class="line">                sum++;</span><br><span class="line">        printf(&quot;%d &quot;, sum);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g94hs0nthuj30ep03tdfx.jpg" alt="QQ图片20191120143227.png"></p><hr><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>由于在图书馆做的没有时间打上来，就只能上传图片了<br></p><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g9625rmuj4j31zz23u4qp.jpg" alt="1.JPG"><br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g9626c819kj32111rpe5n.jpg" alt="2.JPG"><br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g9626nkrobj31r52gz7wh.jpg" alt="3.JPG"><br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g9627q5iw0j32uw22s1ky.jpg" alt="4.JPG"></p><h2 id="有错误或者有不同可以给分享我更新"><a href="#有错误或者有不同可以给分享我更新" class="headerlink" title="有错误或者有不同可以给分享我更新"></a><font color="red">有错误或者有不同可以给分享我更新</font></h2><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;华师18年真题答案&quot;&gt;&lt;a href=&quot;#华师18年真题答案&quot; class=&quot;headerlink&quot; title=&quot;华师18年真题答案&quot;&gt;&lt;/a&gt;华师18年真题答案&lt;/h2&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;看到群里很多同学问答案，由于18年的真题难度变大了。个人认为华师的13-17年的真题不值得看，所以做了一下18年的真题。答案如下：&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="2018upup" scheme="http://www.91change.club/tags/2018upup/"/>
-    
-  </entry>
-  
-  <entry>
     <title>中秋节开始堕落了</title>
     <link href="http://www.91change.club/2019/09/15/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     <id>http://www.91change.club/2019/09/15/中秋节/</id>
@@ -131,11 +107,11 @@
     </summary>
     
     
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
-    
       <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
       <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
@@ -170,7 +146,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2019-09-14T11:16:31.200Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX189qFJZzBJ1iwCDQLI26v7sxiw8EU1Vm/pXf0rTvJWF6GFEQoKJFYjwAmoemhP4HCbRx3yLYyAIl0R5aBMlM6lR3Unez6aSmHPgyMbhXgQPWhbeL5S2QBlSU8WFhC3nGfH0Vpcol7p9Oggj58z4LvEJ09xUG6Pfq5qNbvAlpGr6H9km5QWlOzWHhtV7sJRvIyL2Ppiu7xxv94/5e05F0r0ntghkdFB1OJ34oglRvjDB2eR2Zo5jB3aDAU9oOKq87/p0di5a8lZAeKTFzjwg4uuk0FrHMENBci+ym/LJRv7nV8mRv2EFuXzRd7vizaOd32t620qMYViqnuyIrIFsuaceDhKoin0BqIwizG0jcgcPdRfyEUoCUk6HqnK4kz3CD1cW+sFh9zr9/Khl0V33bFmiquLBMbJ69aoyXefjnJ0M6BLNQqheqTE8m+6r6qmLBL+GVFGohOb2xvS48myeOI3DaCMyrz5hBLXhCenBaC0fQKNuqg0effzM6GGIUOFnzTOmhX15FkelNDo26bFTf9zTucNVK06FBvf2hW3oZ1uVgyFayF1cCQixPT8yrGJWWJnMeqESrAJi+Ta5T9yUmA3LPmqHH+Z1vPhEquyorEATilIGyotbvoE04AnNcOCIGAeZ/kgqSQhfbmX4rl9MLxr+azAE8Es0Yco1MtdbRBVZ6qW7VcVBH3WJx+E+5z0lWiVcm9BIBPSiMlEQzRqgCh9HBjPjHhvuiXSkPq0eb7VWhCAeqK6PQwOYOPuVDAT4y47ZSfQtO0OkYIuw0CKe7oEtAWd9nGrOIxWrNX9xUKFcxpH3fVSRqNbo+CYG7pKaV64DeYg19Tdtf5z92Oslg+wx3xSiVNiLMtDdLDyixmhy6Hc/39TREHLv8jTwBGZciQurN50wT2KmVMIeU6lCdQLzIRw/eBihdDRCsIpRCELwYPOQiiLG/Z5igtuyW+FIPSmMu5Lqv8uPULAThPP+Q+sUDnYm9TLBKz9HXKRmBScyddQpFcbs8Ahbunan3hPMZIqDadu7qFu8rBushOhjp5NCXcdmTivH/F0wFq8aYW6WQkH95nFp85u2IC0kpslXMs8PpzdG2F7MMG9DqLY1NxItJozkE5pevnoqXjlCS7UxwEWiuf3CmG5vjE2ZelKbMNKHb5eucKAZT0NLuDlyyU+mCUzqFzU+p7Lbqk7LetSYHi1E0oKmGkD3etmZF6QZqZ1LjKDzKkWgcSq8UXxgST1ZbA/xOGpKuZTYE9qRsOsFX46LHwTGMIg0</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19d29tkYvPisWlBQze/lS6BpjYONnF9E5M7qAcro7KSuqvTXPRpCB31IcVZrFk5Hd/8vq8kHJrAJ/TeTgpEaImu3DTjvr1hH5+Ig2xyZsG8oe7/+EOMJF29oHk634a5zPc+z8BM9sSoxrrSOP3/umuKi/PK3KTPaQjHQOODpy9oDTAncjxa4Y1LNqNZYZvOZufATYBuYBfvE2vOfW0S0MGsTsGlJh5dyRgQJSfocp1hs6UHeDsbE4KZLUE3p/YLI8qbkLMLRjkW+wXy7FprZyXB07t26lWtTiuK6e1sN8uKrUOm68s7hBpOZsMMvTcDxY4iczU4EHDTjRsvzzZv3zjDFtnw5KQxvlnMRxEVe0ZfGaXWfuP834qKi0Pj4PvEOUMoeCnSw8dCusbsUPJsoKoBOxJNro0GaOQmxfTqmSMPZtTXIIw+MPf3m8CVBQwLXCUYW3uujJ2tHQfn1TbVaty0TvrsNLxmErmBEuSJaax+aURwtrlenlsnnIXppSwmGhSewiF/cEHoJUiWJD/HP5Umd6zd3+ZR0OS0PEcqGqPMOjG4o+tQvqOAfmbUXC3qMf+Jh9R72zPFpvahf8BXujocT+4te+LmJ1LfV9yX5A+qoqlspXzJ3QBp66IvK8jg1AVwGELuUMqUCoNhu9L3BrJrK3dva/9Qc9R9pd4XL4UCkcH1STvsGE8CGkZ+A4fVSW2seE+SyMuXA4a8PjaQtxsodool5lCwGhSgQnX3KvdEhvHdVKcVH8+yTPP679UcbciDdF6xtUSWyPlsMFlaQ1JXgoAOPag0TjseHiqZQW21JTzUEukOpdTWsk5Qg9JctTwIWtIC1mNsbKIn1dsRuf1fZ0ddSfYrsTAWuLL3zOZt0NERwDIsf8WbSNc+8EPyEn+x4djsYoA7halrdjSmLHTZzcmXwrW6rmge3dDBfnkYOxdZ3BUeKYMVrCfNbDp0vSzd+sMkcZso8I2e6qajpvwsA7dTWj05ygXElp5Bg4y23EuxTao+dG3rsQZnqhuwPop7uCH1cKTvC2saCzGXqUyhr97IVXZk7o+m3aFXyCNIfKOeYYxkpsbO1cpIjSjChHrMDtS1//atC7ar55xCT/4pGljAdjtOmXIH8bC3Jca31yGeHwaZ823a/W1bE+D9X/WNsD6Q3xo0CrpHUrQ/E2yb2wU+gPNAjmW2npMpUusfaXY+fBmjdE8LGz1p47RYgRLhos5WfboY0UkOUeb1FIHJjT5IAdFOBda9WfPGjEuSytg9OQCzGLWE</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -275,9 +251,9 @@
     </summary>
     
     
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
-    
       <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
     
       <category term="Independent" scheme="http://www.91change.club/tags/Independent/"/>
     
