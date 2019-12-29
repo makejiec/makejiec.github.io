@@ -9,22 +9,22 @@
   <link rel="dns-prefetch" href="http://www.91change.club">
   <title>重新学习51单片机 | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="51单片机学习之路(1)大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机： 首先分享资料：keil μversion5链接 提取码： xgjx  Proteusz仿真链接 提取码:  4ktm  c51编译器支持的数据结构   51单片机使用的c语言的存储器类型 这里的编译器是keil公司开发的 keil">
+  <meta name="description" content="51单片机学习之路(1)51单片机虽然已经出现了30年，但在使用上还是很广泛，市场上也出现一大推以8051为核心的一批单片机系统">
 <meta name="keywords" content="51单片机,嵌入式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="重新学习51单片机">
 <meta property="og:url" content="http://www.91change.club/2019/12/29/c51-1/index.html">
 <meta property="og:site_name" content="长歌|91Change">
-<meta property="og:description" content="51单片机学习之路(1)大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机： 首先分享资料：keil μversion5链接 提取码： xgjx  Proteusz仿真链接 提取码:  4ktm  c51编译器支持的数据结构   51单片机使用的c语言的存储器类型 这里的编译器是keil公司开发的 keil">
+<meta property="og:description" content="51单片机学习之路(1)51单片机虽然已经出现了30年，但在使用上还是很广泛，市场上也出现一大推以8051为核心的一批单片机系统">
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqfkb6l9j30er06gmx5.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqzszn1gj313k0og42b.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadt4sa5wfj30z30kxmym.jpg">
-<meta property="og:updated_time" content="2019-12-29T11:17:17.402Z">
+<meta property="og:updated_time" content="2019-12-29T11:28:58.491Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重新学习51单片机">
-<meta name="twitter:description" content="51单片机学习之路(1)大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机： 首先分享资料：keil μversion5链接 提取码： xgjx  Proteusz仿真链接 提取码:  4ktm  c51编译器支持的数据结构   51单片机使用的c语言的存储器类型 这里的编译器是keil公司开发的 keil">
+<meta name="twitter:description" content="51单片机学习之路(1)51单片机虽然已经出现了30年，但在使用上还是很广泛，市场上也出现一大推以8051为核心的一批单片机系统">
 <meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg">
   
     <link rel="alternative" href="/atom.xml" title="长歌|91Change" type="application/atom+xml">
@@ -218,8 +218,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="51单片机学习之路-1"><a href="#51单片机学习之路-1" class="headerlink" title="51单片机学习之路(1)"></a>51单片机学习之路(1)</h2><p>大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机：</p>
-<p><font color="red" size="5">首先分享资料</font>：<a href="https://pan.baidu.com/s/1DmQB5Qf-F06jg8ZKjawS_w" target="_blank" rel="noopener">keil μversion5链接 </a><br>提取码：<font color="green" size="5"> xgjx </font></p>
+        <h2 id="51单片机学习之路-1"><a href="#51单片机学习之路-1" class="headerlink" title="51单片机学习之路(1)"></a>51单片机学习之路(1)</h2><p>51单片机虽然已经出现了30年，但在使用上还是很广泛，市场上也出现一大推以8051为核心的一批单片机系统</p>
+<a id="more"></a>
+<p>大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机：</p>
+<p><font color="red" size="5">首先分享资料</font>：<a href="https://pan.baidu.com/s/1DmQB5Qf-F06jg8ZKjawS_w" target="_blank" rel="noopener">keil μversion5链接 </a>提取码：<font color="green" size="5"> xgjx </font></p>
 <p><a href="https://pan.baidu.com/s/1osu-R5T98ShACMxWbdm66w" target="_blank" rel="noopener">Proteusz仿真链接</a> 提取码: <font color="green" size="5"> 4ktm </font></p>
 <h4 id="c51编译器支持的数据结构"><a href="#c51编译器支持的数据结构" class="headerlink" title="c51编译器支持的数据结构"></a>c51编译器支持的数据结构</h4><meta name="referrer" content="no-referrer">
 
@@ -536,18 +538,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">考研</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">c语言</a>
               </li>
              
@@ -560,6 +550,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">考研</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
               </li>
              
@@ -568,15 +570,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Independent</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">C语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">51单片机</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">嵌入式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -592,7 +598,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Independent</a>
+                <a href="javascript:void(0)" class="js-tag color1">51单片机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">嵌入式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -601,14 +611,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
             
             <div class="clearfix"></div>
