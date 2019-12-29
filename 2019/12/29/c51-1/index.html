@@ -7,25 +7,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://www.91change.club">
-  <title>浅谈c指针(一) | 长歌|91Change</title>
+  <title>重新学习51单片机 | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="浅谈c语言灵魂——指针  c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
-<meta name="keywords" content="指针,C语言">
+  <meta name="description" content="51单片机学习之路(1)大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机： 首先分享资料：keil μversion5链接 提取码： xgjx  Proteusz仿真链接 提取码:  4ktm  c51编译器支持的数据结构   51单片机使用的c语言的存储器类型 这里的编译器是keil公司开发的 keil">
+<meta name="keywords" content="51单片机,嵌入式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅谈c指针(一)">
-<meta property="og:url" content="http://www.91change.club/2019/08/21/6/index.html">
+<meta property="og:title" content="重新学习51单片机">
+<meta property="og:url" content="http://www.91change.club/2019/12/29/c51-1/index.html">
 <meta property="og:site_name" content="长歌|91Change">
-<meta property="og:description" content="浅谈c语言灵魂——指针  c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
+<meta property="og:description" content="51单片机学习之路(1)大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机： 首先分享资料：keil μversion5链接 提取码： xgjx  Proteusz仿真链接 提取码:  4ktm  c51编译器支持的数据结构   51单片机使用的c语言的存储器类型 这里的编译器是keil公司开发的 keil">
 <meta property="og:locale" content="cn">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6xnfa1hw6j307p060745.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxl3fw9j303o00j0nz.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxsigm9j307105y3yd.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxyh2kej304h00j0m4.jpg">
-<meta property="og:updated_time" content="2019-09-14T10:50:42.526Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqfkb6l9j30er06gmx5.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqzszn1gj313k0og42b.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadt4sa5wfj30z30kxmym.jpg">
+<meta property="og:updated_time" content="2019-12-29T11:17:17.402Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈c指针(一)">
-<meta name="twitter:description" content="浅谈c语言灵魂——指针  c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1g6xnfa1hw6j307p060745.jpg">
+<meta name="twitter:title" content="重新学习51单片机">
+<meta name="twitter:description" content="51单片机学习之路(1)大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机： 首先分享资料：keil μversion5链接 提取码： xgjx  Proteusz仿真链接 提取码:  4ktm  c51编译器支持的数据结构   51单片机使用的c语言的存储器类型 这里的编译器是keil公司开发的 keil">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg">
   
     <link rel="alternative" href="/atom.xml" title="长歌|91Change" type="application/atom+xml">
   
@@ -197,102 +197,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-6" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-c51-1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      浅谈c指针(一)
+      重新学习51单片机
     </h1>
   
 
 		
         
-        <a href="/2019/08/21/6/" class="archive-article-date">
-  	<time datetime="2019-08-21T11:46:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
+        <a href="/2019/12/29/c51-1/" class="archive-article-date">
+  	<time datetime="2019-12-29T07:08:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="浅谈c语言灵魂——指针"><a href="#浅谈c语言灵魂——指针" class="headerlink" title="浅谈c语言灵魂——指针"></a>浅谈c语言灵魂——指针</h2><meta name="referrer" content="no-referrer">
+        <h2 id="51单片机学习之路-1"><a href="#51单片机学习之路-1" class="headerlink" title="51单片机学习之路(1)"></a>51单片机学习之路(1)</h2><p>大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机：</p>
+<p><font color="red" size="5">首先分享资料</font>：<a href="https://pan.baidu.com/s/1DmQB5Qf-F06jg8ZKjawS_w" target="_blank" rel="noopener">keil μversion5链接 </a><br>提取码：<font color="green" size="5"> xgjx </font></p>
+<p><a href="https://pan.baidu.com/s/1osu-R5T98ShACMxWbdm66w" target="_blank" rel="noopener">Proteusz仿真链接</a> 提取码: <font color="green" size="5"> 4ktm </font></p>
+<h4 id="c51编译器支持的数据结构"><a href="#c51编译器支持的数据结构" class="headerlink" title="c51编译器支持的数据结构"></a>c51编译器支持的数据结构</h4><meta name="referrer" content="no-referrer">
 
-<p>c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。</p>
-<a id="more"></a>
-<p>学c语言不学指针，那就等于没学。但是指针又是最难学的，指来指去连自己都指晕了，这也是为什么很对人放弃c语言的原因。</p>
-<h3 id="什么是指针？"><a href="#什么是指针？" class="headerlink" title="什么是指针？"></a>什么是指针？</h3><h5 id="首先想一下下面这段代码的1、2输出是什么？"><a href="#首先想一下下面这段代码的1、2输出是什么？" class="headerlink" title="首先想一下下面这段代码的1、2输出是什么？"></a>首先想一下下面这段代码的1、2输出是什么？</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">	int i=100;</span><br><span class="line">	printf(&quot;%d\n&quot;,i);     //1</span><br><span class="line">	printf(&quot;%d\n&quot;,&amp;i);    //2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好了相信大家都有自己的判断了。</p>
-<p><code>int *pi;</code></p>
-<p>上面这个应该 是最基础的了，pi就是指针我们当然知道了，但是你要说它与int pi; 有什么区别，它也没有，因为他也是变量，顶多叫指针声明（不能为叫申明），那他到底有什么意义呢？ 看下面：<br><br><code>pi = &amp;i;</code><br><br><br>这个应该都能看懂吧，通俗点讲就把变量 i 的地址编号赋值给 pi 。<br><br>如：</p>
-<table>
-<thead>
-<tr>
-<th align="center">变量</th>
-<th align="center">内容</th>
-<th align="center">内存地址编号</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">i</td>
-<td align="center">100</td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="center">pi</td>
-<td align="center">?</td>
-<td align="center">10</td>
-</tr>
-</tbody></table>
-<p>表格中 ? 该为多少，相信大家都会填，为<strong>7</strong>也就是i的地址编号。也就是说&amp;为取地址号操作，我们就把pi称为指针，所以要记住，指针变量所存的内容为地址编号就行了。</p>
-<p>讲到这，我们再回归到上面的代码1处，都知道1处输出为<strong>100</strong>，那下面这句呢？<br><br><code>printf(&quot;%d\n&quot;,*pi);</code><br><br>这句该怎么理解呢，上面不是说了吗pi就是i的地址编号——即pi的内容就是<strong>7</strong>，所以*pi就是pi所指地址的内容了，也就是 i 内容了100它就等同于1处的代码了。</p>
-<p>这些都是很基础的了，下面将一些难的，</p>
-<h3 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h3><p>一维数组a[i]中的a表示数组名，也可以表示a[0]的地址，它是等同于*a的<br></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">printf(&quot;%d\n&quot;,a[i]);</span><br><span class="line">printf(&quot;%d\n&quot;,*(a+i));</span><br></pre></td></tr></table></figure>
-
-<br>
-都表示遍历数组a[i]的，但是他们是有区别的
-
-<p><strong>a[]和*a的区别：</strong><br><br>char *a 与char a[] 的区别：<br></p>
-<ul>
-<li><p>char *a = “hello” 中的a是指向第一个字符‘h’的一个指针<br></p>
-</li>
-<li><p>char a[20] = “hello” 中数组名a也是执行数组第一个字符‘h’的指针</p>
-</li>
-</ul>
-<p>但二者并不相同：</p>
-<p>如：把两个字符串相加</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6xnfa1hw6j307p060745.jpg" alt></p>
-<p>结果：</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxl3fw9j303o00j0nz.jpg" alt></p>
-<p>对比：</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxsigm9j307105y3yd.jpg" alt></p>
-<p>结果：</p>
-<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1g6wyxyh2kej304h00j0m4.jpg" alt></p>
-<p>把字符串加到指针所指的字串上去，出现段错误，<font color="red">本质原因</font>：*d=”0123456789”存放在常量区，是无法修的。而数组是存放在<font color="red">栈</font>中，是可以修改的。两者区别如下：<br><br>一. ”读“ ”写“ 能力</p>
-<ul>
-<li>char *a = “abcd”;  此时”abcd”存放在常量区。通过指针只可以访问字符串常量，而不可以改变它。<br></li>
-</ul>
-<ul>
-<li>而char a[20] = “abcd”； 此时 “abcd”存放在栈。可以通过指针去访问和修改数组内容。<br>二. 赋值时刻</li>
-</ul>
-<ul>
-<li>char *a = “abcd”; 是在编译时就确定了（因为为常量）。</li>
-</ul>
-<ul>
-<li>而char a[20] = “abcd”； 在运行时确定<br>三. 存取效率</li>
-</ul>
-<ul>
-<li>char *a = “abcd”; 存于静态存储区。在栈上的数组比指针所指向字符串快。因此慢</li>
-</ul>
-<ul>
-<li>而char a[20] = “abcd”； 存于栈上。快<br>另外注意：<br>char a[] = “01234”,虽然没有指明字符串的长度，但是此时系统已经开好了，就是大小为6—–’0’ ‘1’ ‘2’ ‘3’ ‘4’ ‘\0’，(注意strlen(a)是不计‘\0’)，也就是说字符串长度为5，但是字符串占有的空间为6。<br></li>
-</ul>
-<p>看一结构中出现的同样的问题：<br>这样红色部分在调用int函数时会出现“Segment Default”, 因为此时 指针n是静态的，只有“读”的本事，不可以改变。</p>
-<hr>
+<p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg" alt="bdc60b2eb6a43448ee6e5d887191fdd9.png"></p>
+<h4 id="51单片机使用的c语言的存储器类型"><a href="#51单片机使用的c语言的存储器类型" class="headerlink" title="51单片机使用的c语言的存储器类型"></a>51单片机使用的c语言的存储器类型</h4><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqfkb6l9j30er06gmx5.jpg" alt="6466a0aa00167bce5417367ac2182bc4.png"></p>
+<p>这里的编译器是keil公司开发的 keil μversion5的IDE<br>，如下：<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqzszn1gj313k0og42b.jpg" alt="QQ图片20191229180157.png"></p>
+<p>作为初学者看书是很枯燥的最好是看视频，这里推荐郭天祥的视频，讲的很好<a href="https://www.bilibili.com/video/av61979588?p=1" target="_blank" rel="noopener">十天学会51单片机</a></p>
+<p>最好买一块板子，看了下淘宝100左右，如果没有板子那只有proteus仿真了</p>
+<p>安装过程就不用介绍了。</p>
+<p>最后看了一下书 发现c51对ANSI c有一些差异在库函数上有一些差异，具体在c51提供的库函数文档里面都有，在写代码时应该看看<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadt4sa5wfj30z30kxmym.jpg" alt="QQ图片20191229191557.png"></p>
 
       
 	  
@@ -308,7 +245,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://www.91change.club/2019/08/21/6/
+				http://www.91change.club/2019/12/29/c51-1/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -366,11 +303,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
         		</li>
       		
 		</ul>
@@ -426,7 +363,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://www.91change.club/2019/08/21/6/" alt="微信分享二维码">
+	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://www.91change.club/2019/12/29/c51-1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -440,18 +377,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/24/8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          2019年计划
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/19/5/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于七牛云图床的使用</div>
+    <a href="/2019/11/21/13/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">KMP算法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -481,7 +409,7 @@
   
 
   
-  <div id="SOHUCS" sid="6" ></div> 
+  <div id="SOHUCS" sid="c51-1" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({

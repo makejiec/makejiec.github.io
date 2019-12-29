@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.91change.club/"/>
-  <updated>2019-11-21T15:38:03.662Z</updated>
+  <updated>2019-12-29T11:17:17.402Z</updated>
   <id>http://www.91change.club/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重新学习51单片机</title>
+    <link href="http://www.91change.club/2019/12/29/c51-1/"/>
+    <id>http://www.91change.club/2019/12/29/c51-1/</id>
+    <published>2019-12-29T07:08:53.000Z</published>
+    <updated>2019-12-29T11:17:17.402Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="51单片机学习之路-1"><a href="#51单片机学习之路-1" class="headerlink" title="51单片机学习之路(1)"></a>51单片机学习之路(1)</h2><p>大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机：</p><p><font color="red" size="5">首先分享资料</font>：<a href="https://pan.baidu.com/s/1DmQB5Qf-F06jg8ZKjawS_w" target="_blank" rel="noopener">keil μversion5链接 </a><br>提取码：<font color="green" size="5"> xgjx </font></p><p><a href="https://pan.baidu.com/s/1osu-R5T98ShACMxWbdm66w" target="_blank" rel="noopener">Proteusz仿真链接</a> 提取码: <font color="green" size="5"> 4ktm </font></p><h4 id="c51编译器支持的数据结构"><a href="#c51编译器支持的数据结构" class="headerlink" title="c51编译器支持的数据结构"></a>c51编译器支持的数据结构</h4><meta name="referrer" content="no-referrer"><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg" alt="bdc60b2eb6a43448ee6e5d887191fdd9.png"></p><h4 id="51单片机使用的c语言的存储器类型"><a href="#51单片机使用的c语言的存储器类型" class="headerlink" title="51单片机使用的c语言的存储器类型"></a>51单片机使用的c语言的存储器类型</h4><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqfkb6l9j30er06gmx5.jpg" alt="6466a0aa00167bce5417367ac2182bc4.png"></p><p>这里的编译器是keil公司开发的 keil μversion5的IDE<br>，如下：<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqzszn1gj313k0og42b.jpg" alt="QQ图片20191229180157.png"></p><p>作为初学者看书是很枯燥的最好是看视频，这里推荐郭天祥的视频，讲的很好<a href="https://www.bilibili.com/video/av61979588?p=1" target="_blank" rel="noopener">十天学会51单片机</a></p><p>最好买一块板子，看了下淘宝100左右，如果没有板子那只有proteus仿真了</p><p>安装过程就不用介绍了。</p><p>最后看了一下书 发现c51对ANSI c有一些差异在库函数上有一些差异，具体在c51提供的库函数文档里面都有，在写代码时应该看看<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadt4sa5wfj30z30kxmym.jpg" alt="QQ图片20191229191557.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;51单片机学习之路-1&quot;&gt;&lt;a href=&quot;#51单片机学习之路-1&quot; class=&quot;headerlink&quot; title=&quot;51单片机学习之路(1)&quot;&gt;&lt;/a&gt;51单片机学习之路(1)&lt;/h2&gt;&lt;p&gt;大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计
+      
+    
+    </summary>
+    
+    
+      <category term="51单片机" scheme="http://www.91change.club/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+      <category term="嵌入式" scheme="http://www.91change.club/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>KMP算法</title>
@@ -146,7 +171,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2019-09-14T11:16:31.200Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19d29tkYvPisWlBQze/lS6BpjYONnF9E5M7qAcro7KSuqvTXPRpCB31IcVZrFk5Hd/8vq8kHJrAJ/TeTgpEaImu3DTjvr1hH5+Ig2xyZsG8oe7/+EOMJF29oHk634a5zPc+z8BM9sSoxrrSOP3/umuKi/PK3KTPaQjHQOODpy9oDTAncjxa4Y1LNqNZYZvOZufATYBuYBfvE2vOfW0S0MGsTsGlJh5dyRgQJSfocp1hs6UHeDsbE4KZLUE3p/YLI8qbkLMLRjkW+wXy7FprZyXB07t26lWtTiuK6e1sN8uKrUOm68s7hBpOZsMMvTcDxY4iczU4EHDTjRsvzzZv3zjDFtnw5KQxvlnMRxEVe0ZfGaXWfuP834qKi0Pj4PvEOUMoeCnSw8dCusbsUPJsoKoBOxJNro0GaOQmxfTqmSMPZtTXIIw+MPf3m8CVBQwLXCUYW3uujJ2tHQfn1TbVaty0TvrsNLxmErmBEuSJaax+aURwtrlenlsnnIXppSwmGhSewiF/cEHoJUiWJD/HP5Umd6zd3+ZR0OS0PEcqGqPMOjG4o+tQvqOAfmbUXC3qMf+Jh9R72zPFpvahf8BXujocT+4te+LmJ1LfV9yX5A+qoqlspXzJ3QBp66IvK8jg1AVwGELuUMqUCoNhu9L3BrJrK3dva/9Qc9R9pd4XL4UCkcH1STvsGE8CGkZ+A4fVSW2seE+SyMuXA4a8PjaQtxsodool5lCwGhSgQnX3KvdEhvHdVKcVH8+yTPP679UcbciDdF6xtUSWyPlsMFlaQ1JXgoAOPag0TjseHiqZQW21JTzUEukOpdTWsk5Qg9JctTwIWtIC1mNsbKIn1dsRuf1fZ0ddSfYrsTAWuLL3zOZt0NERwDIsf8WbSNc+8EPyEn+x4djsYoA7halrdjSmLHTZzcmXwrW6rmge3dDBfnkYOxdZ3BUeKYMVrCfNbDp0vSzd+sMkcZso8I2e6qajpvwsA7dTWj05ygXElp5Bg4y23EuxTao+dG3rsQZnqhuwPop7uCH1cKTvC2saCzGXqUyhr97IVXZk7o+m3aFXyCNIfKOeYYxkpsbO1cpIjSjChHrMDtS1//atC7ar55xCT/4pGljAdjtOmXIH8bC3Jca31yGeHwaZ823a/W1bE+D9X/WNsD6Q3xo0CrpHUrQ/E2yb2wU+gPNAjmW2npMpUusfaXY+fBmjdE8LGz1p47RYgRLhos5WfboY0UkOUeb1FIHJjT5IAdFOBda9WfPGjEuSytg9OQCzGLWE</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+bvdBZpwaJGTtiZKyXcJrPvvN9tF/45e2Izg9h1pOQhqc70XO5SHAKHrrhXTgfrcrSrC4nbs3JYELT7LnWaYKqSrhR6YIcHL3LsN+BsNaNcE5tAY9MTq4DgrO2P9Or8byCQwwrISPLNwWbLRQuVKr/w+jKIykS83WwE5EIjFa9Oit+4wXacgYD9zavkitQKMnZjx/lmQTvPcSw9NzLi6FR+FTfEQ4Gizt8W6z3Lx2YwelOKqmPRkB7vDEcEfj8zwlows+TPt/jGMs10O5ZzlkZH60uDBHhDUzjlPaGOlLpsmOQG7vC40a8lMtRbzD9B71AIMohghJ95yW6/F/3x5KfHJUaJHYWwSnzMtricKN+np6wCnVuxaz6a4SVq0YHhP8zrIcCnJ5fhFWE3vH8YgEpyWY9l9pvd15qGpaqkhay4HUb7o4sSI3n//znuCYm+6IXo4K+VGCeVLFq/+qcP6vyAOwAu/gazzpfrpfJXoZaVNaIGiy7a3GKCzs9WaXsYqKcyAxLAP9R98URvTkZAvp+bfrzaa99N+89Vbv6oYGNrwK0KIC9ocZmd228ksLMC8mMUGjI4F5ebZ3cC1GTd/9hSyDo8MJw6m23U/9u8aPNQGRxKC0FWXWZFswte4dAdZzX0A61aoyAGX7q1IOczZ7Zo28hENoUNUsbIfGAc4qWHQO3cCAAsU7okcIpl5GhOzbyfoB614KdsQbvtYrcVLUUInUwkzZ/U+wKyTdVT2j28A1PH1H2x/K/J6BsEPmx2sfm4oParVaHcmLW6caU43vWOhoE3Lq/cP0kY/lTRhNu1M0LTUGWDlkelEeJW3j6mZbN4CdUujRmuL9S8EoddL5wkrfB+9l6nJSHJ5WCz/qFjDeG5pysuk++IUYb96yD324eZchjRcMpQeJgx7YVRwNnzhsRvDdIwGUEk/jlo3trbRR23bNuYWjH59rBrn4z1DRdfb3weEMQ60naEmncnd6LswWuV/+lNoLSKOmPb9kwQzg0WdJOWwwFnkJ4VkvvUcE5zPvxxCQivRgrzIgZKYkXbxEmHjDhJe6L2CvQJHVA3hK+Kad6qaN3rITxYVw+6qqDfueZRPzsFXtXbHAGjf4gpYfQTwRptxkh3gEX/+yW8bdsMnmI+J9gkjEYmINRA1m9uCCqSCB56PvvfTWYU4cLkBTmUzjDND5oz/fZ3D/aiPzMAVnkn3ioyTEynFRAoyHuiQ2UfxCj0YYcK574zM69fw0b5OKEP0lenvNGW7M7PQGwBWVZ6BjF</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -227,9 +252,9 @@
     </summary>
     
     
-      <category term="yilia" scheme="http://www.91change.club/tags/yilia/"/>
-    
       <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
+    
+      <category term="yilia" scheme="http://www.91change.club/tags/yilia/"/>
     
   </entry>
   
@@ -277,9 +302,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
-    
       <category term="阿里云" scheme="http://www.91change.club/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
     
   </entry>
   
