@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.91change.club/"/>
-  <updated>2019-12-29T11:28:58.491Z</updated>
+  <updated>2019-12-30T13:44:51.106Z</updated>
   <id>http://www.91change.club/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>51单片机</title>
+    <link href="http://www.91change.club/2019/12/30/c51-2/"/>
+    <id>http://www.91change.club/2019/12/30/c51-2/</id>
+    <published>2019-12-30T05:53:17.000Z</published>
+    <updated>2019-12-30T13:44:51.106Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="51单片机学习之路-2"><a href="#51单片机学习之路-2" class="headerlink" title="51单片机学习之路(2)"></a>51单片机学习之路(2)</h2><p>每天学习一点单片机，先从51开始，边听郭天祥的视频，边看是自学发现还可以。</p><meta name="referrer" content="no-referrer"><a id="more"></a><p>昨天，只是熟悉下c51编程的基础，像我学了好几年的c语言就只用看看与标准c差别就行了，其实差别不是很大，会c语言的一些简单的语法完全够了。</p><p>由于没有板子，这里则是基于keil μVision5+Proteus模拟调试的</p><ul><li>首先装好这另两个软件，在前面已经提供了<a href="http://www.91change.club/2019/12/29/c51-1/#more"><font color="red" size="5">链接</font></a> <br><br><a href="https://mp.weixin.qq.com/s/T7A7xFRKTglRHZVKLtm4EA" target="_blank" rel="noopener"><font color="green" size="5">keil μVision5an安装教程</font></a>　　　　　<a href="https://mp.weixin.qq.com/s/3C_NZw7CJ_7SmAqtBIOv9Q" target="_blank" rel="noopener"><font color="green" size="5">Proteus安装教程</font></a><br><br><font color="red" size="4">这里Proteus在后面画图是总是出现闪退</font></li><li><strong>解决方法</strong>：<br><br>找到下面的文件 将他们全部复制到</li></ul><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf06moywgj30qr0dg0tv.jpg" alt="安装1.png"><br> 将他们全部复制到<font color="red" size="5">C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\MODELS</font>下<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0a9d9ajj30s50fs407.jpg" alt="安装2.png"><br>替换已存在的文件，闪退就可以解决来了。<br></p><ul><li>安装完成<br><br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0hhn2dcj308c04fweh.jpg" alt="c511.png"></li></ul><h4 id="下面就开始写第一个单片机程序"><a href="#下面就开始写第一个单片机程序" class="headerlink" title="下面就开始写第一个单片机程序"></a>下面就开始写第一个单片机程序</h4><ul><li><h3>新建工程</h3>![c512.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0lb18l3j30o909t75e.jpg)</li></ul><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0sgyjx9j30lq0gb76l.jpg" alt="c514.png"></p><ul><li><h3>新建一个文件，并把它添加到工程中</h3>Ctrl+N新建一个文件，并且保存为.c的后缀</li></ul><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf12wy7n1j30l00fj75z.jpg" alt="c515.png"></p><p>选择刚才创建的test.c文件</p><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1450ot7j30jo0e875r.jpg" alt="c516.png"></p><ul><li><h3> 可以写代码了 </h3>![c517.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf182fzw3j30vh0imwh7.jpg)<br><br></li></ul><p><strong>我这里的代码是控制6个数码管的循环点亮</strong></p><ul><li><h3>使用Proteus仿真画电路图</h3>![c518.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1cxkhg0j311o0klwho.jpg)![c519.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1fjv0maj30m40hl3yq.jpg)<br><br></li></ul><p><strong>接着一路点击Next到finish</strong><br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1jqzbhlj316x0q7whj.jpg" alt="c5110.png"></p><ul><li><h3>画出你的电路图</h3>![c5111.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1lmreyjj30x20k0q40.jpg)</li><li><h3>将代码编译生成十六进制文件导入原理图中</h3>![c5112.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1rdb967j30vr0ncjvb.jpg)![c5113.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1v2ntloj31360kvwhl.jpg)</li><li><h3>运行效果</h3>![demo_1.gif](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf216ccl3g30ws0j44qp.gif)</li></ul><h1 id="上述代码如下："><a href="#上述代码如下：" class="headerlink" title="上述代码如下："></a>上述代码如下：</h1><pre><code>#include&lt;red52.h&gt;#define uint unsigned int #define uchar unsigned char sbit wei = P2^7;    //位选sbit duan = P2^6;   //段选uchar code table[]={0x3f, 0x06, 0x5b, 0x4f,                   /*0*/ /*1*/ /*2*/ /*3*/                    0x66, 0x6d, 0x7d, 0x07,                   /*4*/ /*5*/ /*6*/ /*7*/                    0x7f, 0x6f, 0x77, 0x7c,                   /*8*/ /*9*/ /*A*/ /*b*/                    0x39, 0x5e, 0x79, 0x71                   /*C*/ /*d*/ /*E*/ /*F*/};  //字符0~f table表uchar num;uchar i;void delay(uint z);int main(void){    uchar count = 0;    uchar flag = 0x01;      while(1)    {        wei = 1;        P0 = ~flag;        wei = 0;         for(num = 0; num &lt; 16; num++)        {            duan = 1;            P0 = table[num];            duan = 0;            delay(100);        }        flag = flag &lt;&lt; 1;        count++;        if(count &gt;= 6)        {            flag = 0x01;            count = 0;        }    }}void delay(uint z)  //延迟{    uint x, y;    for(x=z; x&gt;0; x--)        for(y=110; y&gt;0; y--);}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;51单片机学习之路-2&quot;&gt;&lt;a href=&quot;#51单片机学习之路-2&quot; class=&quot;headerlink&quot; title=&quot;51单片机学习之路(2)&quot;&gt;&lt;/a&gt;51单片机学习之路(2)&lt;/h2&gt;&lt;p&gt;每天学习一点单片机，先从51开始，边听郭天祥的视频，边看是自学发现还可以。&lt;/p&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="51单片机" scheme="http://www.91change.club/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+      <category term="嵌入式" scheme="http://www.91change.club/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>重新学习51单片机</title>
     <link href="http://www.91change.club/2019/12/29/c51-1/"/>
     <id>http://www.91change.club/2019/12/29/c51-1/</id>
     <published>2019-12-29T07:08:53.000Z</published>
-    <updated>2019-12-29T11:28:58.491Z</updated>
+    <updated>2019-12-30T12:11:13.924Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="51单片机学习之路-1"><a href="#51单片机学习之路-1" class="headerlink" title="51单片机学习之路(1)"></a>51单片机学习之路(1)</h2><p>51单片机虽然已经出现了30年，但在使用上还是很广泛，市场上也出现一大推以8051为核心的一批单片机系统</p><a id="more"></a><p>大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机：</p><p><font color="red" size="5">首先分享资料</font>：<a href="https://pan.baidu.com/s/1DmQB5Qf-F06jg8ZKjawS_w" target="_blank" rel="noopener">keil μversion5链接 </a>提取码：<font color="green" size="5"> xgjx </font></p><p><a href="https://pan.baidu.com/s/1osu-R5T98ShACMxWbdm66w" target="_blank" rel="noopener">Proteusz仿真链接</a> 提取码: <font color="green" size="5"> 4ktm </font></p><h4 id="c51编译器支持的数据结构"><a href="#c51编译器支持的数据结构" class="headerlink" title="c51编译器支持的数据结构"></a>c51编译器支持的数据结构</h4><meta name="referrer" content="no-referrer"><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg" alt="bdc60b2eb6a43448ee6e5d887191fdd9.png"></p><h4 id="51单片机使用的c语言的存储器类型"><a href="#51单片机使用的c语言的存储器类型" class="headerlink" title="51单片机使用的c语言的存储器类型"></a>51单片机使用的c语言的存储器类型</h4><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqfkb6l9j30er06gmx5.jpg" alt="6466a0aa00167bce5417367ac2182bc4.png"></p><p>这里的编译器是keil公司开发的 keil μversion5的IDE<br>，如下：<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqzszn1gj313k0og42b.jpg" alt="QQ图片20191229180157.png"></p><p>作为初学者看书是很枯燥的最好是看视频，这里推荐郭天祥的视频，讲的很好<a href="https://www.bilibili.com/video/av61979588?p=1" target="_blank" rel="noopener">十天学会51单片机</a></p><p>最好买一块板子，看了下淘宝100左右，如果没有板子那只有proteus仿真了</p><p>安装过程就不用介绍了。</p><p>最后看了一下书 发现c51对ANSI c有一些差异在库函数上有一些差异，具体在c51提供的库函数文档里面都有，在写代码时应该看看<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadt4sa5wfj30z30kxmym.jpg" alt="QQ图片20191229191557.png"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="51单片机学习之路-1"><a href="#51单片机学习之路-1" class="headerlink" title="51单片机学习之路(1)"></a>51单片机学习之路(1)</h2><p>51单片机虽然已经出现了30年，但在使用上还是很广泛，市场上也出现一大推以8051为核心的一批单片机系统</p><a id="more"></a><p>大三期间学过单片机，主要是用汇编代码写的51代码，最近的毕业设计选择的题目是基于51单片机开发，不过都是用C语言开发的。于是重新学习一下单片机：</p><p><font color="red" size="5">首先分享资料</font>：<a href="https://pan.baidu.com/s/1DmQB5Qf-F06jg8ZKjawS_w" target="_blank" rel="noopener">keil μvVision5链接 </a>提取码：<font color="green" size="5"> xgjx </font></p><p><a href="https://pan.baidu.com/s/1osu-R5T98ShACMxWbdm66w" target="_blank" rel="noopener">Proteusz仿真链接</a> 提取码: <font color="green" size="5"> 4ktm </font></p><h4 id="c51编译器支持的数据结构"><a href="#c51编译器支持的数据结构" class="headerlink" title="c51编译器支持的数据结构"></a>c51编译器支持的数据结构</h4><meta name="referrer" content="no-referrer"><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqd4viupj30gn0b274e.jpg" alt="bdc60b2eb6a43448ee6e5d887191fdd9.png"></p><h4 id="51单片机使用的c语言的存储器类型"><a href="#51单片机使用的c语言的存储器类型" class="headerlink" title="51单片机使用的c语言的存储器类型"></a>51单片机使用的c语言的存储器类型</h4><p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqfkb6l9j30er06gmx5.jpg" alt="6466a0aa00167bce5417367ac2182bc4.png"></p><p>这里的编译器是keil公司开发的 keil Vision5的IDE<br>，如下：<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadqzszn1gj313k0og42b.jpg" alt="QQ图片20191229180157.png"></p><p>作为初学者看书是很枯燥的最好是看视频，这里推荐郭天祥的视频，讲的很好<a href="https://www.bilibili.com/video/av61979588?p=1" target="_blank" rel="noopener">十天学会51单片机</a></p><p>最好买一块板子，看了下淘宝100左右，如果没有板子那只有proteus仿真了</p><p>安装过程就不用介绍了。</p><p>最后看了一下书 发现c51对ANSI c有一些差异在库函数上有一些差异，具体在c51提供的库函数文档里面都有，在写代码时应该看看<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gadt4sa5wfj30z30kxmym.jpg" alt="QQ图片20191229191557.png"></p>]]></content>
     
     <summary type="html">
     
@@ -168,7 +191,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2019-09-14T11:16:31.200Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+o607ekt8ydA4BCbZ4D5GdYvMjmAkMv7f0U2JQNtkC7HZ/eiBsPltWv1VUKJ+T00WClOovdrgiNh/AL+1do9MZ+kro+s5exg7mZbJP96l/fCdMgo1pmr6hp7N0beT+AbpWBA0JO0AsAuH9zyYVuVi5A3O7aMB0RYZD4uaPb8pl0RPUV76ZSNiU/kgmRTcsvpQY5+f3A0f+Hk0wBjnWYSSwilewpSRh1AqlJ4UYQnVxRhZczW4c6DJfsl+h79ydOWSW1vUle/ogftBXaE1WanXvg1ZVF3ApAzqN6bkHor2PaBFSMZ3oZ7l4TI6BggHD/FtFPlfVBK4/IgSCDljF9tOdDpmCt4r1fKatZInrZgFjqgKfK1P/g+IYkOMP0vteQK1ksItlq2G5fAjgIc/Yac6zPoM06B70deEyrBJwFAqI4sXzX3UNG4oJJC9GkD+TxVSsDbgrwM7ggeGhgJ+AZ8w10r8lNM3CNZ+c1xIH+RV7HpAM5gL1Y1xr40fQ3pXuIPTPJO2TG3P2jYb1osG1nHRB3SR3Lil4/x8OGdxVSABLOluj0rrhjfx01Mfw3zeD7OuPSEB64XNRDfhtCGWUjBcTWVkF0tXyulPK8KOWHET+9JQU2HCSjDiutVUOKDVjiwJQ1nXgk/vOT96xQunAIFr2reLyljKgiYcOTMEa4ljqx4xQCPbf9sI4FVfP7gUzdV0ehfTfoRw47eXhe4slbwBwEpFAelDBvxq5nN0weMdjyCpJyGGqIYij9iys9qJF1W6hb1189mtbGj9nYpnlX+dsrFI6vPHyBVaEEfdWgy0h1+Z67c+X4d3iS7X4q8QDgN1aM9WjTxqwPzM40Snoo6tfPO6TsQnyD5jYkP/pjOLjaZ57pfV/MAohSjqjVrtNFL8WPU6UZbpGr7SFBGFoQ2mudFodTiOT2vwAI2XqU70B0rabSFyafLqFdEedU5dEyw0YF2cwO3gRRaWJRK5v/4REMm375DMQZ1cviPhKXnCCdwIVGtN/7qacJMW3bgFH/x0jeWbeIUN9kdMhmcxwpCuZ561Xm16ekQgLUxMi1n+oGUQOnHvwLKnZyOBnwMDZacfSc1LgvzgabDYdy0t1hOblwHW61CdvkWk8eFABGdOlDeEyL7SEjSMwTmkKN/wHxcc2FEm1TswQS7r0E9C1gzPbfrJldvQURGy2yYdecaB42/odDLW2KRGEpPJscB3xtm2Twtzpa0TG0YXD3u11rkpuEodQNaE7fvyN2Dnc7TRDcsjShE/X+wJ7</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/LffMRtnjD2E0PG8jJeD3ysMqLx7gjkQypLeC0FlQeJhCvztGYhOjcTF5sG8Jer2BiArkxsc5tU6zI9qmIPLwfAmnN9iWixrRIycSfRTsEDT3s3qjYcZ5rCUs65CfG/vPTrAGZNAI5AyI0+QgGNDkq3NecTabqQeUTYKwxWMpgfoft7itcg3xS0Nj+zTnhdSWNsB074GwF2mg7NsNAeL9zJ2UkKedamjbBaN/oKt55KWlNqBz912txt/5xv9iV8HRt28i0GpZ+gs70DcN/TV1rHknpnlT6cyBO/UC2lrpDNeykCg6OruKPQy2lDKqNZMJLbh4LW5ZFZpp2zprF04f0zJ5YjgTSAWYR/TZ9HIxfJsSvgI6r8QAidMPPHz/qJ0rB4tAwbiPKWKDoGRt2wfIBQvKrZmj7hMs+6BPb6XGbZDKEuVP9esSGSzdKbUQf/DvRZ8+0O95oOLfVHUGRWExJvLgOynBkE94WQpKbTNYkk3SRxYWqdQiUv6pfbz+9rXoblUv2SZFdblGu6cgIAaxEozk0c1TgxYDVAI5Vi5RkQBpll/2dCIppTLk0TX0TTqbGhRuLG21R21BAbYk1s+8UdFALXvfFqxhuPYGBHqZ9kjdyy1tkS4W00WZg4SV+mHepUn6YRf8h62hjArOO4z4Uq8vcatNc+eRJkNZ9Y7SMo+ReKdwQbyJmz+HURGRWU8tATo8WLTlGQDZ9lXvHd57WTFcBzSN16zIYjgagRrGwNr9BlslnbMb/oVfIr9qxsu6LOu3Jtc889GYAVmnidSYq1yFN1wSkORBdYdr/yRlQeZNpSXvLcrBYe72P6nLXBLAs3NScQpz4ED3tdkG/jTYwFZ/cCNJXqGv/IPnJy/VFu3dKFpoiOjhjOn3FXo0pni8bFjwJXlAITcLLDGokmD28xBoRReiHTyqVUtmbfKjNUZeBiK77WNSrqQoMPwEx9boU6t34ZUPAhmfGkYrSN4jxsr9lBD/XKAlEhJt8AUUnAExUSBbk7tvixZcdwCkyQy3k1irY/wJAIHRoklEkZwQ31b9ZpvVHybzZPK3vm/CuyeDb/mKgjMcnnGsx81Hm2FGgINN3Y6ugZnZ7OZEZv2Vn/DEcRNcxtv7qw9E/64bFqRHEvqsST9G6ipPo2w0i6KDD7mqqvKj4pZzxQaUbOu1beWWw8OkwulULoPgRS4p3IZ05U8kl2dCIOZMH1Rhju4Vyo36ZXSXe/zQTRID59ZXMQwN44YT3PmW8fvSwazuuRkRamLxDvuAW</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -249,9 +272,9 @@
     </summary>
     
     
-      <category term="yilia" scheme="http://www.91change.club/tags/yilia/"/>
-    
       <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
+    
+      <category term="yilia" scheme="http://www.91change.club/tags/yilia/"/>
     
   </entry>
   
@@ -299,9 +322,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
-    
       <category term="阿里云" scheme="http://www.91change.club/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
     
   </entry>
   
