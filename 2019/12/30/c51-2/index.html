@@ -19,13 +19,12 @@
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf06moywgj30qr0dg0tv.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0a9d9ajj30s50fs407.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0hhn2dcj308c04fweh.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0sgyjx9j30lq0gb76l.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1450ot7j30jo0e875r.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1fjv0maj30m40hl3yq.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1jqzbhlj316x0q7whj.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf1v2ntloj31360kvwhl.jpg">
-<meta property="og:updated_time" content="2019-12-30T13:49:04.647Z">
+<meta property="og:updated_time" content="2019-12-30T13:52:04.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="51单片机">
 <meta name="twitter:description" content="51单片机学习之路(2)每天学习一点单片机，先从51开始，边听郭天祥的视频，边看是自学发现还可以。">
@@ -223,18 +222,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="51单片机学习之路-2"><a href="#51单片机学习之路-2" class="headerlink" title="51单片机学习之路(2)"></a>51单片机学习之路(2)</h2><p>每天学习一点单片机，先从51开始，边听郭天祥的视频，边看是自学发现还可以。</p>
-<meta name="referrer" content="no-referrer">
-
 <a id="more"></a>
 <p>昨天，只是熟悉下c51编程的基础，像我学了好几年的c语言就只用看看与标准c差别就行了，其实差别不是很大，会c语言的一些简单的语法完全够了。</p>
-<p>由于没有板子，这里则是基于keil μVision5+Proteus模拟调试的</p>
+<meta name="referrer" content="no-referrer">
+由于没有板子，这里则是基于keil μVision5+Proteus模拟调试的
+
 <ul>
 <li>首先装好这另两个软件，在前面已经提供了<a href="http://www.91change.club/2019/12/29/c51-1/#more"><font color="red" size="5">链接</font></a> <br><br><a href="https://mp.weixin.qq.com/s/T7A7xFRKTglRHZVKLtm4EA" target="_blank" rel="noopener"><font color="green" size="5">keil μVision5an安装教程</font></a>　　　　　<a href="https://mp.weixin.qq.com/s/3C_NZw7CJ_7SmAqtBIOv9Q" target="_blank" rel="noopener"><font color="green" size="5">Proteus安装教程</font></a><br><br><font color="red" size="4">这里Proteus在后面画图是总是出现闪退</font></li>
 <li><strong>解决方法</strong>：<br><br>找到下面的文件 将他们全部复制到</li>
 </ul>
 <p><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf06moywgj30qr0dg0tv.jpg" alt="安装1.png"><br> 将他们全部复制到<font color="red" size="5">C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\MODELS</font>下<br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0a9d9ajj30s50fs407.jpg" alt="安装2.png"><br>替换已存在的文件，闪退就可以解决来了。<br></p>
 <ul>
-<li>安装完成<br><br><img src="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0hhn2dcj308c04fweh.jpg" alt="c511.png"></li>
+<li>安装完成<br><br><a href="https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0hhn2dcj308c04fweh.jpg" target="_blank" rel="noopener">https://ws1.sinaimg.cn/large/006p97Wqgy1gaf0hhn2dcj308c04fweh.jpg</a></li>
 </ul>
 <h4 id="下面就开始写第一个单片机程序"><a href="#下面就开始写第一个单片机程序" class="headerlink" title="下面就开始写第一个单片机程序"></a>下面就开始写第一个单片机程序</h4><ul>
 <li><h3>新建工程</h3>
@@ -246,7 +245,7 @@
 <ul>
 <li><h3>新建一个文件，并把它添加到工程中</h3>
 Ctrl+N新建一个文件，并且保存为.c的后缀
-![c515.png](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf12wy7n1j30l00fj75z.jpg)
+[https://ws1.sinaimg.cn/large/006p97Wqgy1gaf12wy7n1j30l00fj75z.jpg](https://ws1.sinaimg.cn/large/006p97Wqgy1gaf12wy7n1j30l00fj75z.jpg)
 
 </li>
 </ul>
@@ -631,14 +630,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">排序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">c语言</a>
               </li>
              
@@ -663,7 +654,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Independent</a>
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -675,11 +678,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color2">Independent</a>
               </li>
              
               <li class="article-tag-list-item">
