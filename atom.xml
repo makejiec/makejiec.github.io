@@ -68,9 +68,9 @@
     <link href="http://www.91change.club/2019/11/21/13/"/>
     <id>http://www.91change.club/2019/11/21/13/</id>
     <published>2019-11-21T15:22:16.000Z</published>
-    <updated>2020-02-24T08:42:44.126Z</updated>
+    <updated>2020-02-24T09:12:18.696Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="模式匹配算法——KMP"><a href="#模式匹配算法——KMP" class="headerlink" title="模式匹配算法——KMP"></a>模式匹配算法——KMP</h2><meta name="referrer" content="no-referrer"><p>今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番</p><a id="more"></a><p>不解释直接上代码：<br></p><pre><code>/*KMP算法*/#include&lt;stdio.h&gt;#include&lt;string.h&gt;void get_next(char *T,int *next);int Index_KMP(char *S, char *T, int pos);int pos = 0;int next[10];      //next数组char T[10] = &quot;abc&quot;;char S[20] = &quot;ccccccdabcefg&quot;;int main(void){    //char S[LEN_1_SIZE];   // T[LEN_2_SIZE];    int x;    /*printf(&quot;输入主串长度：&quot;);        scanf(&quot;%d&quot;,&amp;n);    printf(&quot;输入主串：&quot;);    fgets(S, n, stdin);        printf(&quot;输入模式串长度：&quot;);    scanf(&quot;%d&quot;,&amp;m);    printf(&quot;输入模式串：&quot;);    fgets(T, m, stdin);*/    get_next(T, next);    x = Index_KMP(S, T, pos);    if(x != 0)    {        printf(&quot;在主串第%d处\n&quot;, x);    }    else    {        printf(&quot;failed\n&quot;);    }}/*获取next数组*/void get_next(char *T,int *next){    int i = 1, j = 0;    next[0]=next[1] = 0;    while(i &lt; (int)strlen(T))    {        if(j == 0|| T[i] == T[j])            {            next[++i] = ++j;        }        else            j = next[j];    }}int Index_KMP(char *S, char *T, int pos){    int j = 1, i = pos;    while(i &lt;= (int)strlen(S) &amp;&amp; j &lt;= (int)strlen(T))    {        if(j == 0 || S[i] == T[j - 1])        {            ++i;            ++j;            }        else            j = next[j];    }    if(j &gt; (int)strlen(T))         return i - strlen(T) + 1;    else        return 0;}</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="模式匹配算法——KMP"><a href="#模式匹配算法——KMP" class="headerlink" title="模式匹配算法——KMP"></a>模式匹配算法——KMP</h2><meta name="referrer" content="no-referrer"><p>今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番</p><a id="more"></a><p>不解释直接上代码：<br></p><pre><code>/*KMP算法*/#include&lt;stdio.h&gt;#include&lt;string.h&gt;void get_next(char *T,int *next);int Index_KMP(char *S, char *T, int pos);int pos = 0;int next[10];      //next数组char T[10] = &quot;abc&quot;;char S[20] = &quot;ccccccdabcefg&quot;;int main(void){    //char S[LEN_1_SIZE];   // T[LEN_2_SIZE];    int x;    /*printf(&quot;输入主串长度：&quot;);        scanf(&quot;%d&quot;,&amp;n);    printf(&quot;输入主串：&quot;);    fgets(S, n, stdin);        printf(&quot;输入模式串长度：&quot;);    scanf(&quot;%d&quot;,&amp;m);    printf(&quot;输入模式串：&quot;);    fgets(T, m, stdin);*/    get_next(T, next);    x = Index_KMP(S, T, pos);    if(x != 0)    {        printf(&quot;在主串第%d处\n&quot;, x);    }    else    {        printf(&quot;failed\n&quot;);    }}/*获取next数组*/void get_next(char *T,int *next){    int i = 1, j = 0;    next[0]=next[1] = 0;    while(i &lt; (int)strlen(T))    {        if(j == 0|| T[i] == T[j])            {            next[++i] = ++j;        }        else            j = next[j];    }}int Index_KMP(char *S, char *T, int pos){    int j = 1, i = pos;    while(i &lt;= (int)strlen(S) &amp;&amp; j &lt;= (int)strlen(T))    {        if(j == 0 || S[i] == T[j - 1])        {            ++i;            ++j;            }        else            j = next[j];    }    if(j &gt; (int)strlen(T))         return i - strlen(T) + 1;    else        return 0;}</code></pre><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p>]]></content>
     
     <summary type="html">
     
@@ -154,11 +154,11 @@
     </summary>
     
     
-      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
     
       <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
   </entry>
   
@@ -178,9 +178,9 @@
     </summary>
     
     
-      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
+    
+      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
     
       <category term="const用法" scheme="http://www.91change.club/tags/const%E7%94%A8%E6%B3%95/"/>
     
@@ -193,7 +193,7 @@
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2020-02-24T08:36:24.297Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+xaAHEsQQhDtrp9YRwZoTdiyqD2RdTucjtdF/zeRz2/Z4xMg2O+mp7ICwVc1Uk9rFu303SRpb2ficuqGInvWrb2d8oKDCcR23F26OyPus6vU21/B9hM9CX93TQNrsFGYuhcGPYTFxje7p0TgKT3TDbGUBdlizupclwUgMn78ACg0egLqYOXQ84S0pa7SlgIIdsg8caHGaQoaY4GW/8uynd8LVEeQR7csJ2WnAUlOCX41uhUFWGm1U0mt4aIuM0ri1fmoO/2lmoRYn7hdFLLF7YycOGgF+tmB881LNjPe6/8uzNnLT6IQo3KZ+vws8992xVOtCnR+Tcd+NbwChseeKDPyPGxxiokJ31dczowOEVjU7irLkhMukgf58AE5WMyY/2Nu6nN/DBjSt+qtgVVoIN0l4wK3kJ0ART4BdrxH+vsh68UAh8RNPQYn8SpYfWhinRLhYlCISRJJHfsnWgAgPFcc26fzxaB5n7xZrRZTX4/Xri8OsA3CIjDZ0AFI+4VbKg9s1xRu6FdXgVlz//XkTgTNxjljV/INwJ3sfUM69WRk1dhdxJZCuUnkEepxbo1c/rTgyW/9JEAHKlxTi7Ib6oSXQDI2Sj6Zs794U7q+PaRTt/8w61EW7ieJjCSyLJdBvOgmLzXf3WwkjOlEpOUkoH1zIH9nziRuOTYI9MzyInyhyHMgeg/k5kt6fMxNr3dLgouvTxHXfjsGm7Epm7F7zi4QEMcz2GCiT2XOe/SbhqfLZ+f3eREcbBnDLqNa74PYILBj5RaMfC/0gjAbll7wdvtYMafNxjAI4HKEjSmm4QNC0irslSRob34h69UEO/tal/7qXlF0eBDkeGCdgmYa5LOT48divCewvIfia3hLLdTwsxeru4aEZDkuGx149byjBiIpVk4eg35qmLYdli9VcAvWNxcAPsD4jZbDT8flqIa6dJGt5i65OSRoU+npqoKikr5+4MkQ8JNGWYkrPgyN6Q8L7TMdg//2sHYihXejqbCRq5FKrp9kqavMjlQqw6ea+L9U/RhKFhNfdkP/pO+Nar3kwqzH/1ZU4kaCsYjlCdHY+LVDQPCCO0+10qVXx7ZgRZ+oGUDAvWDhur1yFLbbpwI1VohNKvMO1S3Tb2uQh24DG7WpuJYF4MmfVh6qDdmVGsaLg1dghkB/fQl2IOZ3p5Zqqmv8udy+TpFUCw5yaRAEqIcvQe8oitS8z8f8Au5N1nyn5KfrAf9wAS6FHMsVpymcoFxew7Ba46j48aQyLI0/QrWDiNC0iDxqa7/JMqiqLySfxUAq6ArJSx6S+r7oS8Zr2N94DyLATXCAYR/6dmOk4J6KUhQAhf</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19Rdv9tbK0Tiy8aciuXJpRAY1J10b3zVzYiocuVfyYIPJHXYAJAmolfpPG3hsUyIfE1vuSOo+esNYfzms3HhdxfLMNVY1FC23Z4Btj4esGO/oJzAOlE0C8vIZgzpcqzXmOW66jfVDXI08twceM+QXUv1jDsuEpWP9x9/uDOm0qehny5Z8jSf3EcVlawAbyWIgI4ED8L741XZiC6SwzjQN4bWHsgLJ+UI00mgr0NAbw+9TRtojk7N61hl/U8NUAlATbYSJvSXjkL8wwQwFqqE+jrhZfhy2E8Fzds/ShOs21P+3WecFnKUso+6OCo1nHajnQJ2o3y8FMAJlj4NKpBmFq/eTnmsRGgKU/mk8Dk8Hhtb3oEeda3RROt1fjzRC2Z+opkYn4pNEKh0Qgs3aAoxozBs2FUQFjid/chkNWH6kadoXPETBGnRKtSdbv9jQ5dNLFqa1P9wje6Gib/9/27Nkp6nRS1tySOm1FsjgASwzQcqRjT04xap8JRod5csc2tjIDfqsEamNzwesM/wdOOpnHyS94ncIYFK9oPx3DSANfZsOXBpjRuQoyFHz2p7zfuxzUcCdTQ+lmj7BYk50wfI0Gwwe8fnlmX9SDz7tWHdSJuLRyqhksffJzKPkpbdLi5ubDc8oqG5Z4QigGhmEBa/AZPHTBwobWO7Ph9r9+KDAwXXGuWxIFEPh3AD1MdI/ZqzTVcarek3nHMk5HqRq9RBr7bWZWZFqfdjK3kIYwT8tNovWBKQVuF43tSjZ9YZG29Hz03F0WZeIs+uU701KT7zIpGwTw7AqF8Xh44wzfR+ZdTJ13e2QaUoGfRS12OyVM5XzAjQj14A4usu2KEs/S/6/rtq9d6WSdrjEn9hkkK10dyonQuip72ntbLW2z4yJ8aQyat/h6nA4b/YFHgBNIr28J+8jP8TSNd7Tleuao6+qo6v0xU//mx1o+WlZ3mCSK72qUuzjruBb2vGfGEueDXfbW/NXNgDbVhbNJORoqHjwvV9JwvxmqpveuwQaSSrKfmqgKJ8nBJQCZQZB+48OayVzTuJ1LFjY7IFjdA02EAl5PpZZXhFFcyFXzC0XaMVgGSegIMgnRToHKjcmfXW2r1C8zbv9c87c7ABc97HhjdNSQeS2y/me4bZZeBYXeWhYZppF15ktOXzOe4vUD2FBdBMF+JBFju68sS/cbOCESFJ8wwbn+VI+zK6H03SZ4zlNsKeMLvnvF1NOnvDcm/pDFUzFqoa0V097bPRgk7a8F8UoxsH96OmLZfXMQDE5txNz5VNfiv/BsAubf9jpvSLG1ul6DLStOEdvaEYhZQFHMAUZuZFQ9BOtmzp78L</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -224,9 +224,9 @@
     </summary>
     
     
-      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
-    
       <category term="C语言" scheme="http://www.91change.club/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
     
   </entry>
   
@@ -298,9 +298,9 @@
     </summary>
     
     
-      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
-    
       <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
     
       <category term="Independent" scheme="http://www.91change.club/tags/Independent/"/>
     
