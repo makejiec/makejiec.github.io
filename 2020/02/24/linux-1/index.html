@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="长歌|91Change">
 <meta property="og:description" content="GCC程序编译Linux系统下的gcc(GNU C Compiler)是GNU推出的功能强大、性能优越的多平台编译器，它的执行效率比一般编译器要高20%~30%">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2020-03-02T12:25:37.993Z">
+<meta property="og:updated_time" content="2020-03-02T12:34:39.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GCC程序编译">
 <meta name="twitter:description" content="GCC程序编译Linux系统下的gcc(GNU C Compiler)是GNU推出的功能强大、性能优越的多平台编译器，它的执行效率比一般编译器要高20%~30%">
@@ -218,7 +218,7 @@
 <a id="more"></a>
 
 <p>GCC编译程序时，编译过程只可以被细分为四个阶段：<strong>预处理、编译、汇编、链接</strong></p>
-<h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><p>Gcc通过后缀来区别输入文件的类别：<br> -</p>
+<h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><p>Gcc通过后缀来区别输入文件的类别：</p>
 <ul>
 <li>.c：源代码文件</li>
 <li>.a：由目标文件构成的库文件</li>
@@ -244,7 +244,7 @@
 <li>Lname：在链接时，装载”libname.a”的函数库，如gcc foo.c -L/home/lib -lfoo -o foo</li>
 <li>-static：静态链接，gcc -static hello.c -o hello</li>
 </ul>
-<p>静态链接和动态链接<br>使用静态库时，连接器找出程序所需的函数，然后将它们拷贝到可执行文件，一旦连接成功，静态程序库也就不再需要了。然而，在动态库中，动态库会在执行程序内留下一个标志指明当程序执行时，首先必须载入这个库，从而节省空间。</p>
+<p>静态链接和动态链接<br>使用静态库时，连接器找出程序所需的函数，然后将它们拷贝到可执行文件，一旦连接成功，静态程序库也就不再需要了。然而，在动态库中，动态库会在执行程序内留下一个标志指明当程序执行时，首先必须载入这个库，从而节省空间。一般在linux中默认都是动态库。</p>
 <ul>
 <li>-Wall：生成所有警告信息</li>
 <li>-w：不生成任何警告信息</li>
@@ -556,11 +556,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+                <a href="javascript:void(0)" class="js-tag color5">模式匹配</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -584,38 +584,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">模式匹配</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Gcc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">51单片机</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">嵌入式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">const用法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
               </li>
              
@@ -628,15 +596,47 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计划</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
+                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">const用法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">51单片机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">嵌入式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Gcc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
               </li>
             
             <div class="clearfix"></div>
