@@ -8,25 +8,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://www.91change.club">
-  <title>浅谈c指针(一) | 长歌|91Change</title>
+  <title>c语言——内存对齐 | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="浅谈c语言灵魂——指针  c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
-<meta name="keywords" content="指针,C语言">
+  <meta name="description" content="内存对齐什么是内存对齐？ 不同类型的数据内存中按照一定的规则；而不是顺序一个接一个的排放。 例如： 123456789101112131415struct Demo_1&amp;#123;    char a;    short b    char c;    int d;&amp;#125;;struct Demo_2&amp;#123;    char a;    char c;    short b;    int">
+<meta name="keywords" content="内存对齐,c语言">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅谈c指针(一)">
-<meta property="og:url" content="http://www.91change.club/2019/08/21/6/index.html">
+<meta property="og:title" content="c语言——内存对齐">
+<meta property="og:url" content="http://www.91change.club/2020/03/12/linux-4/index.html">
 <meta property="og:site_name" content="长歌|91Change">
-<meta property="og:description" content="浅谈c语言灵魂——指针  c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
+<meta property="og:description" content="内存对齐什么是内存对齐？ 不同类型的数据内存中按照一定的规则；而不是顺序一个接一个的排放。 例如： 123456789101112131415struct Demo_1&amp;#123;    char a;    short b    char c;    int d;&amp;#125;;struct Demo_2&amp;#123;    char a;    char c;    short b;    int">
 <meta property="og:locale" content="cn">
-<meta property="og:image" content="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7krqaswmj307p060745.jpg">
-<meta property="og:image" content="https://tva3.sinaimg.cn/large/006p97Wqgy1gc7ks5h2k9j303o00j0nz.jpg">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7ksjo5ghj307105y3yd.jpg">
-<meta property="og:image" content="https://tva3.sinaimg.cn/large/006p97Wqgy1gc7ksyt7i6j304h00j0m4.jpg">
-<meta property="og:updated_time" content="2020-02-24T08:35:33.662Z">
+<meta property="og:image" content="https://gitee.com//change1998/blogimag/raw/master/img/l1.png">
+<meta property="og:image" content="https://gitee.com//change1998/blogimag/raw/master/img/l2.png">
+<meta property="og:image" content="https://gitee.com//change1998/blogimag/raw/master/img/l3.png">
+<meta property="og:updated_time" content="2020-03-13T02:32:52.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈c指针(一)">
-<meta name="twitter:description" content="浅谈c语言灵魂——指针  c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。">
-<meta name="twitter:image" content="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7krqaswmj307p060745.jpg">
+<meta name="twitter:title" content="c语言——内存对齐">
+<meta name="twitter:description" content="内存对齐什么是内存对齐？ 不同类型的数据内存中按照一定的规则；而不是顺序一个接一个的排放。 例如： 123456789101112131415struct Demo_1&amp;#123;    char a;    short b    char c;    int d;&amp;#125;;struct Demo_2&amp;#123;    char a;    char c;    short b;    int">
+<meta name="twitter:image" content="https://gitee.com//change1998/blogimag/raw/master/img/l1.png">
   
     <link rel="alternative" href="/atom.xml" title="长歌|91Change" type="application/atom+xml">
   
@@ -198,102 +197,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-6" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-linux-4" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      浅谈c指针(一)
+      c语言——内存对齐
     </h1>
   
 
 		
         
-        <a href="/2019/08/21/6/" class="archive-article-date">
-  	<time datetime="2019-08-21T11:46:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
+        <a href="/2020/03/12/linux-4/" class="archive-article-date">
+  	<time datetime="2020-03-12T06:26:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="浅谈c语言灵魂——指针"><a href="#浅谈c语言灵魂——指针" class="headerlink" title="浅谈c语言灵魂——指针"></a>浅谈c语言灵魂——指针</h2><meta name="referrer" content="no-referrer">
+        <h2 id="内存对齐"><a href="#内存对齐" class="headerlink" title="内存对齐"></a>内存对齐</h2><p>什么是内存对齐？</p>
+<p>不同类型的数据内存中按照一定的规则；而不是顺序一个接一个的排放。</p>
+<p>例如：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_1</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> a;</span><br><span class="line">    <span class="keyword">short</span> b</span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> d;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_2</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> a;</span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">short</span> b;</span><br><span class="line">    <span class="keyword">int</span> d;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>c语言什么最难，当然是指针(Pointer)，c语言之所以强大，以及其自由性，很大部分体现在其灵活的指针运用上。因此，说指针是c语言的灵魂，一点都不为过。</p>
-<a id="more"></a>
-<p>学c语言不学指针，那就等于没学。但是指针又是最难学的，指来指去连自己都指晕了，这也是为什么很对人放弃c语言的原因。</p>
-<h3 id="什么是指针？"><a href="#什么是指针？" class="headerlink" title="什么是指针？"></a>什么是指针？</h3><h5 id="首先想一下下面这段代码的1、2输出是什么？"><a href="#首先想一下下面这段代码的1、2输出是什么？" class="headerlink" title="首先想一下下面这段代码的1、2输出是什么？"></a>首先想一下下面这段代码的1、2输出是什么？</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">	int i=100;</span><br><span class="line">	printf(&quot;%d\n&quot;,i);     //1</span><br><span class="line">	printf(&quot;%d\n&quot;,&amp;i);    //2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好了相信大家都有自己的判断了。</p>
-<p><code>int *pi;</code></p>
-<p>上面这个应该 是最基础的了，pi就是指针我们当然知道了，但是你要说它与int pi; 有什么区别，它也没有，因为他也是变量，顶多叫指针声明（不能为叫申明），那他到底有什么意义呢？ 看下面：<br><br><code>pi = &amp;i;</code><br><br><br>这个应该都能看懂吧，通俗点讲就把变量 i 的地址编号赋值给 pi 。<br><br>如：</p>
-<table>
-<thead>
-<tr>
-<th align="center">变量</th>
-<th align="center">内容</th>
-<th align="center">内存地址编号</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">i</td>
-<td align="center">100</td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="center">pi</td>
-<td align="center">?</td>
-<td align="center">10</td>
-</tr>
-</tbody></table>
-<p>表格中 ? 该为多少，相信大家都会填，为<strong>7</strong>也就是i的地址编号。也就是说&amp;为取地址号操作，我们就把pi称为指针，所以要记住，指针变量所存的内容为地址编号就行了。</p>
-<p>讲到这，我们再回归到上面的代码1处，都知道1处输出为<strong>100</strong>，那下面这句呢？<br><br><code>printf(&quot;%d\n&quot;,*pi);</code><br><br>这句该怎么理解呢，上面不是说了吗pi就是i的地址编号——即pi的内容就是<strong>7</strong>，所以*pi就是pi所指地址的内容了，也就是 i 内容了100它就等同于1处的代码了。</p>
-<p>这些都是很基础的了，下面将一些难的，</p>
-<h3 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h3><p>一维数组a[i]中的a表示数组名，也可以表示a[0]的地址，它是等同于*a的<br></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">printf(&quot;%d\n&quot;,a[i]);</span><br><span class="line">printf(&quot;%d\n&quot;,*(a+i));</span><br></pre></td></tr></table></figure>
-
-<br>
-都表示遍历数组a[i]的，但是他们是有区别的
-
-<p><strong>a[]和*a的区别：</strong><br><br>char *a 与char a[] 的区别：<br></p>
+<p>这两种类型所占的内存空间是否相同？为什么？</p>
+<p>首先为什么需要内存对齐？</p>
 <ul>
-<li><p>char *a = “hello” 中的a是指向第一个字符‘h’的一个指针<br></p>
-</li>
-<li><p>char a[20] = “hello” 中数组名a也是执行数组第一个字符‘h’的指针</p>
+<li>CPU对内存的读取不是连续的，而是分块读取的，块的大小只能是1、2、4、8个字节，只能是2^n个字节。</li>
+<li>当读取操作的数据未对齐，则需要两次总线周期来访问内存，所以性能就会折扣</li>
+<li>某些硬件平台只能从规定的地址读取某些特定类型的数据，否则就会抛出硬件 异常。<br>例如：<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_3</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> a;</span><br><span class="line">    <span class="keyword">short</span> b;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-<p>但二者并不相同：</p>
-<p>如：把两个字符串相加</p>
-<p><img src="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7krqaswmj307p060745.jpg" alt="图片1"></p>
-<p>结果：</p>
-<p><img src="https://tva3.sinaimg.cn/large/006p97Wqgy1gc7ks5h2k9j303o00j0nz.jpg" alt="图片4"></p>
-<p>对比：</p>
-<p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7ksjo5ghj307105y3yd.jpg" alt="图片3"></p>
-<p>结果：</p>
-<p><img src="https://tva3.sinaimg.cn/large/006p97Wqgy1gc7ksyt7i6j304h00j0m4.jpg" alt="图片5"></p>
-<p>把字符串加到指针所指的字串上去，出现段错误，<font color="red">本质原因</font>：*d=”0123456789”存放在常量区，是无法修的。而数组是存放在<font color="red">栈</font>中，是可以修改的。两者区别如下：<br><br>一. ”读“ ”写“ 能力</p>
+<p>当CPU去读取Demo_3时，所占的内存是3个字节，但cpu每次只能读2^n个字节，所以就有两种读法，第一次读取1个字节，第二次读取两个字节，最后拼接下。可以看出非常好使时间。<br>而真实中cpu会去读取四个字节，这样耗时就会很少，但这样会多一个字节，这时cpu就会优化Demo_3这个结构体使其占用四个字节。</p>
+<p>还有的硬件中规定：只能读/写偶地址</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_3</span> <span class="title">s1</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_3</span> <span class="title">s2</span>;</span></span><br></pre></td></tr></table></figure>
+
+<p>s1.a是一个字节，s2.b是两个字节。当访问s1.a的地址是0xffffff00，可以访问，当访问s2.b时，地址是0xffffff01，此时地址就是奇地址，所以就会出现硬件异常，程序就崩溃了。<br>所以CPU就会去优化让0xffffff01地址空置，把s2.b放在0xffffff02处。</p>
+<p>因此这里有个#pragma pack能够改变编译器的默认对齐方式</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(2)</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_1</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> a;</span><br><span class="line">    <span class="keyword">short</span> b</span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> d;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack()</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(4)</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_2</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> a;</span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">short</span> b;</span><br><span class="line">    <span class="keyword">int</span> d;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack()</span></span><br></pre></td></tr></table></figure>
+
+<p>此时sizeof(struct Demo_1) = ?<br><br>sizeof(struct Demo_2) = ?</p>
+<blockquote>
+<p>struct占用的内存</p>
 <ul>
-<li>char *a = “abcd”;  此时”abcd”存放在常量区。通过指针只可以访问字符串常量，而不可以改变它。<br></li>
+<li>第一个成员起始于0偏移处</li>
+<li>每个成员按其类型大小和指定对齐参数n中较小的一个进行对齐<br>  偏移地址和成员占用大小需对齐<br>  结构体成员的对齐参数为其所有成员使用的对齐参数的最大值</li>
+<li>结构体总长度必须为所有对齐参数的整数倍</li>
 </ul>
-<ul>
-<li>而char a[20] = “abcd”； 此时 “abcd”存放在栈。可以通过指针去访问和修改数组内容。<br>二. 赋值时刻</li>
-</ul>
-<ul>
-<li>char *a = “abcd”; 是在编译时就确定了（因为为常量）。</li>
-</ul>
-<ul>
-<li>而char a[20] = “abcd”； 在运行时确定<br>三. 存取效率</li>
-</ul>
-<ul>
-<li>char *a = “abcd”; 存于静态存储区。在栈上的数组比指针所指向字符串快。因此慢</li>
-</ul>
-<ul>
-<li>而char a[20] = “abcd”； 存于栈上。快<br>另外注意：<br>char a[] = “01234”,虽然没有指明字符串的长度，但是此时系统已经开好了，就是大小为6—–’0’ ‘1’ ‘2’ ‘3’ ‘4’ ‘\0’，(注意strlen(a)是不计‘\0’)，也就是说字符串长度为5，但是字符串占有的空间为6。<br></li>
-</ul>
-<p>看一结构中出现的同样的问题：<br>这样红色部分在调用int函数时会出现“Segment Default”, 因为此时 指针n是静态的，只有“读”的本事，不可以改变。</p>
-<hr>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt; stdio.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Demo_1</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> a;</span><br><span class="line">    <span class="keyword">short</span> b</span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> d;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,<span class="keyword">sizeof</span>(struct Demo_1));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可以看下输出结果是多少？</p>
+<p><img src="https://gitee.com//change1998/blogimag/raw/master/img/l1.png" alt></p>
+<p>为什么是12不是8，这就是内存对齐了。</p>
+<p>可以看一下网上的一道面试题：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt; stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(8)</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">S1</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">short</span> a;</span><br><span class="line">    <span class="keyword">long</span> b;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">S2</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">S1</span> <span class="title">d</span>;</span></span><br><span class="line">    <span class="keyword">double</span> e;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack()</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">S2</span> <span class="title">s2</span>;</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="keyword">sizeof</span>(struct S1));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="keyword">sizeof</span>(struct S2));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="keyword">sizeof</span>(s2));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, (<span class="keyword">int</span>)&amp;(s2.d) - (<span class="keyword">int</span>)&amp;(s2.c));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>分别在vc6.0和linux下的gcc中输出的结果</p>
+<p>vc6.0:</p>
+<p><img src="https://gitee.com//change1998/blogimag/raw/master/img/l2.png" alt></p>
+<p>gcc:</p>
+<p><img src="https://gitee.com//change1998/blogimag/raw/master/img/l3.png" alt></p>
+<p>很奇怪吧，为什么不一样。后来查了下资料，发现在gcc编译器中不允许自定义的字节对齐，只能进行4个字节对齐。</p>
 
       
 	  
@@ -309,7 +278,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://www.91change.club/2019/08/21/6/
+				http://www.91change.club/2020/03/12/linux-4/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -367,11 +336,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">内存对齐</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
         		</li>
       		
 		</ul>
@@ -427,7 +396,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://www.91change.club/2019/08/21/6/" alt="微信分享二维码">
+	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://www.91change.club/2020/03/12/linux-4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -441,18 +410,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/24/8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          2019年计划
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/19/5/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于七牛云图床的使用</div>
+    <a href="/2020/03/06/ex/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">记录人生第一次收获offer的艰辛</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -482,7 +442,7 @@
   
 
   
-  <div id="SOHUCS" sid="6" ></div> 
+  <div id="SOHUCS" sid="linux-4" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
