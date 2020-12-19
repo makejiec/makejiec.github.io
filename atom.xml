@@ -5,9 +5,9 @@
   <subtitle>庐山烟雨浙江潮，未到千般恨不消  及至到来无一事，庐山烟雨浙江潮</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.91change.club/"/>
+  <link href="https://hymnc.gitee.io/"/>
   <updated>2020-03-13T05:51:43.738Z</updated>
-  <id>http://www.91change.club/</id>
+  <id>https://hymnc.gitee.io/</id>
   
   <author>
     <name>长长长长歌丶</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>c语言——内存对齐</title>
-    <link href="http://www.91change.club/2020/03/12/linux-4/"/>
-    <id>http://www.91change.club/2020/03/12/linux-4/</id>
+    <link href="https://hymnc.gitee.io/2020/03/12/linux-4/"/>
+    <id>https://hymnc.gitee.io/2020/03/12/linux-4/</id>
     <published>2020-03-12T06:26:11.000Z</published>
     <updated>2020-03-13T05:51:43.738Z</updated>
     
@@ -33,16 +33,16 @@
     </summary>
     
     
-      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
+      <category term="c语言" scheme="https://hymnc.gitee.io/tags/c%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="内存对齐" scheme="http://www.91change.club/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/"/>
+      <category term="内存对齐" scheme="https://hymnc.gitee.io/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/"/>
     
   </entry>
   
   <entry>
     <title>记录人生第一次收获offer的艰辛</title>
-    <link href="http://www.91change.club/2020/03/06/ex/"/>
-    <id>http://www.91change.club/2020/03/06/ex/</id>
+    <link href="https://hymnc.gitee.io/2020/03/06/ex/"/>
+    <id>https://hymnc.gitee.io/2020/03/06/ex/</id>
     <published>2020-03-06T00:44:01.000Z</published>
     <updated>2020-03-06T05:02:43.147Z</updated>
     
@@ -55,16 +55,16 @@
     </summary>
     
     
-      <category term="面试" scheme="http://www.91change.club/tags/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="https://hymnc.gitee.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
-      <category term="经验" scheme="http://www.91change.club/tags/%E7%BB%8F%E9%AA%8C/"/>
+      <category term="经验" scheme="https://hymnc.gitee.io/tags/%E7%BB%8F%E9%AA%8C/"/>
     
   </entry>
   
   <entry>
     <title>GCC程序编译</title>
-    <link href="http://www.91change.club/2020/02/24/linux-1/"/>
-    <id>http://www.91change.club/2020/02/24/linux-1/</id>
+    <link href="https://hymnc.gitee.io/2020/02/24/linux-1/"/>
+    <id>https://hymnc.gitee.io/2020/02/24/linux-1/</id>
     <published>2020-02-24T09:09:45.000Z</published>
     <updated>2020-03-13T02:31:44.428Z</updated>
     
@@ -77,20 +77,20 @@
     </summary>
     
     
-      <category term="Gcc" scheme="http://www.91change.club/tags/Gcc/"/>
+      <category term="Linux" scheme="https://hymnc.gitee.io/tags/Linux/"/>
     
-      <category term="Linux" scheme="http://www.91change.club/tags/Linux/"/>
+      <category term="Gcc" scheme="https://hymnc.gitee.io/tags/Gcc/"/>
     
   </entry>
   
   <entry>
     <title>51单片机</title>
-    <link href="http://www.91change.club/2019/12/30/c51-2/"/>
-    <id>http://www.91change.club/2019/12/30/c51-2/</id>
+    <link href="https://hymnc.gitee.io/2019/12/30/c51-2/"/>
+    <id>https://hymnc.gitee.io/2019/12/30/c51-2/</id>
     <published>2019-12-30T05:53:17.000Z</published>
     <updated>2020-02-24T09:16:05.904Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="51单片机学习之路-2"><a href="#51单片机学习之路-2" class="headerlink" title="51单片机学习之路(2)"></a>51单片机学习之路(2)</h2><meta name="referrer" content="never">每天学习一点单片机，先从51开始，边听郭天祥的视频，边看是自学发现还可以。<a id="more"></a><h3 id="由于图片可能显示不出来看博客https-blog-csdn-net-makejiec-article-details-103774296"><a href="#由于图片可能显示不出来看博客https-blog-csdn-net-makejiec-article-details-103774296" class="headerlink" title="由于图片可能显示不出来看博客https://blog.csdn.net/makejiec/article/details/103774296"></a>由于图片可能显示不出来看博客<a href="https://blog.csdn.net/makejiec/article/details/103774296" target="_blank" rel="noopener">https://blog.csdn.net/makejiec/article/details/103774296</a></h3><p>昨天，只是熟悉下c51编程的基础，像我学了好几年的c语言就只用看看与标准c差别就行了，其实差别不是很大，会c语言的一些简单的语法完全够了。<br>由于没有板子，这里则是基于keil μVision5+Proteus模拟调试的</p><ul><li>首先装好这另两个软件，在前面已经提供了<a href="http://www.91change.club/2019/12/29/c51-1/#more"><font color="red" size="5">链接</font></a> <br><br><a href="https://mp.weixin.qq.com/s/T7A7xFRKTglRHZVKLtm4EA" target="_blank" rel="noopener"><font color="green" size="5">keil μVision5an安装教程</font></a>　　　　　<a href="https://mp.weixin.qq.com/s/3C_NZw7CJ_7SmAqtBIOv9Q" target="_blank" rel="noopener"><font color="green" size="5">Proteus安装教程</font></a><br><br><font color="red" size="4">这里Proteus在后面画图是总是出现闪退</font></li><li><strong>解决方法</strong>：<br><br>找到下面的文件 将他们全部复制到</li></ul><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7l6pvuo8j30qr0dgjz1.jpg" alt="c1"></p><p> 将他们全部复制到<font color="red" size="5">C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\MODELS</font>下</p><p><img src="https://tvax3.sinaimg.cn/large/006p97Wqgy1gc7l98kix4j30s50fs7er.jpg" alt="c2"></p><p>替换已存在的文件，闪退就可以解决来了。<br></p><ul><li>安装完成<br></li></ul><p><img src="https://tva4.sinaimg.cn/large/006p97Wqgy1gc7la1g7f7j308c04ft90.jpg" alt="c3"></p><h4 id="下面就开始写第一个单片机程序"><a href="#下面就开始写第一个单片机程序" class="headerlink" title="下面就开始写第一个单片机程序"></a>下面就开始写第一个单片机程序</h4><ul><li><h3>新建工程</h3></li></ul><p><img src="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7laeudpzj30o909t41i.jpg" alt="c4"></p><p><img src="https://tvax1.sinaimg.cn/large/006p97Wqgy1gc7lau1hjij30lq0gbn2g.jpg" alt="c5"></p><ul><li><h3>新建一个文件，并把它添加到工程中</h3>Ctrl+N新建一个文件，并且保存为.c的后缀</li></ul><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lb4qw1sj30l00fj0ws.jpg" alt="c6"></p><p>选择刚才创建的test.c文件</p><p><img src="https://tvax2.sinaimg.cn/large/006p97Wqgy1gc7lbpbyl9j30jo0e8wik.jpg" alt="c7"></p><ul><li><h3> 可以写代码了 </h3></li></ul><p><img src="https://tva4.sinaimg.cn/large/006p97Wqgy1gc7lc1jinpj30vh0imjy2.jpg" alt="c8"></p><br><br>**我这里的代码是控制6个数码管的循环点亮**- <h3>使用Proteus仿真画电路图</h3><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lcjyxwhj311o0kltno.jpg" alt="c9"></p><p><img src="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7lcvkl5qj30m40hltax.jpg" alt="c10"></p><br><br>**接着一路点击Next到finish**<p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7ld5mb4tj316x0q7wty.jpg" alt="c11"></p><ul><li><h3>画出你的电路图</h3></li></ul><p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7ldi1uuwj30x20k0wtj.jpg" alt="c12"></p><ul><li><h3>将代码编译生成十六进制文件导入原理图中</h3></li></ul><p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7ldqvor6j30vr0nc47h.jpg" alt="c13"></p><p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7le757fpj31360kv1d3.jpg" alt="c14"></p><ul><li><h3>运行效果</h3></li></ul><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p><h1 id="上述代码如下："><a href="#上述代码如下：" class="headerlink" title="上述代码如下："></a>上述代码如下：</h1><pre><code>#include&lt;red52.h&gt;#define uint unsigned int #define uchar unsigned char sbit wei = P2^7;    //位选sbit duan = P2^6;   //段选uchar code table[]={0x3f, 0x06, 0x5b, 0x4f,                   /*0*/ /*1*/ /*2*/ /*3*/                    0x66, 0x6d, 0x7d, 0x07,                   /*4*/ /*5*/ /*6*/ /*7*/                    0x7f, 0x6f, 0x77, 0x7c,                   /*8*/ /*9*/ /*A*/ /*b*/                    0x39, 0x5e, 0x79, 0x71                   /*C*/ /*d*/ /*E*/ /*F*/};  //字符0~f table表uchar num;uchar i;void delay(uint z);int main(void){    uchar count = 0;    uchar flag = 0x01;      while(1)    {        wei = 1;        P0 = ~flag;        wei = 0;         for(num = 0; num &lt; 16; num++)        {            duan = 1;            P0 = table[num];            duan = 0;            delay(100);        }        flag = flag &lt;&lt; 1;        count++;        if(count &gt;= 6)        {            flag = 0x01;            count = 0;        }    }}void delay(uint z)  //延迟{    uint x, y;    for(x=z; x&gt;0; x--)        for(y=110; y&gt;0; y--);}</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="51单片机学习之路-2"><a href="#51单片机学习之路-2" class="headerlink" title="51单片机学习之路(2)"></a>51单片机学习之路(2)</h2><meta name="referrer" content="never">每天学习一点单片机，先从51开始，边听郭天祥的视频，边看是自学发现还可以。<a id="more"></a><h3 id="由于图片可能显示不出来看博客https-blog-csdn-net-makejiec-article-details-103774296"><a href="#由于图片可能显示不出来看博客https-blog-csdn-net-makejiec-article-details-103774296" class="headerlink" title="由于图片可能显示不出来看博客https://blog.csdn.net/makejiec/article/details/103774296"></a>由于图片可能显示不出来看博客<a href="https://blog.csdn.net/makejiec/article/details/103774296" target="_blank" rel="noopener">https://blog.csdn.net/makejiec/article/details/103774296</a></h3><p>昨天，只是熟悉下c51编程的基础，像我学了好几年的c语言就只用看看与标准c差别就行了，其实差别不是很大，会c语言的一些简单的语法完全够了。<br>由于没有板子，这里则是基于keil μVision5+Proteus模拟调试的</p><ul><li>首先装好这另两个软件，在前面已经提供了<a href="http://www.91change.club/2019/12/29/c51-1/#more" target="_blank" rel="noopener"><font color="red" size="5">链接</font></a> <br><br><a href="https://mp.weixin.qq.com/s/T7A7xFRKTglRHZVKLtm4EA" target="_blank" rel="noopener"><font color="green" size="5">keil μVision5an安装教程</font></a>　　　　　<a href="https://mp.weixin.qq.com/s/3C_NZw7CJ_7SmAqtBIOv9Q" target="_blank" rel="noopener"><font color="green" size="5">Proteus安装教程</font></a><br><br><font color="red" size="4">这里Proteus在后面画图是总是出现闪退</font></li><li><strong>解决方法</strong>：<br><br>找到下面的文件 将他们全部复制到</li></ul><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7l6pvuo8j30qr0dgjz1.jpg" alt="c1"></p><p> 将他们全部复制到<font color="red" size="5">C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\MODELS</font>下</p><p><img src="https://tvax3.sinaimg.cn/large/006p97Wqgy1gc7l98kix4j30s50fs7er.jpg" alt="c2"></p><p>替换已存在的文件，闪退就可以解决来了。<br></p><ul><li>安装完成<br></li></ul><p><img src="https://tva4.sinaimg.cn/large/006p97Wqgy1gc7la1g7f7j308c04ft90.jpg" alt="c3"></p><h4 id="下面就开始写第一个单片机程序"><a href="#下面就开始写第一个单片机程序" class="headerlink" title="下面就开始写第一个单片机程序"></a>下面就开始写第一个单片机程序</h4><ul><li><h3>新建工程</h3></li></ul><p><img src="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7laeudpzj30o909t41i.jpg" alt="c4"></p><p><img src="https://tvax1.sinaimg.cn/large/006p97Wqgy1gc7lau1hjij30lq0gbn2g.jpg" alt="c5"></p><ul><li><h3>新建一个文件，并把它添加到工程中</h3>Ctrl+N新建一个文件，并且保存为.c的后缀</li></ul><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lb4qw1sj30l00fj0ws.jpg" alt="c6"></p><p>选择刚才创建的test.c文件</p><p><img src="https://tvax2.sinaimg.cn/large/006p97Wqgy1gc7lbpbyl9j30jo0e8wik.jpg" alt="c7"></p><ul><li><h3> 可以写代码了 </h3></li></ul><p><img src="https://tva4.sinaimg.cn/large/006p97Wqgy1gc7lc1jinpj30vh0imjy2.jpg" alt="c8"></p><br><br>**我这里的代码是控制6个数码管的循环点亮**- <h3>使用Proteus仿真画电路图</h3><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lcjyxwhj311o0kltno.jpg" alt="c9"></p><p><img src="https://tvax4.sinaimg.cn/large/006p97Wqgy1gc7lcvkl5qj30m40hltax.jpg" alt="c10"></p><br><br>**接着一路点击Next到finish**<p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7ld5mb4tj316x0q7wty.jpg" alt="c11"></p><ul><li><h3>画出你的电路图</h3></li></ul><p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7ldi1uuwj30x20k0wtj.jpg" alt="c12"></p><ul><li><h3>将代码编译生成十六进制文件导入原理图中</h3></li></ul><p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7ldqvor6j30vr0nc47h.jpg" alt="c13"></p><p><img src="https://tva2.sinaimg.cn/large/006p97Wqgy1gc7le757fpj31360kv1d3.jpg" alt="c14"></p><ul><li><h3>运行效果</h3></li></ul><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p><h1 id="上述代码如下："><a href="#上述代码如下：" class="headerlink" title="上述代码如下："></a>上述代码如下：</h1><pre><code>#include&lt;red52.h&gt;#define uint unsigned int #define uchar unsigned char sbit wei = P2^7;    //位选sbit duan = P2^6;   //段选uchar code table[]={0x3f, 0x06, 0x5b, 0x4f,                   /*0*/ /*1*/ /*2*/ /*3*/                    0x66, 0x6d, 0x7d, 0x07,                   /*4*/ /*5*/ /*6*/ /*7*/                    0x7f, 0x6f, 0x77, 0x7c,                   /*8*/ /*9*/ /*A*/ /*b*/                    0x39, 0x5e, 0x79, 0x71                   /*C*/ /*d*/ /*E*/ /*F*/};  //字符0~f table表uchar num;uchar i;void delay(uint z);int main(void){    uchar count = 0;    uchar flag = 0x01;      while(1)    {        wei = 1;        P0 = ~flag;        wei = 0;         for(num = 0; num &lt; 16; num++)        {            duan = 1;            P0 = table[num];            duan = 0;            delay(100);        }        flag = flag &lt;&lt; 1;        count++;        if(count &gt;= 6)        {            flag = 0x01;            count = 0;        }    }}void delay(uint z)  //延迟{    uint x, y;    for(x=z; x&gt;0; x--)        for(y=110; y&gt;0; y--);}</code></pre>]]></content>
     
     <summary type="html">
     
@@ -100,16 +100,16 @@
     </summary>
     
     
-      <category term="51单片机" scheme="http://www.91change.club/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+      <category term="51单片机" scheme="https://hymnc.gitee.io/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
-      <category term="嵌入式" scheme="http://www.91change.club/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+      <category term="嵌入式" scheme="https://hymnc.gitee.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>重新学习51单片机</title>
-    <link href="http://www.91change.club/2019/12/29/c51-1/"/>
-    <id>http://www.91change.club/2019/12/29/c51-1/</id>
+    <link href="https://hymnc.gitee.io/2019/12/29/c51-1/"/>
+    <id>https://hymnc.gitee.io/2019/12/29/c51-1/</id>
     <published>2019-12-29T07:08:53.000Z</published>
     <updated>2020-02-24T09:00:57.363Z</updated>
     
@@ -124,20 +124,20 @@
     </summary>
     
     
-      <category term="51单片机" scheme="http://www.91change.club/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+      <category term="51单片机" scheme="https://hymnc.gitee.io/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
-      <category term="嵌入式" scheme="http://www.91change.club/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+      <category term="嵌入式" scheme="https://hymnc.gitee.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>KMP算法</title>
-    <link href="http://www.91change.club/2019/11/21/13/"/>
-    <id>http://www.91change.club/2019/11/21/13/</id>
+    <link href="https://hymnc.gitee.io/2019/11/21/13/"/>
+    <id>https://hymnc.gitee.io/2019/11/21/13/</id>
     <published>2019-11-21T15:22:16.000Z</published>
-    <updated>2020-02-24T09:12:18.696Z</updated>
+    <updated>2020-12-07T14:18:37.870Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="模式匹配算法——KMP"><a href="#模式匹配算法——KMP" class="headerlink" title="模式匹配算法——KMP"></a>模式匹配算法——KMP</h2><meta name="referrer" content="no-referrer"><p>今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番</p><a id="more"></a><p>不解释直接上代码：<br></p><pre><code>/*KMP算法*/#include&lt;stdio.h&gt;#include&lt;string.h&gt;void get_next(char *T,int *next);int Index_KMP(char *S, char *T, int pos);int pos = 0;int next[10];      //next数组char T[10] = &quot;abc&quot;;char S[20] = &quot;ccccccdabcefg&quot;;int main(void){    //char S[LEN_1_SIZE];   // T[LEN_2_SIZE];    int x;    /*printf(&quot;输入主串长度：&quot;);        scanf(&quot;%d&quot;,&amp;n);    printf(&quot;输入主串：&quot;);    fgets(S, n, stdin);        printf(&quot;输入模式串长度：&quot;);    scanf(&quot;%d&quot;,&amp;m);    printf(&quot;输入模式串：&quot;);    fgets(T, m, stdin);*/    get_next(T, next);    x = Index_KMP(S, T, pos);    if(x != 0)    {        printf(&quot;在主串第%d处\n&quot;, x);    }    else    {        printf(&quot;failed\n&quot;);    }}/*获取next数组*/void get_next(char *T,int *next){    int i = 1, j = 0;    next[0]=next[1] = 0;    while(i &lt; (int)strlen(T))    {        if(j == 0|| T[i] == T[j])            {            next[++i] = ++j;        }        else            j = next[j];    }}int Index_KMP(char *S, char *T, int pos){    int j = 1, i = pos;    while(i &lt;= (int)strlen(S) &amp;&amp; j &lt;= (int)strlen(T))    {        if(j == 0 || S[i] == T[j - 1])        {            ++i;            ++j;            }        else            j = next[j];    }    if(j &gt; (int)strlen(T))         return i - strlen(T) + 1;    else        return 0;}</code></pre><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="模式匹配算法——KMP"><a href="#模式匹配算法——KMP" class="headerlink" title="模式匹配算法——KMP"></a>模式匹配算法——KMP</h2><meta name="referrer" content="no-referrer"><p>今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番</p><a id="more"></a><p>不解释直接上代码：<br></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">KMP算法</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_next</span><span class="params">(<span class="keyword">char</span> *T,<span class="keyword">int</span> *next)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index_KMP</span><span class="params">(<span class="keyword">char</span> *S, <span class="keyword">char</span> *T, <span class="keyword">int</span> pos)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> pos = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> next[<span class="number">10</span>];      <span class="comment">//next数组</span></span><br><span class="line"><span class="keyword">char</span> T[<span class="number">10</span>] = <span class="string">"abc"</span>;</span><br><span class="line"><span class="keyword">char</span> S[<span class="number">20</span>] = <span class="string">"ccccccdabcefg"</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//char S[LEN_1_SIZE];   // T[LEN_2_SIZE];</span></span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*printf("输入主串长度：");</span></span><br><span class="line"><span class="comment">    scanf("%d",&amp;n);</span></span><br><span class="line"><span class="comment">    printf("输入主串：");</span></span><br><span class="line"><span class="comment">    fgets(S, n, stdin);</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    printf("输入模式串长度：");</span></span><br><span class="line"><span class="comment">    scanf("%d",&amp;m);</span></span><br><span class="line"><span class="comment">    printf("输入模式串：");</span></span><br><span class="line"><span class="comment">    fgets(T, m, stdin);*/</span></span><br><span class="line"></span><br><span class="line">    get_next(T, next);</span><br><span class="line">    x = Index_KMP(S, T, pos);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(x != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"在主串第%d处\n"</span>, x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"failed\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">获取next数组</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_next</span><span class="params">(<span class="keyword">char</span> *T,<span class="keyword">int</span> *next)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>;</span><br><span class="line">    next[<span class="number">0</span>]=next[<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i &lt; (<span class="keyword">int</span>)<span class="built_in">strlen</span>(T))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j == <span class="number">0</span>|| T[i] == T[j])</span><br><span class="line">        &#123;</span><br><span class="line">            next[++i] = ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            j = next[j];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index_KMP</span><span class="params">(<span class="keyword">char</span> *S, <span class="keyword">char</span> *T, <span class="keyword">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> j = <span class="number">1</span>, i = pos;</span><br><span class="line">    <span class="keyword">while</span>(i &lt;= (<span class="keyword">int</span>)<span class="built_in">strlen</span>(S) &amp;&amp; j &lt;= (<span class="keyword">int</span>)<span class="built_in">strlen</span>(T))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j == <span class="number">0</span> || S[i] == T[j - <span class="number">1</span>])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            j = next[j];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(j &gt; (<span class="keyword">int</span>)<span class="built_in">strlen</span>(T)) </span><br><span class="line">        <span class="keyword">return</span> i - <span class="built_in">strlen</span>(T) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p>]]></content>
     
     <summary type="html">
     
@@ -148,22 +148,22 @@
     </summary>
     
     
-      <category term="算法" scheme="http://www.91change.club/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://hymnc.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="http://www.91change.club/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="https://hymnc.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="模式匹配" scheme="http://www.91change.club/tags/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
+      <category term="模式匹配" scheme="https://hymnc.gitee.io/tags/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
     
   </entry>
   
   <entry>
     <title>经典排序算法</title>
-    <link href="http://www.91change.club/2019/11/20/12/"/>
-    <id>http://www.91change.club/2019/11/20/12/</id>
+    <link href="https://hymnc.gitee.io/2019/11/20/12/"/>
+    <id>https://hymnc.gitee.io/2019/11/20/12/</id>
     <published>2019-11-20T14:33:55.000Z</published>
-    <updated>2020-02-28T09:16:31.847Z</updated>
+    <updated>2020-12-07T14:06:50.364Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer"><a id="more"></a><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><pre><code>/*冒泡排序思想：从无序序列头部开始，进行两两比较，根据大小交换位置，直到最后将最大（小）的数据元素交换到了无序队列的队尾，从而成为有序序列的一部分；下一次继续这个过程，直到所有数据元素都排好序。算法的核心在于每次通过两两比较交换位置，选出剩余无序序列里最大（小）的数据元素放到队尾。冒泡排序的平均时间复杂度为O(n^2)    */#include&lt;stdio.h&gt;#define num 6int main(void){    int i,j,n;    int flag;    int a[num];    for(i = 0; i &lt; num; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    for(i = 1; i &lt; num; i++)    {        flag = 0;        for(j = 0; j &lt; num - i; j++)        {            if(a[j] &gt; a[j+1])            {                a[j] = a[j] + a[j+1];                a[j+1] = a[j] - a[j+1];                a[j] = a[j] - a[j+1];                flag = 1;            }        }         if(!flag) break;    }    for(i = 0; i &lt; num; i++)        printf(&quot;%d &quot;,a[i]);    printf(&quot;\n&quot;);}</code></pre><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><pre><code>/*归并排序*/#include&lt;stdio.h&gt;#include&lt;stdlib.h&gt;#define NUM 20typedef int ElemType;void MergeSort(ElemType s[], int low, int hight);void Merge(ElemType s[], int low, int mid, int hight);int Buff[20] = {0};int n;int main(void){    int a[NUM], low, hight, i, n;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    low = 0;    hight = n-1;    MergeSort(a, low, hight);    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}void MergeSort(ElemType s[], int low, int hight){    if(low &lt; hight){        int mid = (low + hight) / 2;        MergeSort(s, low, mid);        MergeSort(s, mid+1, hight);        Merge(s, low, mid, hight);    }}void Merge(ElemType s[], int low, int mid, int hight){    int flag, i ,j;    for(flag = low; flag &lt;= hight; flag++)        Buff[flag] = s[flag];    for(i = low, j = mid + 1, flag = i; i &lt;= mid &amp;&amp; j &lt;= hight; flag++)    {        if(Buff[i] &lt;= Buff[j])            s[flag] = Buff[i++];        else            s[flag] = Buff[j++];        //s[flag] = Buff[i] &lt;= Buff[j] ? Buff[i++] : Buff[j++];    }    if(i &lt;= mid)         s[flag++] = Buff[i++];    if(j &lt;= hight)        s[flag++] = Buff[j++];}</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer"><a id="more"></a><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">冒泡排序思想：从无序序列头部开始，进行两两比较，根据大小交换位置，直到最后将最大（小）的数据元素交换到了无序队列的队尾，从而成为有序序列的一部分；下一次继续这个过程，直到所有数据元素都排好序。</span></span><br><span class="line"><span class="comment">算法的核心在于每次通过两两比较交换位置，选出剩余无序序列里最大（小）的数据元素放到队尾。冒泡排序的平均时间复杂度为O(n^2)</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> num 6</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j,n;</span><br><span class="line">    <span class="keyword">int</span> flag;</span><br><span class="line">    <span class="keyword">int</span> a[num];</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; num; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">1</span>; i &lt; num; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>; j &lt; num - i; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j] &gt; a[j+<span class="number">1</span>])</span><br><span class="line">            &#123;</span><br><span class="line">                a[j] = a[j] + a[j+<span class="number">1</span>];</span><br><span class="line">                a[j+<span class="number">1</span>] = a[j] - a[j+<span class="number">1</span>];</span><br><span class="line">                a[j] = a[j] - a[j+<span class="number">1</span>];</span><br><span class="line">                flag = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">         <span class="keyword">if</span>(!flag) <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; num; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">归并排序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NUM 20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeSort</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Merge</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> mid, <span class="keyword">int</span> hight)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> Buff[<span class="number">20</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[NUM], low, hight, i, n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入要排序的个数（小于20）："</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    low = <span class="number">0</span>;</span><br><span class="line">    hight = n<span class="number">-1</span>;</span><br><span class="line"></span><br><span class="line">    MergeSort(a, low, hight);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeSort</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low &lt; hight)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = (low + hight) / <span class="number">2</span>;</span><br><span class="line">        MergeSort(s, low, mid);</span><br><span class="line">        MergeSort(s, mid+<span class="number">1</span>, hight);</span><br><span class="line">        Merge(s, low, mid, hight);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Merge</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> mid, <span class="keyword">int</span> hight)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> flag, i ,j;</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">for</span>(flag = low; flag &lt;= hight; flag++)</span><br><span class="line">        Buff[flag] = s[flag];</span><br><span class="line">    <span class="keyword">for</span>(i = low, j = mid + <span class="number">1</span>, flag = i; i &lt;= mid &amp;&amp; j &lt;= hight; flag++)</span><br><span class="line">    &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(Buff[i] &lt;= Buff[j])</span><br><span class="line">            s[flag] = Buff[i++];</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            s[flag] = Buff[j++];</span><br><span class="line">            </span><br><span class="line">        <span class="comment">//s[flag] = Buff[i] &lt;= Buff[j] ? Buff[i++] : Buff[j++];</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(i &lt;= mid) </span><br><span class="line">        s[flag++] = Buff[i++];</span><br><span class="line">    <span class="keyword">if</span>(j &lt;= hight)</span><br><span class="line">        s[flag++] = Buff[j++];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -172,20 +172,20 @@
     </summary>
     
     
-      <category term="算法" scheme="http://www.91change.club/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://hymnc.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="http://www.91change.club/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://hymnc.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>经典排序算法</title>
-    <link href="http://www.91change.club/2019/11/20/11/"/>
-    <id>http://www.91change.club/2019/11/20/11/</id>
+    <link href="https://hymnc.gitee.io/2019/11/20/11/"/>
+    <id>https://hymnc.gitee.io/2019/11/20/11/</id>
     <published>2019-11-20T13:11:03.000Z</published>
-    <updated>2020-02-24T08:42:12.858Z</updated>
+    <updated>2020-12-07T14:42:07.696Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer">通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。<a id="more"></a><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>废话不多说上代码：<br></p><pre><code>/*选择排序*/#include&lt;stdio.h&gt;#define NUM 20int main(void){    int a[NUM], i, j, n;    int min;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)       {        scanf(&quot;%d&quot;, &amp;a[i]);    }    for(i = 0; i &lt; n-1; i++)   {        min = i;        for(j = i + 1; j &lt; n; j++)            min = a[j] &lt; a[min] ? j : min;        if(min != i)        {            a[i] ^= a[min];            a[min] ^= a[i];            a[i] ^= a[min];        }    }    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}</code></pre><h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><pre><code>/*快速排序*/#include&lt;stdio.h&gt;#define NUM 20typedef int ElemType;void QuickSort(ElemType s[], int low, int hight);int Partition(ElemType s[], int low, int hight);int main(void)`{    int a[NUM], low, hight, i, n;    printf(&quot;请输入要排序的个数（小于20）：&quot;);    scanf(&quot;%d&quot;, &amp;n);    for(i = 0; i &lt; n; i++)    {        scanf(&quot;%d&quot;, &amp;a[i]);    }    low = 0;    hight = n-1;    QuickSort(a, low, hight);    for(i = 0; i &lt; n; i++)    {        printf(&quot;%d &quot;, a[i]);    }    printf(&quot;\n&quot;);}void QuickSort(ElemType s[], int low, int hight){    if(low &lt; hight)    {        int piv = Partition(s, low, hight);        QuickSort(s, low, piv - 1);        QuickSort(s, piv+1, hight);    }}int Partition(ElemType s[], int low, int hight){    int pi = s[low];    while(low &lt; hight)    {        while(low &lt; hight &amp;&amp; s[hight] &gt;= pi)            --hight;        s[low] = s[hight];        while(low &lt; hight &amp;&amp; s[low] &lt;= pi)            ++low;        s[hight] = s[low];    }    s[low] = pi;    return low;}</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><meta name="referrer" content="no-referrer">通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。<a id="more"></a><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>废话不多说上代码：<br></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">选择排序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NUM 20</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[NUM], i, j, n;</span><br><span class="line">    <span class="keyword">int</span> min;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入要排序的个数（小于20）："</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++)</span><br><span class="line">   &#123;</span><br><span class="line">        min = i;</span><br><span class="line">        <span class="keyword">for</span>(j = i + <span class="number">1</span>; j &lt; n; j++)</span><br><span class="line">            min = a[j] &lt; a[min] ? j : min;</span><br><span class="line">        <span class="keyword">if</span>(min != i)</span><br><span class="line">        &#123;</span><br><span class="line">            a[i] ^= a[min];</span><br><span class="line">            a[min] ^= a[i];</span><br><span class="line">            a[i] ^= a[min];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">快速排序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NUM 20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span>;</span><br><span class="line"></span><br><span class="line">int main(void)`</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> a[NUM], low, hight, i, n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入要排序的个数（小于20）："</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    low = <span class="number">0</span>;</span><br><span class="line">    hight = n<span class="number">-1</span>;</span><br><span class="line"></span><br><span class="line">    QuickSort(a, low, hight);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low &lt; hight)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> piv = Partition(s, low, hight);</span><br><span class="line">        QuickSort(s, low, piv - <span class="number">1</span>);</span><br><span class="line">        QuickSort(s, piv+<span class="number">1</span>, hight);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pi = s[low];</span><br><span class="line">    <span class="keyword">while</span>(low &lt; hight)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(low &lt; hight &amp;&amp; s[hight] &gt;= pi)</span><br><span class="line">            --hight;</span><br><span class="line">        s[low] = s[hight];</span><br><span class="line">        <span class="keyword">while</span>(low &lt; hight &amp;&amp; s[low] &lt;= pi)</span><br><span class="line">            ++low;</span><br><span class="line">        s[hight] = s[low];</span><br><span class="line">    &#125;</span><br><span class="line">    s[low] = pi;</span><br><span class="line">    <span class="keyword">return</span> low;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -195,16 +195,16 @@
     </summary>
     
     
-      <category term="算法" scheme="http://www.91change.club/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://hymnc.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="http://www.91change.club/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://hymnc.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>中秋节开始堕落了</title>
-    <link href="http://www.91change.club/2019/09/15/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
-    <id>http://www.91change.club/2019/09/15/中秋节/</id>
+    <link href="https://hymnc.gitee.io/2019/09/15/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+    <id>https://hymnc.gitee.io/2019/09/15/中秋节/</id>
     <published>2019-09-15T07:19:13.000Z</published>
     <updated>2020-02-24T08:15:13.688Z</updated>
     
@@ -221,18 +221,18 @@
     </summary>
     
     
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://hymnc.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="https://hymnc.gitee.io/tags/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="中秋节" scheme="http://www.91change.club/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+      <category term="中秋节" scheme="https://hymnc.gitee.io/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
   </entry>
   
   <entry>
     <title>浅谈c指针(二)</title>
-    <link href="http://www.91change.club/2019/08/27/9/"/>
-    <id>http://www.91change.club/2019/08/27/9/</id>
+    <link href="https://hymnc.gitee.io/2019/08/27/9/"/>
+    <id>https://hymnc.gitee.io/2019/08/27/9/</id>
     <published>2019-08-27T08:33:00.000Z</published>
     <updated>2019-08-27T15:59:42.159Z</updated>
     
@@ -245,22 +245,22 @@
     </summary>
     
     
-      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
+      <category term="指针" scheme="https://hymnc.gitee.io/tags/%E6%8C%87%E9%92%88/"/>
     
-      <category term="c语言" scheme="http://www.91change.club/tags/c%E8%AF%AD%E8%A8%80/"/>
+      <category term="c语言" scheme="https://hymnc.gitee.io/tags/c%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="const用法" scheme="http://www.91change.club/tags/const%E7%94%A8%E6%B3%95/"/>
+      <category term="const用法" scheme="https://hymnc.gitee.io/tags/const%E7%94%A8%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>2019年计划</title>
-    <link href="http://www.91change.club/2019/08/24/8/"/>
-    <id>http://www.91change.club/2019/08/24/8/</id>
+    <link href="https://hymnc.gitee.io/2019/08/24/8/"/>
+    <id>https://hymnc.gitee.io/2019/08/24/8/</id>
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2020-02-24T08:36:24.297Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19SLz+Isp8lPlrfaa1oPqQFQU8sNV4M8GyJXg7JtvhVRP85+4votAYJ1fHy1VIONtM+vDJXvMKPP3bU8hxyV0D9ftcyAtpyrdd63hvVPCVWJBz4g0LAlIZlvHzj35P/zgOrMYT5wbZK3zn1EJhPxe+IN/rccWo3DUFZcAhsSqdQeR+Okf16i5+wxTxKuGoM+hU4Ud2g4+B4jzAHPZYMwY7gWRCYmAk7LS10Nq72IYu3nkwgdH0TfPfJnNAe26C2gVZRhIYlkZrC+WRayT1+5gjx4qeJG6UjVnasdiM2NKuySnd+HZuXHshCwclUk3lkB61buZx6Ty6nYClWiBxR+6GBS4P5YEjsf9McPTEUzPA/iEGhBK1GFiJVJPAxoSuuG/NLiNcKO18k/GTbb2c8z1Y4LS3HgZDHAqChX9TwebdrazykY011LbbQELblfXILZphklMxPHnbgjnjfS91D1A1qvVPS/zGbyC/hE/3XsZ5BV7sZYSGRIj9/xcsAwemNd/XIo0o4CZDJ8DRWM2ZfNLK1PPBrR83LQaaLXbxL9xEQuZkIFxOPwMjKCfbWJQhk3/FoJYfDD/QAebLx1O21Mld55TX5rbwBdeKQr4Y7a3IAWq1ud+8/egCFB2EfNngXOYyURkyLS29/oBCln47MBsQq8l93tVcHatXlm6BGkM2VZkDviP7mwwedPb694KrsfRdh9Hte2ijSuftFRSWfGCY3Ci0zHztsjhQ/0vVoXYhc1p+wqD+b7gkP73tPr4KJ2FOsE8EL7/iREbggMPq/QF4FWiZ9fRiAMwpXz6kVwj9cSCREYnOBzSv3f22qd/pP6lWgMHK4vCkNenexSe0KdJd3Rc7jCGB1MsjE1iqh/v50P0r28tLAHbf7gSBLbLschucmW/8rFv+GSKN7GXjl3FUaaTHH6BnXRxi+dvdswZaiJ3o2CRv76XlBdN9IKLl+ou5l78sXpsrveG/kadu9QOOoqWdUzqYobx2xDwMwaljeIX6gRsKDKOL7rrCeVjusqFx7Q/H1EQwaa6g12Eqvg2v9CnzaC5EpE8Z/opbAbiKsHV+9C4L/sTFLFprFzdS/gFbTWqsPE9tF80UXv1G1znWG81RIybRAod0XRkYwxISUYE2AomlaYARwhDKxmFv/ubpdfCwowU7ueKUcsb37nEJ/FE+rro1ciuioGod3Bi6nkliNzL/2YBHLI9wABEhQZdQBZPefV7xmukVmHSuV6u6Oz0IlFXwKNgvM/EQANDM6mxATJGePYcbb4EKHbfXGmi2YZwgLaeFAQPgZXaHEvyn4TuFZTtLy1gbOwdcxwv7+NK7lnuXywmjh</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19QXzGqNX6ZimzGl3/7NKFktuhGTrbVZxZtdt26ffSPmadJ7JiM22ZFfvQ/q+YzDsd4rPAzDjw90t8SUZiy9doyCcped2aaB0LQ5lraZ93MahEXEPzPx6KkcdwZOoqxriNjNvJoVUZI6R8odBNULkSNyUoGIHZBevyDncgwCLjo7EcD6TYa1VU8J3gIJpeNbhTmZAMUzYjW7/nj1qUgt7vsP5P8vIiFR1aSnUBM479NofnA2WlSvWHP2MNJljSccuNAh4pXT2osableQz/mH73PwjWOfmVYBihZoOXpXNLcCntkafhrdPx9R4zxxCvH5tiE1hhzBYfnzoC7uv/Vnh6qOL2WiBPuFJXjjj6/D54ScaaFkm5ZcnWbuYk1HoJ13SlSs0GgYu/eCoXI0X+xIbM8RHiuhYsooLipgPqQl7Pna3FP7AipivsYnPYRk3+znZrMy6DAJq9QdMJven54E47TMw4lvyLGtGmU8Vj5/AwPg7UWmH3repiJKyKykwd6VY11Z9SfYEw8yUK67OHaRAtyqHsFe3IdJoPQr2CciHg4vwxpDTuOiJJS/EgbpkFYU3AYXTnR4Yz0bdnMaDfQnrtbItO8tNCFedmTIg0ruBMPKfwz0UOWpwU7/mTMogwE/1oD7CpSUYXrgra2lrChu9n4r6Tru36N2SmCcR7jyyrkiLAUJzkSOn0CkupmitfgEVZ1Ql1b7vhNI5gx5TUc8S+lE1MeXCDQnDO6K0Mh+IRZlPGMKn/QZ2WV9uCOl4I7TB8C+eF996TtddxJf+ebgGgE0fmr+eCm1GqJPXdnEeCVIBKt/VUtXhO23Mu+u4NkQBjcciEY1lEueCN3B9t6OkMNi5e2kYXXQGpWEaz6xd0cXqdaWAcTDmjf3wyOI/3hd9e6j+UAWFzAEq+OXyECnZ08taHFcVXLnjDseXwQIK0nPT59kxa8eraPAOY1Ig1VU4ESCoTAzPwH9iaEl3Gu6v45rFB0ABP5KlLmf2cdIWCj/6tpT30dpj0GA9/9022/7HAm6/Gr5ZdPoZSD/bt54k6nNOJj6G2NlxLjRPUUcRZjC1onTKlmzZwyZu5VQf5A/mdoWazpxFnAd2zLIS4l7gWkpKaIXghGuav3Bx3kXMSnuU0LpH8l8F2F3mKRJrPcQ5oamKqbn7ozQuVKtw7bCc+AnIjgX60aq/iFq6/6OZkxiVDBwqD49nkfx2swqL2MNDM2WEDEHmRKTQJN2Whrg1jphmCOuka6jQ/S2QUo5qBzGaI4/uNXSNjCVCCUmfgYPLgerLOToohOLDyz6u0iDINCv9mWtz5ktpV/nNtzmCybL/ifeY2BxgtD</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -269,14 +269,14 @@
     </summary>
     
     
-      <category term="计划" scheme="http://www.91change.club/tags/%E8%AE%A1%E5%88%92/"/>
+      <category term="计划" scheme="https://hymnc.gitee.io/tags/%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>浅谈c指针(一)</title>
-    <link href="http://www.91change.club/2019/08/21/6/"/>
-    <id>http://www.91change.club/2019/08/21/6/</id>
+    <link href="https://hymnc.gitee.io/2019/08/21/6/"/>
+    <id>https://hymnc.gitee.io/2019/08/21/6/</id>
     <published>2019-08-21T11:46:25.000Z</published>
     <updated>2020-02-24T08:35:33.662Z</updated>
     
@@ -291,16 +291,16 @@
     </summary>
     
     
-      <category term="C语言" scheme="http://www.91change.club/tags/C%E8%AF%AD%E8%A8%80/"/>
+      <category term="C语言" scheme="https://hymnc.gitee.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="指针" scheme="http://www.91change.club/tags/%E6%8C%87%E9%92%88/"/>
+      <category term="指针" scheme="https://hymnc.gitee.io/tags/%E6%8C%87%E9%92%88/"/>
     
   </entry>
   
   <entry>
     <title>关于七牛云图床的使用</title>
-    <link href="http://www.91change.club/2019/08/19/5/"/>
-    <id>http://www.91change.club/2019/08/19/5/</id>
+    <link href="https://hymnc.gitee.io/2019/08/19/5/"/>
+    <id>https://hymnc.gitee.io/2019/08/19/5/</id>
     <published>2019-08-19T11:47:56.000Z</published>
     <updated>2020-02-24T08:33:01.032Z</updated>
     
@@ -315,18 +315,18 @@
     </summary>
     
     
-      <category term="七牛云" scheme="http://www.91change.club/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
+      <category term="七牛云" scheme="https://hymnc.gitee.io/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
     
-      <category term="插件" scheme="http://www.91change.club/tags/%E6%8F%92%E4%BB%B6/"/>
+      <category term="插件" scheme="https://hymnc.gitee.io/tags/%E6%8F%92%E4%BB%B6/"/>
     
-      <category term="PicGo" scheme="http://www.91change.club/tags/PicGo/"/>
+      <category term="PicGo" scheme="https://hymnc.gitee.io/tags/PicGo/"/>
     
   </entry>
   
   <entry>
     <title>yilia主题的一些配置问题</title>
-    <link href="http://www.91change.club/2019/08/17/4/"/>
-    <id>http://www.91change.club/2019/08/17/4/</id>
+    <link href="https://hymnc.gitee.io/2019/08/17/4/"/>
+    <id>https://hymnc.gitee.io/2019/08/17/4/</id>
     <published>2019-08-17T04:02:21.000Z</published>
     <updated>2020-02-24T08:28:28.308Z</updated>
     
@@ -341,16 +341,16 @@
     </summary>
     
     
-      <category term="yilia" scheme="http://www.91change.club/tags/yilia/"/>
+      <category term="yilia" scheme="https://hymnc.gitee.io/tags/yilia/"/>
     
-      <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
+      <category term="hexo" scheme="https://hymnc.gitee.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>考研日常记</title>
-    <link href="http://www.91change.club/2019/08/16/3/"/>
-    <id>http://www.91change.club/2019/08/16/3/</id>
+    <link href="https://hymnc.gitee.io/2019/08/16/3/"/>
+    <id>https://hymnc.gitee.io/2019/08/16/3/</id>
     <published>2019-08-16T14:18:43.000Z</published>
     <updated>2020-02-24T08:26:41.165Z</updated>
     
@@ -365,18 +365,18 @@
     </summary>
     
     
-      <category term="考研" scheme="http://www.91change.club/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://hymnc.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="感悟" scheme="http://www.91change.club/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="https://hymnc.gitee.io/tags/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="Independent" scheme="http://www.91change.club/tags/Independent/"/>
+      <category term="Independent" scheme="https://hymnc.gitee.io/tags/Independent/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客的搭建之旅</title>
-    <link href="http://www.91change.club/2019/08/12/first/"/>
-    <id>http://www.91change.club/2019/08/12/first/</id>
+    <link href="https://hymnc.gitee.io/2019/08/12/first/"/>
+    <id>https://hymnc.gitee.io/2019/08/12/first/</id>
     <published>2019-08-12T13:01:37.000Z</published>
     <updated>2020-02-24T08:25:50.331Z</updated>
     
@@ -391,9 +391,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://www.91change.club/tags/hexo/"/>
+      <category term="hexo" scheme="https://hymnc.gitee.io/tags/hexo/"/>
     
-      <category term="阿里云" scheme="http://www.91change.club/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+      <category term="阿里云" scheme="https://hymnc.gitee.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
   </entry>
   

@@ -7,18 +7,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://www.91change.club">
+  <link rel="dns-prefetch" href="https://hymnc.gitee.io">
   <title>经典排序算法 | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="经典排序算法 通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。">
 <meta name="keywords" content="算法,排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="经典排序算法">
-<meta property="og:url" content="http://www.91change.club/2019/11/20/11/index.html">
+<meta property="og:url" content="https://hymnc.gitee.io/2019/11/20/11/index.html">
 <meta property="og:site_name" content="长歌|91Change">
 <meta property="og:description" content="经典排序算法 通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2020-02-24T08:42:12.858Z">
+<meta property="og:updated_time" content="2020-12-07T14:42:07.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="经典排序算法">
 <meta name="twitter:description" content="经典排序算法 通过一段时间的学习，总结了一些经典的排序算法：选择排序、快速排序、冒泡排序、归并排序。">
@@ -219,109 +219,11 @@
 
 <a id="more"></a>
 <h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>废话不多说上代码：<br></p>
-<pre><code>/*
-选择排序
-*/
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">选择排序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NUM 20</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[NUM], i, j, n;</span><br><span class="line">    <span class="keyword">int</span> min;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入要排序的个数（小于20）："</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++)</span><br><span class="line">   &#123;</span><br><span class="line">        min = i;</span><br><span class="line">        <span class="keyword">for</span>(j = i + <span class="number">1</span>; j &lt; n; j++)</span><br><span class="line">            min = a[j] &lt; a[min] ? j : min;</span><br><span class="line">        <span class="keyword">if</span>(min != i)</span><br><span class="line">        &#123;</span><br><span class="line">            a[i] ^= a[min];</span><br><span class="line">            a[min] ^= a[i];</span><br><span class="line">            a[i] ^= a[min];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-#include&lt;stdio.h&gt;
-
-#define NUM 20
-
-int main(void)
-{
-    int a[NUM], i, j, n;
-    int min;
-    printf(&quot;请输入要排序的个数（小于20）：&quot;);
-    scanf(&quot;%d&quot;, &amp;n);
-    for(i = 0; i &lt; n; i++)
-       {
-        scanf(&quot;%d&quot;, &amp;a[i]);
-    }
-
-    for(i = 0; i &lt; n-1; i++)
-   {
-        min = i;
-        for(j = i + 1; j &lt; n; j++)
-            min = a[j] &lt; a[min] ? j : min;
-        if(min != i)
-        {
-            a[i] ^= a[min];
-            a[min] ^= a[i];
-            a[i] ^= a[min];
-        }
-    }
-
-    for(i = 0; i &lt; n; i++)
-    {
-        printf(&quot;%d &quot;, a[i]);
-    }
-    printf(&quot;\n&quot;);
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">快速排序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NUM 20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span>;</span><br><span class="line"></span><br><span class="line">int main(void)`</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> a[NUM], low, hight, i, n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入要排序的个数（小于20）："</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    low = <span class="number">0</span>;</span><br><span class="line">    hight = n<span class="number">-1</span>;</span><br><span class="line"></span><br><span class="line">    QuickSort(a, low, hight);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low &lt; hight)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> piv = Partition(s, low, hight);</span><br><span class="line">        QuickSort(s, low, piv - <span class="number">1</span>);</span><br><span class="line">        QuickSort(s, piv+<span class="number">1</span>, hight);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span><span class="params">(ElemType s[], <span class="keyword">int</span> low, <span class="keyword">int</span> hight)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pi = s[low];</span><br><span class="line">    <span class="keyword">while</span>(low &lt; hight)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(low &lt; hight &amp;&amp; s[hight] &gt;= pi)</span><br><span class="line">            --hight;</span><br><span class="line">        s[low] = s[hight];</span><br><span class="line">        <span class="keyword">while</span>(low &lt; hight &amp;&amp; s[low] &lt;= pi)</span><br><span class="line">            ++low;</span><br><span class="line">        s[hight] = s[low];</span><br><span class="line">    &#125;</span><br><span class="line">    s[low] = pi;</span><br><span class="line">    <span class="keyword">return</span> low;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-}</code></pre><h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><pre><code>/*
-快速排序
-*/
-
-#include&lt;stdio.h&gt;
-
-#define NUM 20
-
-typedef int ElemType;
-
-void QuickSort(ElemType s[], int low, int hight);
-int Partition(ElemType s[], int low, int hight);
-
-int main(void)`
-{
-    int a[NUM], low, hight, i, n;
-
-    printf(&quot;请输入要排序的个数（小于20）：&quot;);
-    scanf(&quot;%d&quot;, &amp;n);
-
-    for(i = 0; i &lt; n; i++)
-    {
-        scanf(&quot;%d&quot;, &amp;a[i]);
-    }
-
-    low = 0;
-    hight = n-1;
-
-    QuickSort(a, low, hight);
-
-    for(i = 0; i &lt; n; i++)
-    {
-        printf(&quot;%d &quot;, a[i]);
-    }
-
-    printf(&quot;\n&quot;);
-}
-
-void QuickSort(ElemType s[], int low, int hight)
-{
-    if(low &lt; hight)
-    {
-        int piv = Partition(s, low, hight);
-        QuickSort(s, low, piv - 1);
-        QuickSort(s, piv+1, hight);
-    }
-
-}
-
-int Partition(ElemType s[], int low, int hight)
-{
-    int pi = s[low];
-    while(low &lt; hight)
-    {
-        while(low &lt; hight &amp;&amp; s[hight] &gt;= pi)
-            --hight;
-        s[low] = s[hight];
-        while(low &lt; hight &amp;&amp; s[low] &lt;= pi)
-            ++low;
-        s[hight] = s[low];
-    }
-    s[low] = pi;
-    return low;
-}</code></pre>
       
 	  
 	  
@@ -336,7 +238,7 @@ int Partition(ElemType s[], int low, int hight)
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://www.91change.club/2019/11/20/11/
+				https://hymnc.gitee.io/2019/11/20/11/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -454,7 +356,7 @@ int Partition(ElemType s[], int low, int hight)
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://www.91change.club/2019/11/20/11/" alt="微信分享二维码">
+	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://hymnc.gitee.io/2019/11/20/11/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -628,11 +530,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+                <a href="javascript:void(0)" class="js-tag color3">经验</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">字符设备驱动</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -641,18 +551,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">排序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PicGo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -676,6 +574,34 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">PicGo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计划</a>
               </li>
              
@@ -688,18 +614,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">51单片机</a>
               </li>
              
@@ -708,31 +622,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">内存对齐</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Gcc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">经验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">字符设备驱动</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
             
             <div class="clearfix"></div>

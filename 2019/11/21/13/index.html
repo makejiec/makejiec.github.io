@@ -7,19 +7,19 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://www.91change.club">
+  <link rel="dns-prefetch" href="https://hymnc.gitee.io">
   <title>KMP算法 | 长歌|91Change</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="模式匹配算法——KMP  今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番">
 <meta name="keywords" content="算法,数据结构,模式匹配">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KMP算法">
-<meta property="og:url" content="http://www.91change.club/2019/11/21/13/index.html">
+<meta property="og:url" content="https://hymnc.gitee.io/2019/11/21/13/index.html">
 <meta property="og:site_name" content="长歌|91Change">
 <meta property="og:description" content="模式匹配算法——KMP  今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番">
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif">
-<meta property="og:updated_time" content="2020-02-24T09:12:18.696Z">
+<meta property="og:updated_time" content="2020-12-07T14:18:37.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KMP算法">
 <meta name="twitter:description" content="模式匹配算法——KMP  今天在看书数据结构关于模式匹配的算法看到一个改进的算法，想起了之前在力扣上一道算法题就研究了一番">
@@ -222,86 +222,9 @@
 <a id="more"></a>
 
 <p>不解释直接上代码：<br></p>
-<pre><code>/*
-KMP算法
-*/
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">KMP算法</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_next</span><span class="params">(<span class="keyword">char</span> *T,<span class="keyword">int</span> *next)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index_KMP</span><span class="params">(<span class="keyword">char</span> *S, <span class="keyword">char</span> *T, <span class="keyword">int</span> pos)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> pos = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> next[<span class="number">10</span>];      <span class="comment">//next数组</span></span><br><span class="line"><span class="keyword">char</span> T[<span class="number">10</span>] = <span class="string">"abc"</span>;</span><br><span class="line"><span class="keyword">char</span> S[<span class="number">20</span>] = <span class="string">"ccccccdabcefg"</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//char S[LEN_1_SIZE];   // T[LEN_2_SIZE];</span></span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">	</span><br><span class="line">    <span class="comment">/*printf("输入主串长度：");</span></span><br><span class="line"><span class="comment">	    scanf("%d",&amp;n);</span></span><br><span class="line"><span class="comment">    printf("输入主串：");</span></span><br><span class="line"><span class="comment">    fgets(S, n, stdin);</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">	    printf("输入模式串长度：");</span></span><br><span class="line"><span class="comment">    scanf("%d",&amp;m);</span></span><br><span class="line"><span class="comment">    printf("输入模式串：");</span></span><br><span class="line"><span class="comment">    fgets(T, m, stdin);*/</span></span><br><span class="line"></span><br><span class="line">    get_next(T, next);</span><br><span class="line">    x = Index_KMP(S, T, pos);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(x != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"在主串第%d处\n"</span>, x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"failed\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">获取next数组</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_next</span><span class="params">(<span class="keyword">char</span> *T,<span class="keyword">int</span> *next)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>;</span><br><span class="line">    next[<span class="number">0</span>]=next[<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i &lt; (<span class="keyword">int</span>)<span class="built_in">strlen</span>(T))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j == <span class="number">0</span>|| T[i] == T[j])</span><br><span class="line">	        &#123;</span><br><span class="line">            next[++i] = ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            j = next[j];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index_KMP</span><span class="params">(<span class="keyword">char</span> *S, <span class="keyword">char</span> *T, <span class="keyword">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> j = <span class="number">1</span>, i = pos;</span><br><span class="line">    <span class="keyword">while</span>(i &lt;= (<span class="keyword">int</span>)<span class="built_in">strlen</span>(S) &amp;&amp; j &lt;= (<span class="keyword">int</span>)<span class="built_in">strlen</span>(T))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j == <span class="number">0</span> || S[i] == T[j - <span class="number">1</span>])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">	        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            j = next[j];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(j &gt; (<span class="keyword">int</span>)<span class="built_in">strlen</span>(T)) </span><br><span class="line">        <span class="keyword">return</span> i - <span class="built_in">strlen</span>(T) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-#include&lt;stdio.h&gt;
-#include&lt;string.h&gt;
-
-void get_next(char *T,int *next);
-int Index_KMP(char *S, char *T, int pos);
-
-int pos = 0;
-int next[10];      //next数组
-char T[10] = &quot;abc&quot;;
-char S[20] = &quot;ccccccdabcefg&quot;;
-
-int main(void)
-{
-    //char S[LEN_1_SIZE];   // T[LEN_2_SIZE];
-    int x;
-
-    /*printf(&quot;输入主串长度：&quot;);
-        scanf(&quot;%d&quot;,&amp;n);
-    printf(&quot;输入主串：&quot;);
-    fgets(S, n, stdin);
-
-        printf(&quot;输入模式串长度：&quot;);
-    scanf(&quot;%d&quot;,&amp;m);
-    printf(&quot;输入模式串：&quot;);
-    fgets(T, m, stdin);*/
-
-    get_next(T, next);
-    x = Index_KMP(S, T, pos);
-
-    if(x != 0)
-    {
-        printf(&quot;在主串第%d处\n&quot;, x);
-    }
-    else
-    {
-        printf(&quot;failed\n&quot;);
-    }
-}
-
-/*
-获取next数组
-*/
-void get_next(char *T,int *next)
-{
-    int i = 1, j = 0;
-    next[0]=next[1] = 0;
-    while(i &lt; (int)strlen(T))
-    {
-        if(j == 0|| T[i] == T[j])
-            {
-            next[++i] = ++j;
-        }
-        else
-            j = next[j];
-    }
-}
-
-int Index_KMP(char *S, char *T, int pos)
-{
-    int j = 1, i = pos;
-    while(i &lt;= (int)strlen(S) &amp;&amp; j &lt;= (int)strlen(T))
-    {
-        if(j == 0 || S[i] == T[j - 1])
-        {
-            ++i;
-            ++j;
-            }
-        else
-            j = next[j];
-    }
-
-    if(j &gt; (int)strlen(T)) 
-        return i - strlen(T) + 1;
-    else
-        return 0;
-}</code></pre><p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p>
+<p><img src="https://tva1.sinaimg.cn/large/006p97Wqgy1gc7lej2oqfg30ws0j44qp.gif" alt></p>
 
       
 	  
@@ -317,7 +240,7 @@ int Index_KMP(char *S, char *T, int pos)
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://www.91change.club/2019/11/21/13/
+				https://hymnc.gitee.io/2019/11/21/13/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -439,7 +362,7 @@ int Index_KMP(char *S, char *T, int pos)
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://www.91change.club/2019/11/21/13/" alt="微信分享二维码">
+	  <img src="//api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://hymnc.gitee.io/2019/11/21/13/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -613,11 +536,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+                <a href="javascript:void(0)" class="js-tag color3">经验</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">字符设备驱动</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -626,18 +557,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">排序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PicGo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -661,6 +580,34 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">PicGo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">指针</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计划</a>
               </li>
              
@@ -673,18 +620,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">51单片机</a>
               </li>
              
@@ -693,31 +628,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">内存对齐</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">中秋节</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Gcc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">经验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">字符设备驱动</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
             
             <div class="clearfix"></div>
