@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>长歌|makejiec</title>
+  <title>长歌行|makejiec</title>
   
-  <subtitle>庐山烟雨浙江潮，未到千般恨不消  及至到来无一事，庐山烟雨浙江潮</subtitle>
+  <subtitle>知行合一</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://hymnc.gitee.io/"/>
+  <link href="https://makejiec.gitee.io/"/>
   <updated>2020-03-13T05:51:43.738Z</updated>
-  <id>https://hymnc.gitee.io/</id>
+  <id>https://makejiec.gitee.io/</id>
   
   <author>
-    <name>makejiec</name>
+    <name>长歌行</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>c语言——内存对齐</title>
-    <link href="https://hymnc.gitee.io/2020/03/12/linux-4/"/>
-    <id>https://hymnc.gitee.io/2020/03/12/linux-4/</id>
+    <link href="https://makejiec.gitee.io/2020/03/12/linux-4/"/>
+    <id>https://makejiec.gitee.io/2020/03/12/linux-4/</id>
     <published>2020-03-12T06:26:11.000Z</published>
     <updated>2020-03-13T05:51:43.738Z</updated>
     
@@ -33,16 +33,16 @@
     </summary>
     
     
-      <category term="c语言" scheme="https://hymnc.gitee.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+      <category term="c语言" scheme="https://makejiec.gitee.io/tags/c%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="内存对齐" scheme="https://hymnc.gitee.io/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/"/>
+      <category term="内存对齐" scheme="https://makejiec.gitee.io/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/"/>
     
   </entry>
   
   <entry>
     <title>记录人生第一次收获offer的艰辛</title>
-    <link href="https://hymnc.gitee.io/2020/03/06/ex/"/>
-    <id>https://hymnc.gitee.io/2020/03/06/ex/</id>
+    <link href="https://makejiec.gitee.io/2020/03/06/ex/"/>
+    <id>https://makejiec.gitee.io/2020/03/06/ex/</id>
     <published>2020-03-06T00:44:01.000Z</published>
     <updated>2020-03-06T05:02:43.147Z</updated>
     
@@ -55,16 +55,16 @@
     </summary>
     
     
-      <category term="面试" scheme="https://hymnc.gitee.io/tags/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="https://makejiec.gitee.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
-      <category term="经验" scheme="https://hymnc.gitee.io/tags/%E7%BB%8F%E9%AA%8C/"/>
+      <category term="经验" scheme="https://makejiec.gitee.io/tags/%E7%BB%8F%E9%AA%8C/"/>
     
   </entry>
   
   <entry>
     <title>GCC程序编译</title>
-    <link href="https://hymnc.gitee.io/2020/02/24/linux-1/"/>
-    <id>https://hymnc.gitee.io/2020/02/24/linux-1/</id>
+    <link href="https://makejiec.gitee.io/2020/02/24/linux-1/"/>
+    <id>https://makejiec.gitee.io/2020/02/24/linux-1/</id>
     <published>2020-02-24T09:09:45.000Z</published>
     <updated>2020-03-13T02:31:44.428Z</updated>
     
@@ -77,16 +77,16 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://hymnc.gitee.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://makejiec.gitee.io/tags/Linux/"/>
     
-      <category term="Gcc" scheme="https://hymnc.gitee.io/tags/Gcc/"/>
+      <category term="Gcc" scheme="https://makejiec.gitee.io/tags/Gcc/"/>
     
   </entry>
   
   <entry>
     <title>51单片机</title>
-    <link href="https://hymnc.gitee.io/2019/12/30/c51-2/"/>
-    <id>https://hymnc.gitee.io/2019/12/30/c51-2/</id>
+    <link href="https://makejiec.gitee.io/2019/12/30/c51-2/"/>
+    <id>https://makejiec.gitee.io/2019/12/30/c51-2/</id>
     <published>2019-12-30T05:53:17.000Z</published>
     <updated>2020-02-24T09:16:05.904Z</updated>
     
@@ -100,16 +100,16 @@
     </summary>
     
     
-      <category term="51单片机" scheme="https://hymnc.gitee.io/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+      <category term="51单片机" scheme="https://makejiec.gitee.io/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
-      <category term="嵌入式" scheme="https://hymnc.gitee.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+      <category term="嵌入式" scheme="https://makejiec.gitee.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>重新学习51单片机</title>
-    <link href="https://hymnc.gitee.io/2019/12/29/c51-1/"/>
-    <id>https://hymnc.gitee.io/2019/12/29/c51-1/</id>
+    <link href="https://makejiec.gitee.io/2019/12/29/c51-1/"/>
+    <id>https://makejiec.gitee.io/2019/12/29/c51-1/</id>
     <published>2019-12-29T07:08:53.000Z</published>
     <updated>2020-02-24T09:00:57.363Z</updated>
     
@@ -124,16 +124,16 @@
     </summary>
     
     
-      <category term="51单片机" scheme="https://hymnc.gitee.io/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+      <category term="51单片机" scheme="https://makejiec.gitee.io/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
-      <category term="嵌入式" scheme="https://hymnc.gitee.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+      <category term="嵌入式" scheme="https://makejiec.gitee.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>KMP算法</title>
-    <link href="https://hymnc.gitee.io/2019/11/21/13/"/>
-    <id>https://hymnc.gitee.io/2019/11/21/13/</id>
+    <link href="https://makejiec.gitee.io/2019/11/21/13/"/>
+    <id>https://makejiec.gitee.io/2019/11/21/13/</id>
     <published>2019-11-21T15:22:16.000Z</published>
     <updated>2020-12-07T14:18:37.870Z</updated>
     
@@ -148,18 +148,18 @@
     </summary>
     
     
-      <category term="算法" scheme="https://hymnc.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://makejiec.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="https://hymnc.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="https://makejiec.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="模式匹配" scheme="https://hymnc.gitee.io/tags/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
+      <category term="模式匹配" scheme="https://makejiec.gitee.io/tags/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
     
   </entry>
   
   <entry>
     <title>经典排序算法</title>
-    <link href="https://hymnc.gitee.io/2019/11/20/12/"/>
-    <id>https://hymnc.gitee.io/2019/11/20/12/</id>
+    <link href="https://makejiec.gitee.io/2019/11/20/12/"/>
+    <id>https://makejiec.gitee.io/2019/11/20/12/</id>
     <published>2019-11-20T14:33:55.000Z</published>
     <updated>2020-12-07T14:06:50.364Z</updated>
     
@@ -172,16 +172,16 @@
     </summary>
     
     
-      <category term="算法" scheme="https://hymnc.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://makejiec.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="https://hymnc.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://makejiec.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>经典排序算法</title>
-    <link href="https://hymnc.gitee.io/2019/11/20/11/"/>
-    <id>https://hymnc.gitee.io/2019/11/20/11/</id>
+    <link href="https://makejiec.gitee.io/2019/11/20/11/"/>
+    <id>https://makejiec.gitee.io/2019/11/20/11/</id>
     <published>2019-11-20T13:11:03.000Z</published>
     <updated>2020-12-07T14:42:07.696Z</updated>
     
@@ -195,16 +195,16 @@
     </summary>
     
     
-      <category term="算法" scheme="https://hymnc.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://makejiec.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="https://hymnc.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://makejiec.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>中秋节开始堕落了</title>
-    <link href="https://hymnc.gitee.io/2019/09/15/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
-    <id>https://hymnc.gitee.io/2019/09/15/中秋节/</id>
+    <link href="https://makejiec.gitee.io/2019/09/15/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+    <id>https://makejiec.gitee.io/2019/09/15/中秋节/</id>
     <published>2019-09-15T07:19:13.000Z</published>
     <updated>2020-02-24T08:15:13.688Z</updated>
     
@@ -221,18 +221,18 @@
     </summary>
     
     
-      <category term="考研" scheme="https://hymnc.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://makejiec.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="感悟" scheme="https://hymnc.gitee.io/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="https://makejiec.gitee.io/tags/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="中秋节" scheme="https://hymnc.gitee.io/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+      <category term="中秋节" scheme="https://makejiec.gitee.io/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
   </entry>
   
   <entry>
     <title>浅谈c指针(二)</title>
-    <link href="https://hymnc.gitee.io/2019/08/27/9/"/>
-    <id>https://hymnc.gitee.io/2019/08/27/9/</id>
+    <link href="https://makejiec.gitee.io/2019/08/27/9/"/>
+    <id>https://makejiec.gitee.io/2019/08/27/9/</id>
     <published>2019-08-27T08:33:00.000Z</published>
     <updated>2019-08-27T15:59:42.159Z</updated>
     
@@ -245,22 +245,22 @@
     </summary>
     
     
-      <category term="指针" scheme="https://hymnc.gitee.io/tags/%E6%8C%87%E9%92%88/"/>
+      <category term="指针" scheme="https://makejiec.gitee.io/tags/%E6%8C%87%E9%92%88/"/>
     
-      <category term="c语言" scheme="https://hymnc.gitee.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+      <category term="c语言" scheme="https://makejiec.gitee.io/tags/c%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="const用法" scheme="https://hymnc.gitee.io/tags/const%E7%94%A8%E6%B3%95/"/>
+      <category term="const用法" scheme="https://makejiec.gitee.io/tags/const%E7%94%A8%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>2019年计划</title>
-    <link href="https://hymnc.gitee.io/2019/08/24/8/"/>
-    <id>https://hymnc.gitee.io/2019/08/24/8/</id>
+    <link href="https://makejiec.gitee.io/2019/08/24/8/"/>
+    <id>https://makejiec.gitee.io/2019/08/24/8/</id>
     <published>2019-08-24T11:49:53.000Z</published>
     <updated>2020-02-24T08:36:24.297Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19rfpXiZxN5Iiqwiq+qKvB01WSxHxqM3kSVCcBtXTa9IYyPyo9tjfkNVk4D3qJ8wFcGoTp2cAeHTuehTEKV2LlCvVAu9Xr4LHZczS5A+mv1a2uTkz8iWv0Z3Z7dj4P6FAHvWxDk/lkQ5H2hwKG1jsDnoaJISBczTKQvgjvb1fWd9o86Ct3CNrNo6NaQJ8+p34bvvGTUBfr+bIJGNe9CDArkkhYIAQH+COncKqzv6QgBuhTS7wLNBhhear62p5tuWY9RtSvvjGHAHuHx0K0tF10wIcLymOXVEdTmbFKmGhtzY7bntw1vRfHpY1YnZPt8gldyZ8FLMQTWkHZ4CQq+ESwlx5Rw/JL612ncHuY6FT7nE20pgPLrPELzPQ4eEePJCb4XBUuts04BbTU+CCcTOLi1eo0wdgPdJzFh9ITelJLvUWTnJ3NLi8+VpzT5iknLSrmYAcZpWqdUyMqGRKsKTnjsrMlg8+/2ZcVAcEaGydzzQCKyB3yWnyCPw1ubqQE8HJPbN8SbanInLcePUSxLup50XHMgIVeCjf1I1yTS6mN498Voe+GeHan+W/MCRqJJpPUWhAnHkOB/IeqhX3N9bDBHKbNZBASEjYeJrAwhd+N12ahDepu8hcIBf0KC1Tc2GNwpz625DvzRqNYcxsNvY+cfEz0XiZPV7eMLmDQqf2HJioL1ea1dw/6XUTMTLfEk9r+8Nqi5c/HpXKXr52wt/sBMzKSEcLz//OQSOOX9rFp+kEOldVydlG8zKPKTYm9urLquROMs+VfK7M9y89joETX2awYDlJdp5iSGbA9QhoY9HU4D0ffRa3CuMMziYIR0C4fwA/VH1BoriFOCHpdQp16oMHmWB6WlfvxUI66X/PuYsQRNIbV6PvrJj3yzWcjpsGFsnBjNHWzHuV1V70Yo6m7XRi1devL2aFBRnni/qQm07FDTUWve56kLsSHIXW6hKu7qv2wlolhoL/6vvda/vDqKos/m8XedOI3/i/ceSkI4BZDMQL/hDDMwQnP1NdJlIcsfwfakeQibIl7BlfRsW6ljp1cEsE4MEsMT5/V4j2+XXnBz+5U3K39JaUbmpmCpXDrgcI9l3eL3w0IB9B3nuycpAocKfa/gEaiFcOgQUH/+E3nUcy/MQ1mPeC0mGucD6WosII0ve5TtKhdt7zvUBw47GJ4pR7KzwLANaU/vcjVOjdsvlrZ7pP6DiSVphp0df3v+B1ATH1Qi7PSgskW/Fa3V1xv0fb6Bsd5m6a75SjggFUKc0RKha8PwmlMYeytOQRv9h2F5M7QBqJMYLOLc/Frdc7+saYheCslxAYBDsjFxaAQQrvr302I1</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="密码：change" />    <label for="pass">密码：change</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19ZRwz2vb9y3Dpk6qAAlY5tg77bCJMUAPrUQdsq6LSFOCR8u7c1ImSFkEVhP9y9JczRaA0kngX/u6NrAcugULOBGbz06LgjK3Dd7A4jq5dmB1P2v1yjqfYBZLANbNEn3eh1pfdEXa1JIVZ8n0LqsJps5C2SMViTgTBERRYBWAm3YCwK7gQo2FW3iLjHmedcKz21+tqqlWB3TI/pB7kYBLKYP7gY4MCzfBVncD0v9OHtfN1tJ9gRu3rtdl7L8UEr2LO7PHhsRXABJteewJa6KKlHegC6TNj93ibx5Ti07tf/Z5Ihpeh5Dbpj56sdokCFGCr/EeBxRzmRPJJ6rh6VtDvIf2Az/li7PNoawR4rYXgBEihPacgwKjHpU+Mue9uYS2Hmvpv7I9dtAjvKpRBrsRUI2phEDRThk4Bugw5FHIsCUSewHp1jT7t6WFeRVufbhLsRw72n145TXG3aub/lpiEDvHdGVDCm8HTYXWIlYuIAZk+KmOncO3Gb3mYP62S/jSi5MvMq0fgS6tu71DFYew2aTS5nsXQYmjA992AHIndWjX8xUB9F9iRJC+5nUbdYC/9lafe5JlNkZqZyxIjAKdHa1GMxbMonjDc1imcfPC1mEjuaOaeWAIIGBLNewWj5hNdz9KdF3VKyqFf8Zwy8+TCbiPcnj0oVbTNyDxTEOOFe/gxwMfYSJB5XRhYn5ux229IjH4YotQOBncSUalT6wDo+/8oqD4nQuZsMnP1aOU4HRkunCSn4wkuXsX4H0jp8oj0Q7X17HVeeGH/wkgsVZZhe0McoQnAu0dH755HT7s8FnfW9lM89uSvh8C3wj49o9TApAGBvXWgr8kQvmkq/ra4fRuhgn8G9J2+0qrzvGcKebKQEwXGV0h5lvA8Ut8jL3oSpGlC8WYinJxnAzgsLn3wJ0RR5QOrRV39xX8Y/40eNVTWVOoCrLSsLkT53vleXIkbIKTl4kxm6aniPTJyLrdglBO7QqshqqdleA0UJYiQJR3Q0zyDVJqo5lirRaMXx9mXTBDQWznyNh9/OqZ+jWnk3lKFVnOQFQZANpyNSI//UyhHeb+R86j8XhZJBlCNY+m61HFrTDJcnAuoGkugzDdJyYiD0ACt3NCSwR8rll1ZbMN79l63SO2SlP5DoBjiMbfvtcn85W1awPefJhS+1qxOlFojF63AbAh564MDMdh84uNW4qBcSKVFyMWNV8Y+1P6Tam3jT00TMHqlDxRUBl+c5G9CmqxnDo6V9JddZXFY3t9i6fEy3+q9W4JbgUi3DsPh61evtouwARo/bOjZGTnieU0HURaUHXNNqHW0ykx73H3LPvKX9WPme</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -269,14 +269,14 @@
     </summary>
     
     
-      <category term="计划" scheme="https://hymnc.gitee.io/tags/%E8%AE%A1%E5%88%92/"/>
+      <category term="计划" scheme="https://makejiec.gitee.io/tags/%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>浅谈c指针(一)</title>
-    <link href="https://hymnc.gitee.io/2019/08/21/6/"/>
-    <id>https://hymnc.gitee.io/2019/08/21/6/</id>
+    <link href="https://makejiec.gitee.io/2019/08/21/6/"/>
+    <id>https://makejiec.gitee.io/2019/08/21/6/</id>
     <published>2019-08-21T11:46:25.000Z</published>
     <updated>2020-02-24T08:35:33.662Z</updated>
     
@@ -291,16 +291,16 @@
     </summary>
     
     
-      <category term="C语言" scheme="https://hymnc.gitee.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+      <category term="C语言" scheme="https://makejiec.gitee.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="指针" scheme="https://hymnc.gitee.io/tags/%E6%8C%87%E9%92%88/"/>
+      <category term="指针" scheme="https://makejiec.gitee.io/tags/%E6%8C%87%E9%92%88/"/>
     
   </entry>
   
   <entry>
     <title>关于七牛云图床的使用</title>
-    <link href="https://hymnc.gitee.io/2019/08/19/5/"/>
-    <id>https://hymnc.gitee.io/2019/08/19/5/</id>
+    <link href="https://makejiec.gitee.io/2019/08/19/5/"/>
+    <id>https://makejiec.gitee.io/2019/08/19/5/</id>
     <published>2019-08-19T11:47:56.000Z</published>
     <updated>2020-02-24T08:33:01.032Z</updated>
     
@@ -315,18 +315,18 @@
     </summary>
     
     
-      <category term="七牛云" scheme="https://hymnc.gitee.io/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
+      <category term="七牛云" scheme="https://makejiec.gitee.io/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
     
-      <category term="插件" scheme="https://hymnc.gitee.io/tags/%E6%8F%92%E4%BB%B6/"/>
+      <category term="插件" scheme="https://makejiec.gitee.io/tags/%E6%8F%92%E4%BB%B6/"/>
     
-      <category term="PicGo" scheme="https://hymnc.gitee.io/tags/PicGo/"/>
+      <category term="PicGo" scheme="https://makejiec.gitee.io/tags/PicGo/"/>
     
   </entry>
   
   <entry>
     <title>yilia主题的一些配置问题</title>
-    <link href="https://hymnc.gitee.io/2019/08/17/4/"/>
-    <id>https://hymnc.gitee.io/2019/08/17/4/</id>
+    <link href="https://makejiec.gitee.io/2019/08/17/4/"/>
+    <id>https://makejiec.gitee.io/2019/08/17/4/</id>
     <published>2019-08-17T04:02:21.000Z</published>
     <updated>2020-02-24T08:28:28.308Z</updated>
     
@@ -341,16 +341,16 @@
     </summary>
     
     
-      <category term="yilia" scheme="https://hymnc.gitee.io/tags/yilia/"/>
+      <category term="yilia" scheme="https://makejiec.gitee.io/tags/yilia/"/>
     
-      <category term="hexo" scheme="https://hymnc.gitee.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://makejiec.gitee.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>考研日常记</title>
-    <link href="https://hymnc.gitee.io/2019/08/16/3/"/>
-    <id>https://hymnc.gitee.io/2019/08/16/3/</id>
+    <link href="https://makejiec.gitee.io/2019/08/16/3/"/>
+    <id>https://makejiec.gitee.io/2019/08/16/3/</id>
     <published>2019-08-16T14:18:43.000Z</published>
     <updated>2020-02-24T08:26:41.165Z</updated>
     
@@ -365,18 +365,18 @@
     </summary>
     
     
-      <category term="考研" scheme="https://hymnc.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://makejiec.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="感悟" scheme="https://hymnc.gitee.io/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="https://makejiec.gitee.io/tags/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="Independent" scheme="https://hymnc.gitee.io/tags/Independent/"/>
+      <category term="Independent" scheme="https://makejiec.gitee.io/tags/Independent/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客的搭建之旅</title>
-    <link href="https://hymnc.gitee.io/2019/08/12/first/"/>
-    <id>https://hymnc.gitee.io/2019/08/12/first/</id>
+    <link href="https://makejiec.gitee.io/2019/08/12/first/"/>
+    <id>https://makejiec.gitee.io/2019/08/12/first/</id>
     <published>2019-08-12T13:01:37.000Z</published>
     <updated>2020-02-24T08:25:50.331Z</updated>
     
@@ -391,9 +391,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://hymnc.gitee.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://makejiec.gitee.io/tags/hexo/"/>
     
-      <category term="阿里云" scheme="https://hymnc.gitee.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+      <category term="阿里云" scheme="https://makejiec.gitee.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
   </entry>
   
